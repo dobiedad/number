@@ -51,12 +51,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="xWO-iX-AfR">
+                                <rect key="frame" x="101" y="120" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="cheesyTextView:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="490-Qc-Tqd"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="Name" destination="8B8-7C-6Ac" id="YfK-Eh-mAZ"/>
                         <outlet property="Number" destination="tp2-Hw-UN1" id="giK-eG-res"/>
+                        <outlet property="cheesyTextView" destination="xWO-iX-AfR" id="a9e-VT-0oL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

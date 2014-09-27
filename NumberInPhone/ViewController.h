@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *Name;
 @property (weak, nonatomic) IBOutlet UITextField *Number;
 @property (weak, nonatomic) IBOutlet NSArray *cheesyArray;
+@property (weak, nonatomic) IBOutlet UITextField *cheesyTextView;
 
 
 @end
