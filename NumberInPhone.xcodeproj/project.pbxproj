@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B31D4E0319D76E8900E1CD79 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = B31D4E0219D76E8900E1CD79 /* save.png */; };
+		B31D4E0819D7761200E1CD79 /* gender.png in Resources */ = {isa = PBXBuildFile; fileRef = B31D4E0719D7761200E1CD79 /* gender.png */; };
 		B3C3C84919D700A500B1D69B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C3C84819D700A500B1D69B /* main.m */; };
 		B3C3C84C19D700A500B1D69B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C3C84B19D700A500B1D69B /* AppDelegate.m */; };
 		B3C3C84F19D700A500B1D69B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C3C84E19D700A500B1D69B /* ViewController.m */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		B31D4E0219D76E8900E1CD79 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = SOURCE_ROOT; };
+		B31D4E0719D7761200E1CD79 /* gender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gender.png; sourceTree = SOURCE_ROOT; };
 		B3C3C84319D700A500B1D69B /* NumberInPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberInPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C3C84719D700A500B1D69B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3C3C84819D700A500B1D69B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				B31D4E0219D76E8900E1CD79 /* save.png */,
 				B3E7EBD519D756F9008DD3B3 /* no */,
 				B3E7EBD619D756F9008DD3B3 /* yes.png */,
+				B31D4E0719D7761200E1CD79 /* gender.png */,
 				B3C3C85019D700A500B1D69B /* Main.storyboard */,
 				B3E7EBD319D754B9008DD3B3 /* refresh.png */,
 				B3C3C85319D700A500B1D69B /* Images.xcassets */,
@@ -213,6 +216,7 @@
 			files = (
 				B3E7EBD719D756F9008DD3B3 /* no in Resources */,
 				B3C3C85219D700A500B1D69B /* Main.storyboard in Resources */,
+				B31D4E0819D7761200E1CD79 /* gender.png in Resources */,
 				B3E7EBD419D754B9008DD3B3 /* refresh.png in Resources */,
 				B3E7EBD819D756F9008DD3B3 /* yes.png in Resources */,
 				B3C3C85719D700A500B1D69B /* LaunchScreen.xib in Resources */,

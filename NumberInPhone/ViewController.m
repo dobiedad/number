@@ -52,6 +52,8 @@
     [self reloadCheeseFunction];
     putInNumber.hidden = YES;
     btnCreateNewContact.hidden =YES;
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"gender.png"]];
+
 
     
     
@@ -93,6 +95,13 @@
         [contactAddedAlert show];
         self.Name.text=@"";
         self.Number.text=@"";
+        [self hideSecondBit];
+        [self showFirstBit];
+
+
+     
+
+
         
 
 
@@ -105,10 +114,6 @@
     }
     
 }
-
-
-
-
 
 
 
@@ -165,36 +170,8 @@
 
 
 - (IBAction)yesButton:(id)sender {
-    CATransition *leftAnimation = [CATransition animation];
-    leftAnimation.type = kCATransitionFromLeft;
-    leftAnimation.duration = 0.3;
-    [_Name.layer addAnimation:leftAnimation forKey:nil];
-    
-    _Name.hidden = NO;
-    CATransition *rightAnimation = [CATransition animation];
-    rightAnimation.type = kCATransitionFromRight;
-    rightAnimation.duration = 0.3;
-    [_Number.layer addAnimation:rightAnimation forKey:nil];
-    
-    _Number.hidden = NO;
-    CATransition *Animation = [CATransition animation];
-    Animation.type = kCATransitionFromBottom;
-    Animation.duration = 1;
-    [_Number.layer addAnimation:Animation forKey:nil];
-    
-   putInNumber.hidden = NO;
-    refresh.hidden = YES;
-    cheesyTextView.hidden = YES;
-    yesButton.hidden = YES;
-    noButton.hidden = YES;
-    callLabel.hidden = YES;
-    btnCreateNewContact.hidden =NO;
 
-    
-
-
-    
-
+    [self hideFirstBit];
 
 
 }
@@ -202,6 +179,49 @@
 {
     [self.view endEditing:YES];
 }
+- (void)hideFirstBit
+{
+    refresh.hidden = YES;
+    cheesyTextView.hidden = YES;
+    yesButton.hidden = YES;
+    noButton.hidden = YES;
+    callLabel.hidden = YES;
+    _Name.hidden = NO;
+    btnCreateNewContact.hidden =NO;
+
+    putInNumber.hidden = NO;
+
+    _Number.hidden = NO;
+
+
+}
+- (void)showFirstBit
+{
+    refresh.hidden = NO;
+    cheesyTextView.hidden = NO;
+    yesButton.hidden = NO;
+    noButton.hidden = NO;
+    callLabel.hidden = NO;
+    _Name.hidden = YES;
+    btnCreateNewContact.hidden =YES;
+    
+    putInNumber.hidden = YES;
+    
+    _Number.hidden = YES;
+    
+    
+}
+- (void)hideSecondBit
+{
+    putInNumber.hidden = YES;
+    _Number.hidden = YES;
+    _Name.hidden = YES;
+    btnCreateNewContact.hidden =YES;
+
+    
+    
+}
+
 
 - (void)reloadCheeseFunction
 {
