@@ -19,6 +19,14 @@
 @synthesize yesButton;
 @synthesize refresh;
 @synthesize cheesyTextView;
+@synthesize putInNumber;
+@synthesize noButton;
+@synthesize callLabel;
+
+
+
+
+
 
 
 
@@ -40,6 +48,8 @@
     
     [self checkAddressBookAccess];
     [self reloadCheeseFunction];
+    putInNumber.hidden = YES;
+
     
     
 
@@ -159,6 +169,24 @@
     [_Number.layer addAnimation:rightAnimation forKey:nil];
     
     _Number.hidden = NO;
+    CATransition *Animation = [CATransition animation];
+    Animation.type = kCATransitionFromBottom;
+    Animation.duration = 1;
+    [_Number.layer addAnimation:Animation forKey:nil];
+    
+   putInNumber.hidden = NO;
+    refresh.hidden = YES;
+    cheesyTextView.hidden = YES;
+    yesButton.hidden = YES;
+    noButton.hidden = YES;
+    callLabel.hidden = YES;
+    
+
+
+    
+
+
+
 }
 
 - (void)reloadCheeseFunction

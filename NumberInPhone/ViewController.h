@@ -21,5 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *refresh;
 @property (weak, nonatomic) IBOutlet UITextView *cheesyTextView;
 @property (weak, nonatomic) IBOutlet UIButton *noButton;
+@property (weak, nonatomic) IBOutlet UILabel *putInNumber;
+@property (weak, nonatomic) IBOutlet UILabel *callLabel;
 
 @end
