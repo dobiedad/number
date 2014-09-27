@@ -23,5 +23,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *noButton;
 @property (weak, nonatomic) IBOutlet UILabel *putInNumber;
 @property (weak, nonatomic) IBOutlet UILabel *callLabel;
+@property (weak, nonatomic) IBOutlet UIButton *btnCreateNewContact;
 
 @end

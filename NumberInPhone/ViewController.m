@@ -21,7 +21,10 @@
 @synthesize cheesyTextView;
 @synthesize putInNumber;
 @synthesize noButton;
+@synthesize btnCreateNewContact;
+
 @synthesize callLabel;
+
 
 
 
@@ -49,6 +52,7 @@
     [self checkAddressBookAccess];
     [self reloadCheeseFunction];
     putInNumber.hidden = YES;
+    btnCreateNewContact.hidden =YES;
 
     
     
@@ -180,6 +184,8 @@
     yesButton.hidden = YES;
     noButton.hidden = YES;
     callLabel.hidden = YES;
+    btnCreateNewContact.hidden =NO;
+
     
 
 
@@ -187,6 +193,10 @@
 
 
 
+}
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
 }
 
 - (void)reloadCheeseFunction
