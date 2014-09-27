@@ -28,49 +28,46 @@
     [self checkAddressBookAccess];
 }
 - (IBAction)btnCreateNewContactClicked:(id)sender {
-    [self showNewPersonViewController];
-
-}
-
-
-
-
-
-
-
-// Dismisses the people picker and shows the application when users tap Cancel.
-- (void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker;
-{
-    [self dismissViewControllerAnimated:YES completion:NULL];
-}
-
-#pragma mark Create a new person
-// Called when users tap "Create New Contact" in the application. Allows users to create a new contact.
--(void)showNewPersonViewController
-{
-    ABNewPersonViewController *picker = [[ABNewPersonViewController alloc] init];
-    picker.newPersonViewDelegate = self;
+    NSString *Name;
+    NSString *Number;
+        Name = @"Cheesy";
+        Number = @"2015552398";
     
-    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:picker];
-    [self presentViewController:navigation animated:YES completion:nil];
+    ABAddressBookRef addressBookRef = ABAddressBookCreateWithOptions(NULL, nil);
+    ABRecordRef new = ABPersonCreate();
+    ABRecordSetValue(new, kABPersonFirstNameProperty, (__bridge CFStringRef)Name, nil);
+    
+    ABMutableMultiValueRef Numbers = ABMultiValueCreateMutable(kABMultiStringPropertyType);
+    ABMultiValueAddValueAndLabel(Numbers, (__bridge CFStringRef)Number, kABPersonPhoneMainLabel, NULL);
+    ABRecordSetValue(new, kABPersonPhoneProperty, Numbers, nil);
+    
+    ABAddressBookAddRecord(addressBookRef, new, nil);
+    
+    NSArray *allContacts = (__bridge NSArray *)ABAddressBookCopyArrayOfAllPeople(addressBookRef);
+    for (id record in allContacts){
+        ABRecordRef thisContact = (__bridge ABRecordRef)record;
+        if (CFStringCompare(ABRecordCopyCompositeName(thisContact),
+                            ABRecordCopyCompositeName(new), 0) == kCFCompareEqualTo){
+            //The contact already exists!
+            UIAlertView *contactExistsAlert = [[UIAlertView alloc]initWithTitle:[NSString stringWithFormat:@"There can only be one %@", Name] message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [contactExistsAlert show];
+            return;
+        }
+    }
+    ABAddressBookSave(addressBookRef, nil);
+    UIAlertView *contactAddedAlert = [[UIAlertView alloc]initWithTitle:@"Contact Added" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [contactAddedAlert show];
 }
 
-#pragma mark ABNewPersonViewControllerDelegate methods
-// Dismisses the new-person view controller.
-- (void)newPersonViewController:(ABNewPersonViewController *)newPersonViewController didCompleteWithNewPerson:(ABRecordRef)person
-{
-    [self dismissViewControllerAnimated:YES completion:NULL];
-}
 
 
 
-#pragma mark ABPersonViewControllerDelegate methods
-// Does not allow users to perform default actions such as dialing a phone number, when they select a contact property.
-- (BOOL)personViewController:(ABPersonViewController *)personViewController shouldPerformDefaultActionForPerson:(ABRecordRef)person
-                    property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifierForValue
-{
-    return NO;
-}
+
+
+
+
+
+
 
 #pragma mark Address Book Access
 // Check the authorization status of our application for Address Book
