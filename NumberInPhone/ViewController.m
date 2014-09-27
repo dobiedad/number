@@ -16,8 +16,9 @@
 
 @synthesize addressBook;
 @synthesize cheesyArray;
-- (IBAction)cheesyTextView:(id)sender {
-}
+@synthesize cheesyTextView;
+
+
 
 
 - (void)viewDidLoad
@@ -32,6 +33,12 @@
     [self checkAddressBookAccess];
     NSArray *cheesyArray = @[@"Mercedes-Benz", @"BMW", @"Porsche",
                              @"Opel", @"Volkswagen", @"Audi"];
+    uint32_t rnd = arc4random_uniform([cheesyArray count]);
+    NSString *randomCheese = [cheesyArray objectAtIndex:rnd];
+
+
+    cheesyTextView.text = randomCheese;
+
 }
 - (IBAction)btnCreateNewContactClicked:(id)sender {
     NSString *Name = self.Name.text;
