@@ -54,7 +54,10 @@
     }
     ABAddressBookSave(addressBookRef, nil);
     UIAlertView *contactAddedAlert = [[UIAlertView alloc]initWithTitle:@"Contact Added" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    
     [contactAddedAlert show];
+
+
 }
 
 
