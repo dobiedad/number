@@ -188,6 +188,14 @@
     
     cheesyTextView.text = randomCheese;
     [cheesyTextView setUserInteractionEnabled:NO];
+    
+    NSArray *callMeArray = @[@"Let me call you later?", @"Grab some coffee later?", @"Lets go out sometime?",
+                             @"Its a date?", @"Me + You"];
+    uint32_t callrnd = arc4random_uniform([callMeArray count]);
+    NSString *callMe = [callMeArray objectAtIndex:callrnd];
+    
+    
+    callLabel.text = callMe;
 }
 
 - (IBAction)refreshButton:(id)sender {
