@@ -16,7 +16,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *Name;
 @property (weak, nonatomic) IBOutlet UITextField *Number;
 @property (weak, nonatomic) IBOutlet NSArray *cheesyArray;
-@property (weak, nonatomic) IBOutlet UITextField *cheesyTextView;
 
+@property (weak, nonatomic) IBOutlet UIButton *yesButton;
+@property (weak, nonatomic) IBOutlet UIButton *refresh;
+@property (weak, nonatomic) IBOutlet UITextView *cheesyTextView;
+@property (weak, nonatomic) IBOutlet UIButton *noButton;
 
 @end
