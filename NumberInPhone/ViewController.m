@@ -22,19 +22,7 @@
 @synthesize putInNumber;
 @synthesize noButton;
 @synthesize btnCreateNewContact;
-
 @synthesize callLabel;
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -43,26 +31,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    
     addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
-    
     [self checkAddressBookAccess];
     [self reloadCheeseFunction];
     putInNumber.hidden = YES;
     btnCreateNewContact.hidden =YES;
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"gender.png"]];
-
-
-    
-    
-
-   
-
 }
 - (IBAction)btnCreateNewContactClicked:(id)sender {
-
     
     NSString *Name = self.Name.text;
     NSString *Number = self.Number.text;
@@ -98,27 +74,12 @@
         [self hideSecondBit];
         [self showFirstBit];
 
-
-     
-
-
-        
-
-
-
     }
     else {
         UIAlertView *emptyAlert = [[UIAlertView alloc]initWithTitle:@"Thats a fake contact. Try again with the correct details" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-        
         [emptyAlert show];
     }
-    
 }
-
-
-
-
-
 
 
 #pragma mark Address Book Access
@@ -204,11 +165,8 @@
     callLabel.hidden = NO;
     _Name.hidden = YES;
     btnCreateNewContact.hidden =YES;
-    
     putInNumber.hidden = YES;
-    
     _Number.hidden = YES;
-    
     
 }
 - (void)hideSecondBit
@@ -217,9 +175,6 @@
     _Number.hidden = YES;
     _Name.hidden = YES;
     btnCreateNewContact.hidden =YES;
-
-    
-    
 }
 
 
