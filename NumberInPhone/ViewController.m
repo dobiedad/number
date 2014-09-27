@@ -23,6 +23,8 @@
 @synthesize noButton;
 @synthesize btnCreateNewContact;
 @synthesize callLabel;
+@synthesize userImage;
+@synthesize phoneImage;
 
 
 
@@ -153,6 +155,8 @@
     putInNumber.hidden = NO;
 
     _Number.hidden = NO;
+    userImage.hidden = NO;
+    phoneImage.hidden = NO;
 
 
 }
@@ -167,6 +171,8 @@
     btnCreateNewContact.hidden =YES;
     putInNumber.hidden = YES;
     _Number.hidden = YES;
+    userImage.hidden = YES;
+    phoneImage.hidden = YES;
     
 }
 - (void)hideSecondBit
