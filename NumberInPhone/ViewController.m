@@ -15,17 +15,21 @@
 @implementation ViewController
 
 @synthesize addressBook;
+@synthesize cheesyArray;
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.navigationItem.title = @"Manage Contacts";
+    self.navigationItem.title = @"Number In Phone";
     
     addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     
     [self checkAddressBookAccess];
+    NSArray *cheesyArray = @[@"Mercedes-Benz", @"BMW", @"Porsche",
+                             @"Opel", @"Volkswagen", @"Audi"];
 }
 - (IBAction)btnCreateNewContactClicked:(id)sender {
     NSString *Name = self.Name.text;

@@ -15,5 +15,7 @@
 @property (nonatomic, assign) ABAddressBookRef addressBook;
 @property (weak, nonatomic) IBOutlet UITextField *Name;
 @property (weak, nonatomic) IBOutlet UITextField *Number;
+@property (weak, nonatomic) IBOutlet NSArray *cheesyArray;
+
 
 @end
