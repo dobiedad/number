@@ -28,10 +28,8 @@
     [self checkAddressBookAccess];
 }
 - (IBAction)btnCreateNewContactClicked:(id)sender {
-    NSString *Name;
-    NSString *Number;
-        Name = @"Cheesy";
-        Number = @"2015552398";
+    NSString *Name = self.Name.text;
+    NSString *Number = self.Number.text;
     
     ABAddressBookRef addressBookRef = ABAddressBookCreateWithOptions(NULL, nil);
     ABRecordRef new = ABPersonCreate();

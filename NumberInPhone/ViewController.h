@@ -10,8 +10,10 @@
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
 
-@interface ViewController : UIViewController <ABPeoplePickerNavigationControllerDelegate,ABPersonViewControllerDelegate,ABNewPersonViewControllerDelegate>
+@interface ViewController : UIViewController
 
 @property (nonatomic, assign) ABAddressBookRef addressBook;
+@property (weak, nonatomic) IBOutlet UITextField *Name;
+@property (weak, nonatomic) IBOutlet UITextField *Number;
 
 @end
