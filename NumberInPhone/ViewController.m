@@ -38,6 +38,7 @@
 
 
     cheesyTextView.text = randomCheese;
+    [cheesyTextView setUserInteractionEnabled:NO];
 
 }
 - (IBAction)btnCreateNewContactClicked:(id)sender {
