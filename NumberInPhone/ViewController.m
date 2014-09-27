@@ -89,9 +89,14 @@
             }
         }
         ABAddressBookSave(addressBookRef, nil);
-        UIAlertView *contactAddedAlert = [[UIAlertView alloc]initWithTitle:@"Contact Added" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        UIAlertView *contactAddedAlert = [[UIAlertView alloc]initWithTitle:@"Saved! Ill be in touch soon " message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         
         [contactAddedAlert show];
+        self.Name.text=@"";
+        self.Number.text=@"";
+        
+
+
 
     }
     else {
@@ -99,7 +104,7 @@
         
         [emptyAlert show];
     }
-
+    
 }
 
 
