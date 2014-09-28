@@ -37,12 +37,26 @@
     [super viewDidLoad];
     [self paralax];
 
+
+
     addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     [self checkAddressBookAccess];
     [self reloadCheeseFunction];
     putInNumber.hidden = YES;
     btnCreateNewContact.hidden =YES;
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"gender.png"]];
+}
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        
+        NSMutableArray *myImageNames = [NSMutableArray arrayWithObjects:@"image1.png", @"image2.png", @"image3.png",@"image4.png", @"image5.png",@"image6.png",   nil];
+        int index = arc4random() % [myImageNames count];
+        
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:[myImageNames objectAtIndex:index]]];
+    }
+    return self;
 }
 
 - (void)paralax
