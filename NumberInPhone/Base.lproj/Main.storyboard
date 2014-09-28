@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Number?-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -16,6 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3dO-5e-8Ok">
+                                <rect key="frame" x="-38" y="-74" width="568" height="1024"/>
+                            </imageView>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tp2-Hw-UN1">
                                 <rect key="frame" x="51" y="129" width="200" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -59,16 +62,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let me call you later?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqq-wl-GHB">
-                                <rect key="frame" x="87" y="163" width="164" height="21"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TND-Cd-cJl">
                                 <rect key="frame" x="49" y="81" width="240" height="62"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="0.35000000000000003" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -88,13 +86,21 @@
                                     <action selector="btnCreateNewContactClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bu2-Do-XY5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let me call you later?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqq-wl-GHB">
+                                <rect key="frame" x="87" y="167" width="164" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.28999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <color key="textColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="highlightedColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="u3d-Jc-QBL"/>
+                    <navigationItem key="navigationItem" title="Number?" id="u3d-Jc-QBL"/>
                     <connections>
                         <outlet property="Name" destination="8B8-7C-6Ac" id="YfK-Eh-mAZ"/>
                         <outlet property="Number" destination="tp2-Hw-UN1" id="giK-eG-res"/>
+                        <outlet property="background" destination="3dO-5e-8Ok" id="1bB-Ka-3If"/>
                         <outlet property="btnCreateNewContact" destination="rmt-lx-B7V" id="5Bs-0t-OkR"/>
                         <outlet property="callLabel" destination="lqq-wl-GHB" id="hY7-Ut-XON"/>
                         <outlet property="cheesyTextView" destination="TND-Cd-cJl" id="h4l-Sp-1a4"/>
@@ -130,6 +136,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bg.jpg" width="640" height="1136"/>
         <image name="no" width="152" height="152"/>
         <image name="phone.png" width="104" height="104"/>
         <image name="refresh.png" width="24" height="24"/>

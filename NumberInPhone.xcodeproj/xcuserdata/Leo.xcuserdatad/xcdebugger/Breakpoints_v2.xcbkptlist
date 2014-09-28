@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NumberInPhone/ViewController.m"
-            timestampString = "433553962.058041"
+            timestampString = "433616497.563904"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "-requestAddressBookAccess"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NumberInPhone/ViewController.h"
-            timestampString = "433552719.845084"
+            timestampString = "433616497.563904"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "@interface ViewController"
             landmarkType = "2">
             <Locations>
@@ -41,11 +41,11 @@
                   symbolName = "-[ViewController addressBook]"
                   moduleName = "NumberInPhone"
                   urlString = "file:///Users/Leo/iOS/NumberInPhone/NumberInPhone/ViewController.h"
-                  timestampString = "433554905.632225"
+                  timestampString = "433616554.233651"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
                   offsetFromSymbolStart = "16">
                </Location>
                <Location
@@ -55,11 +55,11 @@
                   symbolName = "-[ViewController setAddressBook:]"
                   moduleName = "NumberInPhone"
                   urlString = "file:///Users/Leo/iOS/NumberInPhone/NumberInPhone/ViewController.h"
-                  timestampString = "433554905.632515"
+                  timestampString = "433616554.233886"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
                   offsetFromSymbolStart = "20">
                </Location>
             </Locations>
@@ -72,11 +72,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NumberInPhone/ViewController.m"
-            timestampString = "433553962.058041"
+            timestampString = "433616497.563904"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "-btnCreateNewContactClicked:"
             landmarkType = "5">
          </BreakpointContent>

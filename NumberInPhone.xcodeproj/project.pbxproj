@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31B24F019D86FC900025B47 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B31B24EF19D86FC900025B47 /* bg.jpg */; };
 		B31D4E0319D76E8900E1CD79 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = B31D4E0219D76E8900E1CD79 /* save.png */; };
 		B31D4E0819D7761200E1CD79 /* gender.png in Resources */ = {isa = PBXBuildFile; fileRef = B31D4E0719D7761200E1CD79 /* gender.png */; };
 		B31D4E0B19D7813200E1CD79 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = B31D4E0919D7813200E1CD79 /* phone.png */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B31B24EF19D86FC900025B47 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = SOURCE_ROOT; };
 		B31D4E0219D76E8900E1CD79 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = SOURCE_ROOT; };
 		B31D4E0719D7761200E1CD79 /* gender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gender.png; sourceTree = SOURCE_ROOT; };
 		B31D4E0919D7813200E1CD79 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = SOURCE_ROOT; };
@@ -108,6 +110,7 @@
 				B3A5C07519D7834E00015738 /* icon.png */,
 				B3E7EBD619D756F9008DD3B3 /* yes.png */,
 				B31D4E0919D7813200E1CD79 /* phone.png */,
+				B31B24EF19D86FC900025B47 /* bg.jpg */,
 				B31D4E0A19D7813200E1CD79 /* user.png */,
 				B31D4E0719D7761200E1CD79 /* gender.png */,
 				B3A5C07719D7857500015738 /* launch.png */,
@@ -226,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31B24F019D86FC900025B47 /* bg.jpg in Resources */,
 				B3A5C07819D7857500015738 /* launch.png in Resources */,
 				B3E7EBD719D756F9008DD3B3 /* no in Resources */,
 				B3C3C85219D700A500B1D69B /* Main.storyboard in Resources */,

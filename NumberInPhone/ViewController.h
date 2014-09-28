@@ -11,6 +11,7 @@
 #import <AddressBookUI/AddressBookUI.h>
 
 
+
 @interface ViewController : UIViewController
 
 @property (nonatomic, assign) ABAddressBookRef addressBook;
@@ -27,5 +28,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnCreateNewContact;
 @property (weak, nonatomic) IBOutlet UIImageView *userImage;
 @property (weak, nonatomic) IBOutlet UIImageView *phoneImage;
+@property (weak, nonatomic) IBOutlet UIImageView *background;
 
 @end

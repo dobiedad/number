@@ -25,6 +25,8 @@
 @synthesize callLabel;
 @synthesize userImage;
 @synthesize phoneImage;
+@synthesize background;
+
 
 
 
@@ -33,12 +35,40 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self paralax];
+
     addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     [self checkAddressBookAccess];
     [self reloadCheeseFunction];
     putInNumber.hidden = YES;
     btnCreateNewContact.hidden =YES;
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"gender.png"]];
+}
+
+- (void)paralax
+{
+    // Set vertical effect
+    UIInterpolatingMotionEffect *verticalMotionEffect =
+    [[UIInterpolatingMotionEffect alloc]
+     initWithKeyPath:@"center.y"
+     type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+    verticalMotionEffect.minimumRelativeValue = @(-50);
+    verticalMotionEffect.maximumRelativeValue = @(50);
+    
+    // Set horizontal effect
+    UIInterpolatingMotionEffect *horizontalMotionEffect =
+    [[UIInterpolatingMotionEffect alloc]
+     initWithKeyPath:@"center.x"
+     type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+    horizontalMotionEffect.minimumRelativeValue = @(-50);
+    horizontalMotionEffect.maximumRelativeValue = @(50);
+    
+    // Create group to combine both
+    UIMotionEffectGroup *group = [UIMotionEffectGroup new];
+    group.motionEffects = @[horizontalMotionEffect, verticalMotionEffect];
+    
+    // Add both effects to your view
+    [background addMotionEffect:group];
 }
 - (IBAction)btnCreateNewContactClicked:(id)sender {
     
