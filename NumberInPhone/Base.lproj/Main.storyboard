@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vMD-1c-EqL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vMD-1c-EqL">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -16,127 +17,138 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3dO-5e-8Ok">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3dO-5e-8Ok">
                                 <rect key="frame" x="-113" y="-121" width="568" height="1024"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiy-hV-6bF" userLabel="refreshButton">
-                                <rect key="frame" x="267" y="48" width="16" height="16"/>
-                                <state key="normal" backgroundImage="refresh.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="refreshButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DSo-PW-EPu"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YzO-6F-7ia" userLabel="contactView">
-                                <rect key="frame" x="80" y="142" width="160" height="284"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJ1-A4-bkD" userLabel="bottomContainer">
+                                <rect key="frame" x="0.0" y="85" width="320" height="483"/>
                                 <subviews>
-                                    <button alpha="0.59999999999999964" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmt-lx-B7V">
-                                        <rect key="frame" x="56" y="118" width="48" height="48"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                        <state key="normal" backgroundImage="save.png">
-                                            <color key="titleShadowColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="btnCreateNewContactClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bu2-Do-XY5"/>
-                                        </connections>
-                                    </button>
-                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phone.png" translatesAutoresizingMaskIntoConstraints="NO" id="eTY-oY-2Vd">
-                                        <rect key="frame" x="55" y="117" width="50" height="50"/>
-                                    </imageView>
-                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="psz-3W-v5h">
-                                        <rect key="frame" x="55" y="117" width="50" height="50"/>
-                                    </imageView>
-                                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tp2-Hw-UN1">
-                                        <rect key="frame" x="-20" y="127" width="200" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8B8-7C-6Ac">
-                                        <rect key="frame" x="-20" y="127" width="200" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What you waiting for, Put in your Number...." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jx-Sj-Lt9">
-                                        <rect key="frame" x="-68" y="111" width="295" height="62"/>
-                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.27000000000000002" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kf0-77-T3J" userLabel="cheesyContainer">
+                                        <rect key="frame" x="0.0" y="245" width="320" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let me call you later?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqq-wl-GHB" userLabel="cheesyCallLine">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="26"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <color key="textColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
+                                                <color key="highlightedColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TND-Cd-cJl" userLabel="cheesyLine">
+                                                <rect key="frame" x="0.0" y="63" width="320" height="87"/>
+                                                <color key="backgroundColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="0.35000000000000003" colorSpace="calibratedRGB"/>
+                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YzO-6F-7ia" userLabel="contactView">
+                                        <rect key="frame" x="0.0" y="132" width="320" height="251"/>
+                                        <subviews>
+                                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8B8-7C-6Ac">
+                                                <rect key="frame" x="76" y="138" width="200" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What you waiting for, Put in your Number...." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jx-Sj-Lt9">
+                                                <rect key="frame" x="8" y="68" width="295" height="62"/>
+                                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.27000000000000002" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="psz-3W-v5h">
+                                                <rect key="frame" x="8" y="123" width="50" height="50"/>
+                                            </imageView>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phone.png" translatesAutoresizingMaskIntoConstraints="NO" id="eTY-oY-2Vd">
+                                                <rect key="frame" x="8" y="166" width="50" height="50"/>
+                                            </imageView>
+                                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tp2-Hw-UN1">
+                                                <rect key="frame" x="76" y="182" width="200" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="0.0" colorSpace="deviceRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Jt-ri-pOw" userLabel="footerButtonView">
+                                        <rect key="frame" x="0.0" y="383" width="320" height="100"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pUP-fX-UuQ" userLabel="centeredContainer">
+                                                <rect key="frame" x="42" y="12" width="236" height="76"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ii-dM-jiH" userLabel="yesButton">
+                                                        <rect key="frame" x="123" y="-12" width="100" height="100"/>
+                                                        <state key="normal" backgroundImage="yes.png">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="yesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oVF-IO-RMh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button alpha="0.59999999999999964" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmt-lx-B7V">
+                                                        <rect key="frame" x="94" y="14" width="48" height="48"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                        <state key="normal" backgroundImage="save.png">
+                                                            <color key="titleShadowColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="btnCreateNewContactClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bu2-Do-XY5"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bv8-JF-88g" userLabel="noButton">
+                                                        <rect key="frame" x="15" y="-12" width="100" height="100"/>
+                                                        <state key="normal" backgroundImage="no">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="noButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xP3-Qo-LIh"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="bottomBar"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kf0-77-T3J" userLabel="cheesyTextView">
-                                <rect key="frame" x="80" y="142" width="160" height="284"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let me call you later?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqq-wl-GHB" userLabel="cheesyCallLine">
-                                        <rect key="frame" x="-44" y="129" width="247" height="26"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.28999999999999998" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
-                                        <color key="textColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
-                                        <color key="highlightedColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TND-Cd-cJl" userLabel="cheesyLine">
-                                        <rect key="frame" x="-80" y="102" width="320" height="81"/>
-                                        <color key="backgroundColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="0.35000000000000003" colorSpace="calibratedRGB"/>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Jt-ri-pOw" userLabel="footerButtonView">
-                                <rect key="frame" x="0.0" y="468" width="160" height="100"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bv8-JF-88g" userLabel="noButton">
-                                        <rect key="frame" x="30" y="0.0" width="100" height="100"/>
-                                        <state key="normal" backgroundImage="no">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="noButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xP3-Qo-LIh"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ii-dM-jiH" userLabel="yesButton">
-                                        <rect key="frame" x="60" y="0.0" width="100" height="100"/>
-                                        <state key="normal" backgroundImage="yes.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="yesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oVF-IO-RMh"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="bottomBar"/>
-                                </userDefinedRuntimeAttributes>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y4G-7T-9ME" firstAttribute="top" secondItem="YJ1-A4-bkD" secondAttribute="bottom" id="EuL-1w-pQZ"/>
+                            <constraint firstItem="YJ1-A4-bkD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LfN-qb-3F8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Number?" id="PD4-db-I74"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="Name" destination="8B8-7C-6Ac" id="YfK-Eh-mAZ"/>
                         <outlet property="Number" destination="tp2-Hw-UN1" id="giK-eG-res"/>
                         <outlet property="background" destination="3dO-5e-8Ok" id="1bB-Ka-3If"/>
                         <outlet property="btnCreateNewContact" destination="rmt-lx-B7V" id="5Bs-0t-OkR"/>
                         <outlet property="callLabel" destination="lqq-wl-GHB" id="hY7-Ut-XON"/>
-                        <outlet property="cheesyTextView" destination="TND-Cd-cJl" id="h4l-Sp-1a4"/>
+                        <outlet property="cheesyContainer" destination="kf0-77-T3J" id="nUD-Lo-Hob"/>
+                        <outlet property="contactView" destination="YzO-6F-7ia" id="a5E-Ld-m22"/>
+                        <outlet property="footerButtonView" destination="9Jt-ri-pOw" id="nkd-ZF-7ga"/>
                         <outlet property="noButton" destination="Bv8-JF-88g" id="sZC-Ro-XAR"/>
                         <outlet property="phoneImage" destination="eTY-oY-2Vd" id="QZK-mm-GLT"/>
                         <outlet property="putInNumber" destination="2Jx-Sj-Lt9" id="zju-9x-CEL"/>
-                        <outlet property="refresh" destination="tiy-hV-6bF" id="PBH-Gj-frO"/>
                         <outlet property="userImage" destination="psz-3W-v5h" id="Lw8-1F-i5m"/>
                         <outlet property="yesButton" destination="1Ii-dM-jiH" id="iQ1-ao-ajv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="606" y="128"/>
+            <point key="canvasLocation" x="1115.625" y="168.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vTA-J4-8bo">
@@ -161,21 +173,15 @@
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
             </objects>
-            <point key="canvasLocation" x="74" y="128"/>
+            <point key="canvasLocation" x="138.75" y="160"/>
         </scene>
     </scenes>
     <resources>
         <image name="bg.jpg" width="640" height="1136"/>
         <image name="no" width="152" height="152"/>
         <image name="phone.png" width="104" height="104"/>
-        <image name="refresh.png" width="24" height="24"/>
         <image name="save.png" width="64" height="64"/>
         <image name="user.png" width="104" height="104"/>
         <image name="yes.png" width="152" height="152"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

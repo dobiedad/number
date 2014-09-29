@@ -17,7 +17,6 @@
 @synthesize addressBook;
 @synthesize cheesyArray;
 @synthesize yesButton;
-@synthesize refresh;
 @synthesize cheesyTextView;
 @synthesize putInNumber;
 @synthesize noButton;
@@ -26,6 +25,9 @@
 @synthesize userImage;
 @synthesize phoneImage;
 @synthesize background;
+@synthesize cheesyContainer;
+@synthesize contactView;
+@synthesize footerButtonView;
 
 
 
@@ -36,7 +38,7 @@
 {
     [super viewDidLoad];
     [self paralax];
-    [PixateFreestyle initializePixateFreestyle];
+
     
 
 
@@ -183,35 +185,17 @@
 
 - (IBAction)yesButton:(id)sender {
 
-    [self hideFirstBit];
-
+    cheesyContainer.hidden = TRUE;
+    contactView.hidden = FALSE;
 
 }
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self.view endEditing:YES];
 }
-- (void)hideFirstBit
-{
-    refresh.hidden = YES;
-    cheesyTextView.hidden = YES;
-    yesButton.hidden = YES;
-    noButton.hidden = YES;
-    callLabel.hidden = YES;
-    _Name.hidden = NO;
-    btnCreateNewContact.hidden =NO;
 
-    putInNumber.hidden = NO;
-
-    _Number.hidden = NO;
-    userImage.hidden = NO;
-    phoneImage.hidden = NO;
-
-
-}
 - (void)showFirstBit
 {
-    refresh.hidden = NO;
     cheesyTextView.hidden = NO;
     yesButton.hidden = NO;
     noButton.hidden = NO;

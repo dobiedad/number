@@ -23,7 +23,6 @@
 @property (weak, nonatomic) IBOutlet NSArray *cheesyArray;
 
 @property (weak, nonatomic) IBOutlet UIButton *yesButton;
-@property (weak, nonatomic) IBOutlet UIButton *refresh;
 @property (weak, nonatomic) IBOutlet UITextView *cheesyTextView;
 @property (weak, nonatomic) IBOutlet UIButton *noButton;
 @property (weak, nonatomic) IBOutlet UILabel *putInNumber;
@@ -32,5 +31,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *userImage;
 @property (weak, nonatomic) IBOutlet UIImageView *phoneImage;
 @property (weak, nonatomic) IBOutlet UIImageView *background;
+@property (weak, nonatomic) IBOutlet UIView *footerButtonView;
+@property (weak, nonatomic) IBOutlet UIView *contactView;
+@property (weak, nonatomic) IBOutlet UIView *cheesyContainer;
 
 @end
