@@ -88,11 +88,13 @@
     
     NSString *Name = self.Name.text;
     NSString *Number = self.Number.text;
+
     
     if (Name.length > 2 && Number.length > 6 ) {
         ABAddressBookRef addressBookRef = ABAddressBookCreateWithOptions(NULL, nil);
         ABRecordRef new = ABPersonCreate();
         ABRecordSetValue(new, kABPersonFirstNameProperty, (__bridge CFStringRef)Name, nil);
+        
         
         ABMutableMultiValueRef Numbers = ABMultiValueCreateMutable(kABMultiStringPropertyType);
         ABMultiValueAddValueAndLabel(Numbers, (__bridge CFStringRef)Number, kABPersonPhoneMainLabel, NULL);
@@ -247,13 +249,21 @@
     
     callLabel.text = callMe;
 }
+- (void)vibrate
+{
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+}
 
 - (IBAction)refreshButton:(id)sender {
     [self reloadCheeseFunction];
     
+    
 }
 - (IBAction)noButtonClicked:(id)sender {
     [self reloadCheeseFunction];
+    [self vibrate];
+
+    
 
 }
 
