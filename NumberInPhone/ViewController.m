@@ -36,6 +36,9 @@
 {
     [super viewDidLoad];
     [self paralax];
+    [PixateFreestyle initializePixateFreestyle];
+    
+
 
 
 

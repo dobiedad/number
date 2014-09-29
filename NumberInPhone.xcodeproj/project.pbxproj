@@ -14,6 +14,9 @@
 		B31D4E0C19D7813200E1CD79 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = B31D4E0A19D7813200E1CD79 /* user.png */; };
 		B3A5C07619D7834E00015738 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A5C07519D7834E00015738 /* icon.png */; };
 		B3A5C07819D7857500015738 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A5C07719D7857500015738 /* launch.png */; };
+		B3AF700919D96D3A00899811 /* PixateFreestyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AF700819D96D3A00899811 /* PixateFreestyle.framework */; };
+		B3AF700C19D96E5300899811 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = B3AF700A19D96E5300899811 /* default.css */; };
+		B3AF700D19D96E5300899811 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AF700B19D96E5300899811 /* TemplateIcon2x.png */; };
 		B3C3C84919D700A500B1D69B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C3C84819D700A500B1D69B /* main.m */; };
 		B3C3C84C19D700A500B1D69B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C3C84B19D700A500B1D69B /* AppDelegate.m */; };
 		B3C3C84F19D700A500B1D69B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C3C84E19D700A500B1D69B /* ViewController.m */; };
@@ -44,6 +47,9 @@
 		B31D4E0A19D7813200E1CD79 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = SOURCE_ROOT; };
 		B3A5C07519D7834E00015738 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
 		B3A5C07719D7857500015738 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = SOURCE_ROOT; };
+		B3AF700819D96D3A00899811 /* PixateFreestyle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PixateFreestyle.framework; sourceTree = SOURCE_ROOT; };
+		B3AF700A19D96E5300899811 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
+		B3AF700B19D96E5300899811 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
 		B3C3C84319D700A500B1D69B /* NumberInPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberInPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C3C84719D700A500B1D69B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3C3C84819D700A500B1D69B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3AF700919D96D3A00899811 /* PixateFreestyle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				B3C3C84519D700A500B1D69B /* NumberInPhone */,
+				B3AF700819D96D3A00899811 /* PixateFreestyle.framework */,
 				B3C3C85F19D700A500B1D69B /* NumberInPhoneTests */,
 				B3C3C84419D700A500B1D69B /* Products */,
 			);
@@ -115,6 +123,8 @@
 				B31D4E0719D7761200E1CD79 /* gender.png */,
 				B3A5C07719D7857500015738 /* launch.png */,
 				B3C3C85019D700A500B1D69B /* Main.storyboard */,
+				B3AF700A19D96E5300899811 /* default.css */,
+				B3AF700B19D96E5300899811 /* TemplateIcon2x.png */,
 				B3E7EBD319D754B9008DD3B3 /* refresh.png */,
 				B3C3C85319D700A500B1D69B /* Images.xcassets */,
 				B3C3C85519D700A500B1D69B /* LaunchScreen.xib */,
@@ -234,10 +244,12 @@
 				B3E7EBD719D756F9008DD3B3 /* no in Resources */,
 				B3C3C85219D700A500B1D69B /* Main.storyboard in Resources */,
 				B31D4E0819D7761200E1CD79 /* gender.png in Resources */,
+				B3AF700D19D96E5300899811 /* TemplateIcon2x.png in Resources */,
 				B3E7EBD419D754B9008DD3B3 /* refresh.png in Resources */,
 				B3E7EBD819D756F9008DD3B3 /* yes.png in Resources */,
 				B31D4E0B19D7813200E1CD79 /* phone.png in Resources */,
 				B3A5C07619D7834E00015738 /* icon.png in Resources */,
+				B3AF700C19D96E5300899811 /* default.css in Resources */,
 				B31D4E0C19D7813200E1CD79 /* user.png in Resources */,
 				B3C3C85719D700A500B1D69B /* LaunchScreen.xib in Resources */,
 				B31D4E0319D76E8900E1CD79 /* save.png in Resources */,
@@ -385,6 +397,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = NumberInPhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,6 +411,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = NumberInPhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
