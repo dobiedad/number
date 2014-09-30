@@ -277,7 +277,7 @@
 
     [UIView transitionWithView:superView
                       duration:0.5
-                       options:UIViewAnimationOptionTransitionFlipFromLeft
+                       options:UIViewAnimationOptionTransitionCurlDown
                     animations:NULL
                     completion:NULL];
     [UIView transitionWithView:background
