@@ -10,6 +10,7 @@
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import "JCRBlurView.h"
 
 
 

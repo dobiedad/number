@@ -46,6 +46,10 @@
     contactView.hidden = true;
     btnCreateNewContact.hidden =true;
     [background setImage:[UIImage imageNamed:@"bg.jpg"]];
+    
+    JCRBlurView *blurView = [JCRBlurView new];
+    [blurView setFrame:CGRectMake(0.0f,0.0f,100.0f,100.0f)];
+    [self.footerButtonView addSubview:blurView];
 
 
 
@@ -55,7 +59,6 @@
     addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     [self checkAddressBookAccess];
     [self reloadCheeseFunction];
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"gender.png"]];
    
 
 }
@@ -285,6 +288,7 @@
                        options:UIViewAnimationOptionTransitionCrossDissolve
                     animations:NULL
                     completion:NULL];
+
     
 }
 

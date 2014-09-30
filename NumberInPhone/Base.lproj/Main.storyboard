@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vMD-1c-EqL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
@@ -126,10 +126,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="0.85999999999999999" colorSpace="deviceRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.46000000000000002" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="centerX" secondItem="cFX-fN-VxK" secondAttribute="centerX" id="yOm-qz-Tr6"/>
                                         </constraints>
@@ -145,10 +145,19 @@
                                     <constraint firstAttribute="trailing" secondItem="9Jt-ri-pOw" secondAttribute="trailing" id="pqM-7i-5g0"/>
                                 </constraints>
                             </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.59999999999999998" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CdR-M7-Jj7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <barButtonItem title="Item" id="YNC-hf-YeU"/>
+                                </items>
+                                <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="y4G-7T-9ME" firstAttribute="top" secondItem="YJ1-A4-bkD" secondAttribute="bottom" id="EuL-1w-pQZ"/>
+                            <constraint firstItem="CdR-M7-Jj7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Jjm-o0-JRw"/>
                             <constraint firstItem="YJ1-A4-bkD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LfN-qb-3F8"/>
                         </constraints>
                     </view>
@@ -176,31 +185,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1115" y="168"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="vTA-J4-8bo">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vMD-1c-EqL" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="47t-C1-WfU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zo3-O4-mGg"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mwf-Ab-bOO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="9K1-wr-b8x">
-                    <rect key="frame" x="0.0" y="0.0" width="328" height="164"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="0.23999999999999999" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
-            </objects>
-            <point key="canvasLocation" x="138.75" y="160"/>
         </scene>
     </scenes>
     <resources>

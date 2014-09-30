@@ -17,6 +17,7 @@
 		B32D81E719DAFB7900CB5B38 /* boat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B32D81E619DAFB7900CB5B38 /* boat.jpg */; };
 		B32D81EA19DAFC8100CB5B38 /* plane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B32D81E819DAFC8100CB5B38 /* plane.jpg */; };
 		B32D81EB19DAFC8100CB5B38 /* wave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B32D81E919DAFC8100CB5B38 /* wave.jpg */; };
+		B32D81F319DB0CB000CB5B38 /* JCRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = B32D81F219DB0CB000CB5B38 /* JCRBlurView.m */; };
 		B3A5C07619D7834E00015738 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A5C07519D7834E00015738 /* icon.png */; };
 		B3A5C07819D7857500015738 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A5C07719D7857500015738 /* launch.png */; };
 		B3AF700919D96D3A00899811 /* PixateFreestyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AF700819D96D3A00899811 /* PixateFreestyle.framework */; };
@@ -54,6 +55,8 @@
 		B32D81E619DAFB7900CB5B38 /* boat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boat.jpg; sourceTree = SOURCE_ROOT; };
 		B32D81E819DAFC8100CB5B38 /* plane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plane.jpg; sourceTree = SOURCE_ROOT; };
 		B32D81E919DAFC8100CB5B38 /* wave.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wave.jpg; sourceTree = SOURCE_ROOT; };
+		B32D81F119DB0CB000CB5B38 /* JCRBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRBlurView.h; sourceTree = "<group>"; };
+		B32D81F219DB0CB000CB5B38 /* JCRBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRBlurView.m; sourceTree = "<group>"; };
 		B3A5C07519D7834E00015738 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
 		B3A5C07719D7857500015738 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = SOURCE_ROOT; };
 		B3AF700819D96D3A00899811 /* PixateFreestyle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PixateFreestyle.framework; sourceTree = SOURCE_ROOT; };
@@ -124,6 +127,8 @@
 				B31D4E0219D76E8900E1CD79 /* save.png */,
 				B32D81E619DAFB7900CB5B38 /* boat.jpg */,
 				B32D81E119DAFB2900CB5B38 /* london.jpeg */,
+				B32D81F119DB0CB000CB5B38 /* JCRBlurView.h */,
+				B32D81F219DB0CB000CB5B38 /* JCRBlurView.m */,
 				B32D81E819DAFC8100CB5B38 /* plane.jpg */,
 				B32D81E919DAFC8100CB5B38 /* wave.jpg */,
 				B32D81E219DAFB2900CB5B38 /* river.jpeg */,
@@ -290,6 +295,7 @@
 				B3C3C84F19D700A500B1D69B /* ViewController.m in Sources */,
 				B3C3C84C19D700A500B1D69B /* AppDelegate.m in Sources */,
 				B3C3C84919D700A500B1D69B /* main.m in Sources */,
+				B32D81F319DB0CB000CB5B38 /* JCRBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
