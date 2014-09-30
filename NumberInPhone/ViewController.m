@@ -31,6 +31,8 @@
 @synthesize superView;
 
 @synthesize imageArray;
+@synthesize backButton;
+
 
 
 
@@ -47,9 +49,7 @@
     btnCreateNewContact.hidden =true;
     [background setImage:[UIImage imageNamed:@"bg.jpg"]];
     
-    JCRBlurView *blurView = [JCRBlurView new];
-    [blurView setFrame:CGRectMake(0.0f,0.0f,100.0f,100.0f)];
-    [self.footerButtonView addSubview:blurView];
+
 
 
 
@@ -60,6 +60,18 @@
     [self checkAddressBookAccess];
     [self reloadCheeseFunction];
    
+
+}
+- (IBAction)backButtonClicked:(id)sender {
+    contactView.hidden = true;
+    cheesyContainer.hidden = false;
+    
+    [UIView transitionWithView:superView
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionFlipFromLeft
+                    animations:NULL
+                    completion:NULL];
+
 
 }
 
