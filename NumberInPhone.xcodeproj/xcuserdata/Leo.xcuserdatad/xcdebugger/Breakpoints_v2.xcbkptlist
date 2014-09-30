@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NumberInPhone/ViewController.m"
-            timestampString = "433769003.61941"
+            timestampString = "433783071.529704"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "-requestAddressBookAccess"
             landmarkType = "5">
          </BreakpointContent>
@@ -41,11 +41,11 @@
                   symbolName = "-[ViewController addressBook]"
                   moduleName = "NumberInPhone"
                   urlString = "file:///Users/Leo/iOS/NumberInPhone/NumberInPhone/ViewController.h"
-                  timestampString = "433618098.04991"
+                  timestampString = "433771801.640137"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
                   offsetFromSymbolStart = "16">
                </Location>
                <Location
@@ -55,11 +55,11 @@
                   symbolName = "-[ViewController setAddressBook:]"
                   moduleName = "NumberInPhone"
                   urlString = "file:///Users/Leo/iOS/NumberInPhone/NumberInPhone/ViewController.h"
-                  timestampString = "433618098.050257"
+                  timestampString = "433771801.640612"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
                   offsetFromSymbolStart = "20">
                </Location>
             </Locations>
@@ -72,12 +72,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NumberInPhone/ViewController.m"
-            timestampString = "433769003.61941"
+            timestampString = "433783071.529704"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "-paralax"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NumberInPhone/ViewController.m"
+            timestampString = "433783071.529704"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
+            landmarkName = "-noButtonClicked:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NumberInPhone/ViewController.m"
+            timestampString = "433783071.529704"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
+            landmarkName = "-noButtonClicked:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

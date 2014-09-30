@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vMD-1c-EqL">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -152,7 +151,7 @@
                     <connections>
                         <outlet property="Name" destination="8B8-7C-6Ac" id="YfK-Eh-mAZ"/>
                         <outlet property="Number" destination="tp2-Hw-UN1" id="giK-eG-res"/>
-                        <outlet property="background" destination="3dO-5e-8Ok" id="1bB-Ka-3If"/>
+                        <outlet property="background" destination="3dO-5e-8Ok" id="L82-XN-j1A"/>
                         <outlet property="btnCreateNewContact" destination="rmt-lx-B7V" id="5Bs-0t-OkR"/>
                         <outlet property="callLabel" destination="lqq-wl-GHB" id="hY7-Ut-XON"/>
                         <outlet property="cheesyContainer" destination="kf0-77-T3J" id="nUD-Lo-Hob"/>
@@ -162,6 +161,7 @@
                         <outlet property="noButton" destination="Bv8-JF-88g" id="sZC-Ro-XAR"/>
                         <outlet property="phoneImage" destination="eTY-oY-2Vd" id="QZK-mm-GLT"/>
                         <outlet property="putInNumber" destination="2Jx-Sj-Lt9" id="zju-9x-CEL"/>
+                        <outlet property="superView" destination="8bC-Xf-vdC" id="PgA-ah-hoX"/>
                         <outlet property="userImage" destination="psz-3W-v5h" id="Lw8-1F-i5m"/>
                         <outlet property="yesButton" destination="1Ii-dM-jiH" id="iQ1-ao-ajv"/>
                     </connections>

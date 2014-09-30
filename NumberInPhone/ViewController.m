@@ -28,6 +28,10 @@
 @synthesize cheesyContainer;
 @synthesize contactView;
 @synthesize footerButtonView;
+@synthesize superView;
+
+@synthesize imageArray;
+
 
 
 
@@ -41,6 +45,8 @@
     
     contactView.hidden = true;
     btnCreateNewContact.hidden =true;
+    [background setImage:[UIImage imageNamed:@"bg.jpg"]];
+
 
 
 
@@ -50,19 +56,10 @@
     [self checkAddressBookAccess];
     [self reloadCheeseFunction];
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"gender.png"]];
+   
+
 }
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        
-        NSMutableArray *myImageNames = [NSMutableArray arrayWithObjects:@"image1.png", @"image2.png", @"image3.png",@"image4.png", @"image5.png",@"image6.png",   nil];
-        int index = arc4random() % [myImageNames count];
-        
-        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:[myImageNames objectAtIndex:index]]];
-    }
-    return self;
-}
+
 
 - (void)paralax
 {
@@ -183,15 +180,7 @@
 
 
 
-- (IBAction)yesButton:(id)sender {
 
-    cheesyContainer.hidden = TRUE;
-    contactView.hidden = false;
-    btnCreateNewContact.hidden =true;
-    yesButton.hidden=true;
-    noButton.hidden=true;
-    btnCreateNewContact.hidden =false;
-}
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self.view endEditing:YES];
@@ -252,9 +241,51 @@
 - (IBAction)noButtonClicked:(id)sender {
     [self reloadCheeseFunction];
     [self vibrate];
+    imageArray = [[NSMutableArray alloc] initWithObjects:@"bg.jpg", @"london.jpeg", @"river.jpeg", @"wave.jpg", @"boat.jpg",@"plane.jpg", nil];
+    uint32_t imagernd = arc4random_uniform([imageArray count]);
+    NSString *randomImage = [imageArray objectAtIndex:imagernd];
+    background.image = [UIImage imageNamed:randomImage];
+    
+    [UIView transitionWithView:background
+                      duration:0.3
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:NULL
+                    completion:NULL];
+    
+
+    [UIView transitionWithView:superView
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionFlipFromRight
+                    animations:NULL
+                    completion:NULL];
+
+
+
 
     
 
+}
+- (IBAction)yesButton:(id)sender {
+    
+    cheesyContainer.hidden = TRUE;
+    contactView.hidden = false;
+    btnCreateNewContact.hidden =true;
+    yesButton.hidden=true;
+    noButton.hidden=true;
+    btnCreateNewContact.hidden =false;
+    
+
+    [UIView transitionWithView:superView
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionFlipFromLeft
+                    animations:NULL
+                    completion:NULL];
+    [UIView transitionWithView:background
+                      duration:0.3
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:NULL
+                    completion:NULL];
+    
 }
 
 - (void)didReceiveMemoryWarning

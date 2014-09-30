@@ -12,6 +12,11 @@
 		B31D4E0819D7761200E1CD79 /* gender.png in Resources */ = {isa = PBXBuildFile; fileRef = B31D4E0719D7761200E1CD79 /* gender.png */; };
 		B31D4E0B19D7813200E1CD79 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = B31D4E0919D7813200E1CD79 /* phone.png */; };
 		B31D4E0C19D7813200E1CD79 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = B31D4E0A19D7813200E1CD79 /* user.png */; };
+		B32D81E419DAFB2900CB5B38 /* london.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B32D81E119DAFB2900CB5B38 /* london.jpeg */; };
+		B32D81E519DAFB2900CB5B38 /* river.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B32D81E219DAFB2900CB5B38 /* river.jpeg */; };
+		B32D81E719DAFB7900CB5B38 /* boat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B32D81E619DAFB7900CB5B38 /* boat.jpg */; };
+		B32D81EA19DAFC8100CB5B38 /* plane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B32D81E819DAFC8100CB5B38 /* plane.jpg */; };
+		B32D81EB19DAFC8100CB5B38 /* wave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B32D81E919DAFC8100CB5B38 /* wave.jpg */; };
 		B3A5C07619D7834E00015738 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A5C07519D7834E00015738 /* icon.png */; };
 		B3A5C07819D7857500015738 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A5C07719D7857500015738 /* launch.png */; };
 		B3AF700919D96D3A00899811 /* PixateFreestyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AF700819D96D3A00899811 /* PixateFreestyle.framework */; };
@@ -44,6 +49,11 @@
 		B31D4E0719D7761200E1CD79 /* gender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gender.png; sourceTree = SOURCE_ROOT; };
 		B31D4E0919D7813200E1CD79 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = SOURCE_ROOT; };
 		B31D4E0A19D7813200E1CD79 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = SOURCE_ROOT; };
+		B32D81E119DAFB2900CB5B38 /* london.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = london.jpeg; sourceTree = SOURCE_ROOT; };
+		B32D81E219DAFB2900CB5B38 /* river.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = river.jpeg; sourceTree = SOURCE_ROOT; };
+		B32D81E619DAFB7900CB5B38 /* boat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boat.jpg; sourceTree = SOURCE_ROOT; };
+		B32D81E819DAFC8100CB5B38 /* plane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plane.jpg; sourceTree = SOURCE_ROOT; };
+		B32D81E919DAFC8100CB5B38 /* wave.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wave.jpg; sourceTree = SOURCE_ROOT; };
 		B3A5C07519D7834E00015738 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
 		B3A5C07719D7857500015738 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = SOURCE_ROOT; };
 		B3AF700819D96D3A00899811 /* PixateFreestyle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PixateFreestyle.framework; sourceTree = SOURCE_ROOT; };
@@ -112,6 +122,11 @@
 				B3C3C84D19D700A500B1D69B /* ViewController.h */,
 				B3C3C84E19D700A500B1D69B /* ViewController.m */,
 				B31D4E0219D76E8900E1CD79 /* save.png */,
+				B32D81E619DAFB7900CB5B38 /* boat.jpg */,
+				B32D81E119DAFB2900CB5B38 /* london.jpeg */,
+				B32D81E819DAFC8100CB5B38 /* plane.jpg */,
+				B32D81E919DAFC8100CB5B38 /* wave.jpg */,
+				B32D81E219DAFB2900CB5B38 /* river.jpeg */,
 				B3E7EBD519D756F9008DD3B3 /* no */,
 				B3A5C07519D7834E00015738 /* icon.png */,
 				B3E7EBD619D756F9008DD3B3 /* yes.png */,
@@ -240,13 +255,18 @@
 				B3A5C07819D7857500015738 /* launch.png in Resources */,
 				B3E7EBD719D756F9008DD3B3 /* no in Resources */,
 				B3C3C85219D700A500B1D69B /* Main.storyboard in Resources */,
+				B32D81E419DAFB2900CB5B38 /* london.jpeg in Resources */,
 				B31D4E0819D7761200E1CD79 /* gender.png in Resources */,
+				B32D81E519DAFB2900CB5B38 /* river.jpeg in Resources */,
+				B32D81EB19DAFC8100CB5B38 /* wave.jpg in Resources */,
 				B3AF700D19D96E5300899811 /* TemplateIcon2x.png in Resources */,
 				B3E7EBD419D754B9008DD3B3 /* refresh.png in Resources */,
 				B3E7EBD819D756F9008DD3B3 /* yes.png in Resources */,
 				B31D4E0B19D7813200E1CD79 /* phone.png in Resources */,
 				B3A5C07619D7834E00015738 /* icon.png in Resources */,
+				B32D81E719DAFB7900CB5B38 /* boat.jpg in Resources */,
 				B31D4E0C19D7813200E1CD79 /* user.png in Resources */,
+				B32D81EA19DAFC8100CB5B38 /* plane.jpg in Resources */,
 				B3C3C85719D700A500B1D69B /* LaunchScreen.xib in Resources */,
 				B31D4E0319D76E8900E1CD79 /* save.png in Resources */,
 				B3C3C85419D700A500B1D69B /* Images.xcassets in Resources */,
