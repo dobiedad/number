@@ -38,8 +38,10 @@
 {
     [super viewDidLoad];
     [self paralax];
-
     
+    contactView.hidden = true;
+    btnCreateNewContact.hidden =true;
+
 
 
 
@@ -47,8 +49,6 @@
     addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     [self checkAddressBookAccess];
     [self reloadCheeseFunction];
-    putInNumber.hidden = YES;
-    btnCreateNewContact.hidden =YES;
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"gender.png"]];
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -186,8 +186,11 @@
 - (IBAction)yesButton:(id)sender {
 
     cheesyContainer.hidden = TRUE;
-    contactView.hidden = FALSE;
-
+    contactView.hidden = false;
+    btnCreateNewContact.hidden =true;
+    yesButton.hidden=true;
+    noButton.hidden=true;
+    btnCreateNewContact.hidden =false;
 }
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
