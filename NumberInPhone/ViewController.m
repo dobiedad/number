@@ -17,7 +17,7 @@
 @synthesize addressBook;
 @synthesize cheesyArray;
 @synthesize yesButton;
-@synthesize cheesyTextView;
+@synthesize cheesyLine;
 @synthesize putInNumber;
 @synthesize noButton;
 @synthesize btnCreateNewContact;
@@ -196,7 +196,7 @@
 
 - (void)showFirstBit
 {
-    cheesyTextView.hidden = NO;
+    cheesyLine.hidden = NO;
     yesButton.hidden = NO;
     noButton.hidden = NO;
     callLabel.hidden = NO;
@@ -225,8 +225,8 @@
     NSString *randomCheese = [cheesyArray objectAtIndex:rnd];
     
     
-    cheesyTextView.text = randomCheese;
-    [cheesyTextView setUserInteractionEnabled:NO];
+    cheesyLine.text = randomCheese;
+    [cheesyLine setUserInteractionEnabled:NO];
     
     NSArray *callMeArray = @[@"Let me call you later?", @"Grab some coffee later?", @"Lets go out sometime?",
                              @"Its a date?", @"Me + You"];

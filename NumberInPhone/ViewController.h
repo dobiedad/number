@@ -34,5 +34,6 @@
 @property (weak, nonatomic) IBOutlet UIView *footerButtonView;
 @property (weak, nonatomic) IBOutlet UIView *contactView;
 @property (weak, nonatomic) IBOutlet UIView *cheesyContainer;
+@property (weak, nonatomic) IBOutlet UITextView *cheesyLine;
 
 @end
