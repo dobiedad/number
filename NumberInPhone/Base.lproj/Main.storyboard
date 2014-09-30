@@ -23,18 +23,18 @@
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YJ1-A4-bkD" userLabel="bottomContainer">
                                 <rect key="frame" x="0.0" y="85" width="320" height="483"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kf0-77-T3J" userLabel="cheesyContainer">
-                                        <rect key="frame" x="0.0" y="245" width="320" height="150"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kf0-77-T3J" userLabel="cheesyContainer">
+                                        <rect key="frame" x="0.0" y="245" width="320" height="140"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let me call you later?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqq-wl-GHB" userLabel="cheesyCallLine">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="26"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Let me call you later?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqq-wl-GHB" userLabel="cheesyCallLine">
+                                                <rect key="frame" x="0.0" y="27" width="320" height="26"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
                                                 <color key="textColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
                                                 <color key="highlightedColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TND-Cd-cJl" userLabel="cheesyLine">
-                                                <rect key="frame" x="0.0" y="63" width="320" height="87"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TND-Cd-cJl" userLabel="cheesyLine">
+                                                <rect key="frame" x="0.0" y="53" width="320" height="87"/>
                                                 <color key="backgroundColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="0.35000000000000003" colorSpace="calibratedRGB"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -43,8 +43,14 @@
                                             </textView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="TND-Cd-cJl" secondAttribute="trailing" id="38e-6a-l9o"/>
+                                            <constraint firstItem="lqq-wl-GHB" firstAttribute="leading" secondItem="kf0-77-T3J" secondAttribute="leading" id="bty-pU-G4c"/>
+                                            <constraint firstAttribute="trailing" secondItem="lqq-wl-GHB" secondAttribute="trailing" id="llF-dx-bsc"/>
+                                            <constraint firstItem="TND-Cd-cJl" firstAttribute="leading" secondItem="kf0-77-T3J" secondAttribute="leading" id="qX3-VM-bE9"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YzO-6F-7ia" userLabel="contactView">
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YzO-6F-7ia" userLabel="contactView">
                                         <rect key="frame" x="0.0" y="132" width="320" height="251"/>
                                         <subviews>
                                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8B8-7C-6Ac">
@@ -74,7 +80,7 @@
                                         <color key="backgroundColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="0.0" colorSpace="deviceRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Jt-ri-pOw" userLabel="footerButtonView">
-                                        <rect key="frame" x="0.0" y="383" width="320" height="100"/>
+                                        <rect key="frame" x="0.0" y="390" width="320" height="102"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pUP-fX-UuQ" userLabel="centeredContainer">
                                                 <rect key="frame" x="42" y="12" width="236" height="76"/>
@@ -124,7 +130,11 @@
                                 <color key="tintColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="9Jt-ri-pOw" firstAttribute="leading" secondItem="YJ1-A4-bkD" secondAttribute="leading" id="D3N-en-XjR"/>
+                                    <constraint firstAttribute="trailing" secondItem="YzO-6F-7ia" secondAttribute="trailing" id="Fwq-fZ-yVz"/>
+                                    <constraint firstAttribute="trailing" secondItem="kf0-77-T3J" secondAttribute="trailing" id="KhY-LS-R2J"/>
+                                    <constraint firstItem="kf0-77-T3J" firstAttribute="leading" secondItem="YJ1-A4-bkD" secondAttribute="leading" id="hna-qd-4I0"/>
                                     <constraint firstAttribute="trailing" secondItem="9Jt-ri-pOw" secondAttribute="trailing" id="pqM-7i-5g0"/>
+                                    <constraint firstItem="YzO-6F-7ia" firstAttribute="leading" secondItem="YJ1-A4-bkD" secondAttribute="leading" id="w3Y-5w-9fV"/>
                                 </constraints>
                             </view>
                         </subviews>
