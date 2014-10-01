@@ -110,13 +110,6 @@
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kf0-77-T3J" userLabel="cheesyContainer" customClass="FXBlurView">
                                         <rect key="frame" x="0.0" y="250" width="320" height="140"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Let me call you later?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqq-wl-GHB" userLabel="cheesyCallLine">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
-                                                <color key="textColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
-                                                <color key="highlightedColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
-                                            </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TND-Cd-cJl" userLabel="cheesyLine">
                                                 <rect key="frame" x="0.0" y="45" width="320" height="95"/>
                                                 <color key="backgroundColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="0.35000000000000003" colorSpace="calibratedRGB"/>
@@ -125,6 +118,13 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Let me call you later?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqq-wl-GHB" userLabel="cheesyCallLine">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <color key="textColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
+                                                <color key="highlightedColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.13333334029999999" green="0.95686280729999995" blue="0.02745098248" alpha="0.0" colorSpace="deviceRGB"/>
                                         <constraints>
@@ -145,11 +145,11 @@
                                     <constraint firstAttribute="trailing" secondItem="9Jt-ri-pOw" secondAttribute="trailing" id="pqM-7i-5g0"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ENC-a6-Owp" userLabel="Navbar" customClass="FXBlurView">
-                                <rect key="frame" x="0.0" y="-49" width="320" height="134"/>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ENC-a6-Owp" userLabel="Navbar" customClass="FXBlurView">
+                                <rect key="frame" x="0.0" y="-27" width="320" height="115"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6x-Oc-Kdp" userLabel="backButton">
-                                        <rect key="frame" x="-11" y="85" width="79" height="24"/>
+                                        <rect key="frame" x="-15" y="60" width="79" height="24"/>
                                         <state key="normal" image="back.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -157,13 +157,21 @@
                                             <action selector="backButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fav-2j-GVQ"/>
                                         </connections>
                                     </button>
+                                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="VIr-7C-nhv">
+                                        <rect key="frame" x="88" y="50" width="160" height="58"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="VIr-7C-nhv" secondAttribute="centerX" id="GiH-sh-xd3"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="y4G-7T-9ME" firstAttribute="top" secondItem="YJ1-A4-bkD" secondAttribute="bottom" id="EuL-1w-pQZ"/>
+                            <constraint firstAttribute="width" secondItem="ENC-a6-Owp" secondAttribute="width" id="HcE-3U-Y9f"/>
                             <constraint firstItem="YJ1-A4-bkD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LfN-qb-3F8"/>
                         </constraints>
                     </view>
@@ -172,6 +180,7 @@
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="Name" destination="8B8-7C-6Ac" id="YfK-Eh-mAZ"/>
+                        <outlet property="Navbar" destination="ENC-a6-Owp" id="Qcr-pt-oVl"/>
                         <outlet property="Number" destination="tp2-Hw-UN1" id="giK-eG-res"/>
                         <outlet property="backButton" destination="A6x-Oc-Kdp" id="02G-ko-0fJ"/>
                         <outlet property="background" destination="3dO-5e-8Ok" id="L82-XN-j1A"/>
@@ -197,6 +206,7 @@
     <resources>
         <image name="back.png" width="24" height="24"/>
         <image name="bg.jpg" width="640" height="1136"/>
+        <image name="icon.png" width="120" height="120"/>
         <image name="no" width="152" height="152"/>
         <image name="phone.png" width="104" height="104"/>
         <image name="save.png" width="64" height="64"/>

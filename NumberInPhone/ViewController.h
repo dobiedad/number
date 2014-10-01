@@ -36,6 +36,7 @@
 @property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 @property (nonatomic) IBOutlet FXBlurView *footerButtonView;
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
+@property (weak, nonatomic) IBOutlet FXBlurView *Navbar;
 
 @property (strong, nonatomic) IBOutlet UIView *superView;
 @property (nonatomic) IBOutlet FXBlurView *contactView;

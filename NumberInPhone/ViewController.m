@@ -56,12 +56,15 @@
     addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     [self checkAddressBookAccess];
     [self reloadCheeseFunction];
-    self.footerButtonView.dynamic;
+    self.footerButtonView.dynamic = TRUE;
     self.footerButtonView.blurRadius = 15;
-    self.cheesyContainer.dynamic;
-    self.contactView.dynamic;
+    self.cheesyContainer.dynamic = TRUE;
+    self.contactView.dynamic = TRUE;
     self.cheesyContainer.blurRadius = 15;
     self.contactView.blurRadius = 15;
+    self.Navbar.dynamic = TRUE;
+    self.Navbar.blurRadius = 25;
+    backButton.hidden = true;
 
 
 
@@ -83,6 +86,12 @@
     yesButton.hidden= false;
     noButton.hidden= false;
     btnCreateNewContact.hidden = true ;
+    backButton.hidden = true;
+    [self reloadCheeseFunction];
+
+
+    
+
     
 
 
@@ -286,6 +295,8 @@
                        options:UIViewAnimationOptionTransitionCrossDissolve
                     animations:NULL
                     completion:NULL];
+    backButton.hidden = false;
+
 
     
 }
