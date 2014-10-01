@@ -33,8 +33,7 @@
 @synthesize imageArray;
 @synthesize backButton;
 @synthesize toolbar;
-@synthesize slider;
-@synthesize switch1;
+
 
 
 
@@ -58,18 +57,17 @@
     [self checkAddressBookAccess];
     [self reloadCheeseFunction];
     self.footerButtonView.dynamic;
-    
+    self.footerButtonView.blurRadius = 15;
+    self.cheesyContainer.dynamic;
+    self.contactView.dynamic;
+    self.cheesyContainer.blurRadius = 15;
+    self.contactView.blurRadius = 15;
+
+
+
+
    
 
-}
-- (IBAction)toggle:(UISwitch *)sender
-{
-    self.footerButtonView.dynamic = switch1.on;
-}
-
-- (IBAction)update:(UISlider *)sender
-{
-    self.footerButtonView.blurRadius = slider.value;
 }
 
 
