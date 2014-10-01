@@ -12,12 +12,16 @@
 #import <QuartzCore/QuartzCore.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import "FXBlurView.h"
+#import <APAddressBook/APAddressBook.h>
 
 
 
 
 
-@interface ViewController : UIViewController
+
+
+@interface ViewController : UIViewController<UITableViewDelegate ,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *contactsTableView;
 
 @property (nonatomic, assign) ABAddressBookRef addressBook;
 @property (weak, nonatomic) IBOutlet UITextField *Name;
@@ -42,6 +46,9 @@
 @property (nonatomic) IBOutlet FXBlurView *contactView;
 @property (nonatomic) IBOutlet NSArray *cheesyArray;
 @property (nonatomic) IBOutlet NSMutableArray *imageArray;
+@property (nonatomic) IBOutlet NSArray *contactArray;
+
+
 
 
 

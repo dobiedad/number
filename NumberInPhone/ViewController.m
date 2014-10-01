@@ -7,10 +7,7 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
-@end
+#import "APContact.h"
 
 @implementation ViewController
 
@@ -33,6 +30,10 @@
 @synthesize imageArray;
 @synthesize backButton;
 @synthesize toolbar;
+@synthesize contactsTableView;
+@synthesize contactArray;
+
+
 
 
 
@@ -55,6 +56,8 @@
     [background setImage:[UIImage imageNamed:@"bg.jpg"]];
     addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     [self checkAddressBookAccess];
+    [self getContacts];
+
     [self reloadCheeseFunction];
     self.footerButtonView.dynamic = TRUE;
     self.footerButtonView.blurRadius = 15;
@@ -71,6 +74,26 @@
 
    
 
+}
+
+- (void)getContacts {
+    APAddressBook *addressBook = [[APAddressBook alloc] init];
+    // don't forget to show some activity
+    [addressBook loadContacts:^(NSArray *contacts, NSError *error)
+    {
+        // hide activity
+        if (!error)
+        {
+            contactArray = contacts;
+            // do something with contacts array
+            [contactsTableView reloadData];
+            
+        }
+        else
+        {
+            // show error
+        }
+    }];
 }
 
 
@@ -247,7 +270,6 @@
 }
 
 
-
 - (IBAction)noButtonClicked:(id)sender {
     [self reloadCheeseFunction];
     [self vibrate];
@@ -305,6 +327,32 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [contactArray count];
+    
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellIdentifier = @"Identifier";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        
+    
+    }
+    
+    APContact *contact = [contactArray objectAtIndex:(indexPath.row)];
+    cell.textLabel.text = contact.firstName,contact.phones;
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
 }
 
 @end
