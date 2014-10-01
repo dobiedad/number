@@ -114,8 +114,8 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What you waiting for, Put in your Number...." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jx-Sj-Lt9">
                                                         <rect key="frame" x="13" y="8" width="295" height="62"/>
                                                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.27000000000000002" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
-                                                        <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -192,15 +192,6 @@
                                     <view alpha="0.5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jmI-uO-c5N">
                                         <rect key="frame" x="0.0" y="28" width="320" height="87"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6x-Oc-Kdp" userLabel="backButton">
-                                                <rect key="frame" x="-5" y="31" width="79" height="24"/>
-                                                <state key="normal" image="back.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="backButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fav-2j-GVQ"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3U-qt-FwU">
                                                 <rect key="frame" x="259" y="28" width="46" height="30"/>
                                                 <state key="normal" title="Button">
@@ -214,6 +205,15 @@
                                                 <rect key="frame" x="75" y="14" width="160" height="58"/>
                                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6x-Oc-Kdp" userLabel="backButton">
+                                                <rect key="frame" x="0.0" y="48" width="117" height="24"/>
+                                                <state key="normal" title="BUTTOn" image="back.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="backButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fav-2j-GVQ"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
