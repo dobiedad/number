@@ -28,6 +28,7 @@
 @synthesize contactView;
 @synthesize footerButtonView;
 @synthesize superView;
+@synthesize cheesyInsideView;
 
 @synthesize imageArray;
 @synthesize backButton;
@@ -71,6 +72,8 @@
     backButton.hidden = true;
     self.contactsTableView.hidden=true;
     
+    
+    
 
 
 
@@ -78,6 +81,7 @@
    
 
 }
+
 
 - (IBAction)contactButtonClicked:(id)sender {
     self.contactsTableView.hidden=false;
