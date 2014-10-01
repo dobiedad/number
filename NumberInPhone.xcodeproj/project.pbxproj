@@ -17,8 +17,9 @@
 		B32D81E719DAFB7900CB5B38 /* boat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B32D81E619DAFB7900CB5B38 /* boat.jpg */; };
 		B32D81EA19DAFC8100CB5B38 /* plane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B32D81E819DAFC8100CB5B38 /* plane.jpg */; };
 		B32D81EB19DAFC8100CB5B38 /* wave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B32D81E919DAFC8100CB5B38 /* wave.jpg */; };
-		B32D81F319DB0CB000CB5B38 /* JCRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = B32D81F219DB0CB000CB5B38 /* JCRBlurView.m */; };
 		B32D81F719DB112600CB5B38 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = B32D81F619DB112600CB5B38 /* back.png */; };
+		B35B61D319DC113B00AE0D09 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = B35B61D219DC113B00AE0D09 /* FXBlurView.m */; };
+		B35B61D519DC13BE00AE0D09 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35B61D419DC13BE00AE0D09 /* Accelerate.framework */; };
 		B3A5C07619D7834E00015738 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A5C07519D7834E00015738 /* icon.png */; };
 		B3A5C07819D7857500015738 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A5C07719D7857500015738 /* launch.png */; };
 		B3AF700919D96D3A00899811 /* PixateFreestyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AF700819D96D3A00899811 /* PixateFreestyle.framework */; };
@@ -56,9 +57,10 @@
 		B32D81E619DAFB7900CB5B38 /* boat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boat.jpg; sourceTree = SOURCE_ROOT; };
 		B32D81E819DAFC8100CB5B38 /* plane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plane.jpg; sourceTree = SOURCE_ROOT; };
 		B32D81E919DAFC8100CB5B38 /* wave.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wave.jpg; sourceTree = SOURCE_ROOT; };
-		B32D81F119DB0CB000CB5B38 /* JCRBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRBlurView.h; sourceTree = "<group>"; };
-		B32D81F219DB0CB000CB5B38 /* JCRBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRBlurView.m; sourceTree = "<group>"; };
 		B32D81F619DB112600CB5B38 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = SOURCE_ROOT; };
+		B35B61D119DC113B00AE0D09 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		B35B61D219DC113B00AE0D09 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		B35B61D419DC13BE00AE0D09 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		B3A5C07519D7834E00015738 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
 		B3A5C07719D7857500015738 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = SOURCE_ROOT; };
 		B3AF700819D96D3A00899811 /* PixateFreestyle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PixateFreestyle.framework; sourceTree = SOURCE_ROOT; };
@@ -86,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B35B61D519DC13BE00AE0D09 /* Accelerate.framework in Frameworks */,
 				B3AF700919D96D3A00899811 /* PixateFreestyle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,6 +125,7 @@
 		B3C3C84519D700A500B1D69B /* NumberInPhone */ = {
 			isa = PBXGroup;
 			children = (
+				B35B61D419DC13BE00AE0D09 /* Accelerate.framework */,
 				B3C3C84A19D700A500B1D69B /* AppDelegate.h */,
 				B3C3C84B19D700A500B1D69B /* AppDelegate.m */,
 				B3C3C84D19D700A500B1D69B /* ViewController.h */,
@@ -129,9 +133,7 @@
 				B31D4E0219D76E8900E1CD79 /* save.png */,
 				B32D81E619DAFB7900CB5B38 /* boat.jpg */,
 				B32D81E119DAFB2900CB5B38 /* london.jpeg */,
-				B32D81F119DB0CB000CB5B38 /* JCRBlurView.h */,
 				B32D81F619DB112600CB5B38 /* back.png */,
-				B32D81F219DB0CB000CB5B38 /* JCRBlurView.m */,
 				B32D81E819DAFC8100CB5B38 /* plane.jpg */,
 				B32D81E919DAFC8100CB5B38 /* wave.jpg */,
 				B32D81E219DAFB2900CB5B38 /* river.jpeg */,
@@ -140,6 +142,8 @@
 				B3E7EBD619D756F9008DD3B3 /* yes.png */,
 				B31D4E0919D7813200E1CD79 /* phone.png */,
 				B31B24EF19D86FC900025B47 /* bg.jpg */,
+				B35B61D119DC113B00AE0D09 /* FXBlurView.h */,
+				B35B61D219DC113B00AE0D09 /* FXBlurView.m */,
 				B31D4E0A19D7813200E1CD79 /* user.png */,
 				B31D4E0719D7761200E1CD79 /* gender.png */,
 				B3A5C07719D7857500015738 /* launch.png */,
@@ -297,9 +301,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C3C84F19D700A500B1D69B /* ViewController.m in Sources */,
+				B35B61D319DC113B00AE0D09 /* FXBlurView.m in Sources */,
 				B3C3C84C19D700A500B1D69B /* AppDelegate.m in Sources */,
 				B3C3C84919D700A500B1D69B /* main.m in Sources */,
-				B32D81F319DB0CB000CB5B38 /* JCRBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

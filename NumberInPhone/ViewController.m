@@ -33,6 +33,10 @@
 @synthesize imageArray;
 @synthesize backButton;
 @synthesize toolbar;
+@synthesize slider;
+@synthesize switch1;
+
+
 
 
 
@@ -50,20 +54,25 @@
     contactView.hidden = true;
     btnCreateNewContact.hidden =true;
     [background setImage:[UIImage imageNamed:@"bg.jpg"]];
-    
-
-
-
-
-
-
-
     addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     [self checkAddressBookAccess];
     [self reloadCheeseFunction];
+    self.footerButtonView.dynamic;
+    
    
 
 }
+- (IBAction)toggle:(UISwitch *)sender
+{
+    self.footerButtonView.dynamic = switch1.on;
+}
+
+- (IBAction)update:(UISlider *)sender
+{
+    self.footerButtonView.blurRadius = slider.value;
+}
+
+
 - (IBAction)backButtonClicked:(id)sender {
     contactView.hidden = true;
     cheesyContainer.hidden = false;

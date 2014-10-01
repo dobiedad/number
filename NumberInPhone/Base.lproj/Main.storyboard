@@ -17,12 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3dO-5e-8Ok">
-                                <rect key="frame" x="-113" y="-121" width="568" height="1024"/>
-                            </imageView>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YJ1-A4-bkD" userLabel="bottomContainer">
                                 <rect key="frame" x="0.0" y="85" width="320" height="483"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3dO-5e-8Ok">
+                                        <rect key="frame" x="-124" y="-270" width="568" height="1024"/>
+                                    </imageView>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kf0-77-T3J" userLabel="cheesyContainer">
                                         <rect key="frame" x="0.0" y="245" width="320" height="140"/>
                                         <subviews>
@@ -50,7 +50,7 @@
                                             <constraint firstItem="TND-Cd-cJl" firstAttribute="leading" secondItem="kf0-77-T3J" secondAttribute="leading" id="qX3-VM-bE9"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Jt-ri-pOw" userLabel="footerButtonView">
+                                    <view opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Jt-ri-pOw" userLabel="footerButtonView" customClass="FXBlurView">
                                         <rect key="frame" x="0.0" y="390" width="320" height="102"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pUP-fX-UuQ" userLabel="centeredContainer">
@@ -88,7 +88,7 @@
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20999999999999999" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="centerX" secondItem="pUP-fX-UuQ" secondAttribute="centerX" id="89J-Kr-OsD"/>
                                         </constraints>
@@ -134,6 +134,18 @@
                                             <constraint firstAttribute="centerX" secondItem="cFX-fN-VxK" secondAttribute="centerX" id="yOm-qz-Tr6"/>
                                         </constraints>
                                     </view>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="z3S-Wk-lJX">
+                                        <rect key="frame" x="93" y="31" width="118" height="31"/>
+                                        <connections>
+                                            <action selector="update:" destination="BYZ-38-t0r" eventType="valueChanged" id="LJ8-9P-lwI"/>
+                                        </connections>
+                                    </slider>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zFP-kQ-hPA">
+                                        <rect key="frame" x="224" y="55" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="toggle:" destination="BYZ-38-t0r" eventType="valueChanged" id="Me8-3Z-2Zh"/>
+                                        </connections>
+                                    </switch>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="1" colorSpace="calibratedRGB"/>
@@ -145,7 +157,7 @@
                                     <constraint firstAttribute="trailing" secondItem="9Jt-ri-pOw" secondAttribute="trailing" id="pqM-7i-5g0"/>
                                 </constraints>
                             </view>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.59999999999999998" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CdR-M7-Jj7">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.59999999999999998" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CdR-M7-Jj7" customClass="PXUIToolbar">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
@@ -182,7 +194,9 @@
                         <outlet property="noButton" destination="Bv8-JF-88g" id="sZC-Ro-XAR"/>
                         <outlet property="phoneImage" destination="eTY-oY-2Vd" id="QZK-mm-GLT"/>
                         <outlet property="putInNumber" destination="2Jx-Sj-Lt9" id="zju-9x-CEL"/>
+                        <outlet property="slider" destination="z3S-Wk-lJX" id="AS2-HX-4zB"/>
                         <outlet property="superView" destination="8bC-Xf-vdC" id="PgA-ah-hoX"/>
+                        <outlet property="switch1" destination="zFP-kQ-hPA" id="ycy-Ab-w3r"/>
                         <outlet property="toolbar" destination="CdR-M7-Jj7" id="sHi-AX-Zvk"/>
                         <outlet property="userImage" destination="psz-3W-v5h" id="Lw8-1F-i5m"/>
                         <outlet property="yesButton" destination="1Ii-dM-jiH" id="iQ1-ao-ajv"/>

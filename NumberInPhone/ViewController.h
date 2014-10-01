@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
+#import <QuartzCore/QuartzCore.h>
 #import <AudioToolbox/AudioToolbox.h>
-#import "JCRBlurView.h"
+#import "FXBlurView.h"
 
 
 
@@ -30,7 +31,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnCreateNewContact;
 @property (weak, nonatomic) IBOutlet UIImageView *userImage;
 @property (weak, nonatomic) IBOutlet UIImageView *phoneImage;
-@property (weak, nonatomic) IBOutlet UIView *footerButtonView;
 @property (weak, nonatomic) IBOutlet UIView *contactView;
 @property (weak, nonatomic) IBOutlet UIView *cheesyContainer;
 @property (weak, nonatomic) IBOutlet UITextView *cheesyLine;
@@ -38,7 +38,13 @@
 @property (weak, nonatomic) IBOutlet UIImageView *background;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *backButton;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
+@property (nonatomic) IBOutlet FXBlurView *footerButtonView;
 
 @property (strong, nonatomic) IBOutlet UIView *superView;
+@property (weak, nonatomic) IBOutlet UISwitch *toggleDynamic;
 
+@property (weak, nonatomic) IBOutlet UISlider *updateBlur;
+
+@property (weak, nonatomic) IBOutlet UISlider *slider;
+@property (weak, nonatomic) IBOutlet UISwitch *switch1;
 @end
