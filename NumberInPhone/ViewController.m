@@ -149,8 +149,7 @@
         [contactAddedAlert show];
         self.Name.text=@"";
         self.Number.text=@"";
-        [self hideSecondBit];
-        [self showFirstBit];
+
 
     }
     else {
@@ -214,29 +213,6 @@
     [self.view endEditing:YES];
 }
 
-- (void)showFirstBit
-{
-    cheesyLine.hidden = NO;
-    yesButton.hidden = NO;
-    noButton.hidden = NO;
-    callLabel.hidden = NO;
-    _Name.hidden = YES;
-    btnCreateNewContact.hidden =YES;
-    putInNumber.hidden = YES;
-    _Number.hidden = YES;
-    userImage.hidden = YES;
-    phoneImage.hidden = YES;
-    
-}
-- (void)hideSecondBit
-{
-    putInNumber.hidden = YES;
-    _Number.hidden = YES;
-    _Name.hidden = YES;
-    btnCreateNewContact.hidden =YES;
-}
-
-
 - (void)reloadCheeseFunction
 {
     NSArray *cheesyArray = @[@"Are you religious? Because you're the answer to all my prayers.", @"Do you have a Band-Aid? Because I just scraped my knee falling for you.", @"I'm not a photographer, but I can picture me and you together.",
@@ -261,11 +237,8 @@
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 }
 
-- (IBAction)refreshButton:(id)sender {
-    [self reloadCheeseFunction];
-    
-    
-}
+
+
 - (IBAction)noButtonClicked:(id)sender {
     [self reloadCheeseFunction];
     [self vibrate];

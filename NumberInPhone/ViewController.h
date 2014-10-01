@@ -33,9 +33,9 @@
 @property (weak, nonatomic) IBOutlet FXBlurView *cheesyContainer;
 @property (weak, nonatomic) IBOutlet UITextView *cheesyLine;
 @property (weak, nonatomic) IBOutlet UIImageView *background;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *backButton;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 @property (nonatomic) IBOutlet FXBlurView *footerButtonView;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
 
 @property (strong, nonatomic) IBOutlet UIView *superView;
 @property (nonatomic) IBOutlet FXBlurView *contactView;
