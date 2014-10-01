@@ -28,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *Name;
 @property (weak, nonatomic) IBOutlet UITextField *Number;
 
+@property (strong, nonatomic) IBOutlet UIView *superView;
 @property (weak, nonatomic) IBOutlet UIButton *yesButton;
 @property (weak, nonatomic) IBOutlet UIButton *noButton;
 @property (weak, nonatomic) IBOutlet UILabel *putInNumber;
@@ -38,12 +39,10 @@
 @property (weak, nonatomic) IBOutlet FXBlurView *cheesyContainer;
 @property (weak, nonatomic) IBOutlet UITextView *cheesyLine;
 @property (weak, nonatomic) IBOutlet UIImageView *background;
-@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 @property (nonatomic) IBOutlet FXBlurView *footerButtonView;
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
 @property (weak, nonatomic) IBOutlet FXBlurView *Navbar;
 
-@property (strong, nonatomic) IBOutlet UIView *superView;
 @property (nonatomic) IBOutlet FXBlurView *contactView;
 @property (nonatomic) IBOutlet NSArray *cheesyArray;
 @property (nonatomic) IBOutlet NSMutableArray *imageArray;

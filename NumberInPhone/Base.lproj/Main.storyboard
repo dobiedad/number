@@ -212,6 +212,7 @@
                         <outlet property="noButton" destination="Bv8-JF-88g" id="sZC-Ro-XAR"/>
                         <outlet property="phoneImage" destination="eTY-oY-2Vd" id="QZK-mm-GLT"/>
                         <outlet property="putInNumber" destination="2Jx-Sj-Lt9" id="zju-9x-CEL"/>
+                        <outlet property="superView" destination="8bC-Xf-vdC" id="Ufg-ip-PVb"/>
                         <outlet property="userImage" destination="psz-3W-v5h" id="Lw8-1F-i5m"/>
                         <outlet property="yesButton" destination="1Ii-dM-jiH" id="iQ1-ao-ajv"/>
                     </connections>

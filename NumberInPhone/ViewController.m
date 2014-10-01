@@ -31,7 +31,6 @@
 
 @synthesize imageArray;
 @synthesize backButton;
-@synthesize toolbar;
 @synthesize contactsTableView;
 @synthesize contactArray;
 
@@ -285,7 +284,7 @@
 
     [UIView transitionWithView:superView
                       duration:0.5
-                       options:UIViewAnimationOptionTransitionFlipFromRight
+                       options:UIViewAnimationOptionTransitionFlipFromLeft
                     animations:NULL
                     completion:NULL];
 
