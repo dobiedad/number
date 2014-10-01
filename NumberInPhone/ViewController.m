@@ -48,6 +48,7 @@
 
 
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -71,8 +72,7 @@
     self.Navbar.blurRadius = 5;
     backButton.hidden = true;
     self.contactsTableView.hidden=true;
-    
-    
+    putInNumber.textColor = [UIColor whiteColor];
     
 
 
