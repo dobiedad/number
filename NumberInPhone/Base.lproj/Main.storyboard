@@ -183,6 +183,7 @@
                         <outlet property="phoneImage" destination="eTY-oY-2Vd" id="QZK-mm-GLT"/>
                         <outlet property="putInNumber" destination="2Jx-Sj-Lt9" id="zju-9x-CEL"/>
                         <outlet property="superView" destination="8bC-Xf-vdC" id="PgA-ah-hoX"/>
+                        <outlet property="toolbar" destination="CdR-M7-Jj7" id="sHi-AX-Zvk"/>
                         <outlet property="userImage" destination="psz-3W-v5h" id="Lw8-1F-i5m"/>
                         <outlet property="yesButton" destination="1Ii-dM-jiH" id="iQ1-ao-ajv"/>
                     </connections>

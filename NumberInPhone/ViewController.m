@@ -32,6 +32,8 @@
 
 @synthesize imageArray;
 @synthesize backButton;
+@synthesize toolbar;
+
 
 
 
@@ -71,6 +73,10 @@
                        options:UIViewAnimationOptionTransitionFlipFromLeft
                     animations:NULL
                     completion:NULL];
+    yesButton.hidden= false;
+    noButton.hidden= false;
+    btnCreateNewContact.hidden = true ;
+    
 
 
 }

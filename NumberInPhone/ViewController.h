@@ -37,6 +37,7 @@
 @property (nonatomic) IBOutlet NSMutableArray *imageArray;
 @property (weak, nonatomic) IBOutlet UIImageView *background;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *backButton;
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 
 @property (strong, nonatomic) IBOutlet UIView *superView;
 
