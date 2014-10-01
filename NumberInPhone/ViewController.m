@@ -67,7 +67,7 @@
     self.cheesyContainer.blurRadius = 15;
     self.contactView.blurRadius = 15;
     self.Navbar.dynamic = TRUE;
-    self.Navbar.blurRadius = 25;
+    self.Navbar.blurRadius = 5;
     backButton.hidden = true;
     self.contactsTableView.hidden=true;
     
