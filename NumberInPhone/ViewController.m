@@ -17,6 +17,8 @@
 @synthesize cheesyLine;
 @synthesize putInNumber;
 @synthesize noButton;
+@synthesize contactButton;
+
 @synthesize btnCreateNewContact;
 @synthesize callLabel;
 @synthesize userImage;
@@ -68,6 +70,8 @@
     self.Navbar.dynamic = TRUE;
     self.Navbar.blurRadius = 25;
     backButton.hidden = true;
+    self.contactsTableView.hidden=true;
+    
 
 
 
@@ -76,25 +80,17 @@
 
 }
 
-- (void)getContacts {
-    APAddressBook *addressBook = [[APAddressBook alloc] init];
-    // don't forget to show some activity
-    [addressBook loadContacts:^(NSArray *contacts, NSError *error)
-    {
-        // hide activity
-        if (!error)
-        {
-            contactArray = contacts;
-            // do something with contacts array
-            [contactsTableView reloadData];
-            
-        }
-        else
-        {
-            // show error
-        }
-    }];
+- (IBAction)contactButtonClicked:(id)sender {
+    self.contactsTableView.hidden=false;
+    
+    [UIView transitionWithView:contactsTableView
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionCurlDown
+                    animations:NULL
+                    completion:NULL];
+
 }
+
 
 
 - (IBAction)backButtonClicked:(id)sender {
@@ -110,6 +106,8 @@
     noButton.hidden= false;
     btnCreateNewContact.hidden = true ;
     backButton.hidden = true;
+    self.contactsTableView.hidden=true;
+
     [self reloadCheeseFunction];
 
 
@@ -329,6 +327,28 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)getContacts {
+    APAddressBook *addressBook = [[APAddressBook alloc] init];
+    // don't forget to show some activity
+    [addressBook loadContacts:^(NSArray *contacts, NSError *error)
+     {
+         // hide activity
+         if (!error)
+         {
+             contactArray = contacts;
+        
+
+             // do something with contacts array
+             [contactsTableView reloadData];
+             
+         }
+         else
+         {
+             // show error
+         }
+     }];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [contactArray count];
     
@@ -346,7 +366,7 @@
     }
     
     APContact *contact = [contactArray objectAtIndex:(indexPath.row)];
-    cell.textLabel.text = contact.firstName,contact.phones;
+    cell.textLabel.text = contact.firstName;
     
     return cell;
 }

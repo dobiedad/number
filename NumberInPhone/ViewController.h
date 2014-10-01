@@ -23,6 +23,7 @@
 @interface ViewController : UIViewController<UITableViewDelegate ,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *contactsTableView;
 
+@property (weak, nonatomic) IBOutlet UIButton *contactButton;
 @property (nonatomic, assign) ABAddressBookRef addressBook;
 @property (weak, nonatomic) IBOutlet UITextField *Name;
 @property (weak, nonatomic) IBOutlet UITextField *Number;

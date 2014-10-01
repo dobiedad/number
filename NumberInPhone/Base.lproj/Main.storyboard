@@ -165,9 +165,18 @@
                                             <action selector="backButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fav-2j-GVQ"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3U-qt-FwU">
+                                        <rect key="frame" x="261" y="64" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="contactButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vOw-fa-tGP"/>
+                                        </connections>
+                                    </button>
                                     <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="VIr-7C-nhv">
-                                        <rect key="frame" x="88" y="50" width="160" height="58"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="80" y="43" width="160" height="58"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -196,6 +205,7 @@
                         <outlet property="callLabel" destination="lqq-wl-GHB" id="hY7-Ut-XON"/>
                         <outlet property="cheesyContainer" destination="kf0-77-T3J" id="nUD-Lo-Hob"/>
                         <outlet property="cheesyLine" destination="TND-Cd-cJl" id="Xbk-K2-TjR"/>
+                        <outlet property="contactButton" destination="Q3U-qt-FwU" id="Hce-Yy-xhT"/>
                         <outlet property="contactView" destination="YzO-6F-7ia" id="a5E-Ld-m22"/>
                         <outlet property="contactsTableView" destination="dND-Sf-G7v" id="4G9-1U-0SR"/>
                         <outlet property="footerButtonView" destination="9Jt-ri-pOw" id="nkd-ZF-7ga"/>
