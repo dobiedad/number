@@ -84,13 +84,19 @@
 
 
 - (IBAction)contactButtonClicked:(id)sender {
-    self.contactsTableView.hidden=false;
     
-    [UIView transitionWithView:contactsTableView
-                      duration:0.5
-                       options:UIViewAnimationOptionTransitionCurlDown
-                    animations:NULL
-                    completion:NULL];
+    
+        self.contactButton.hidden=false;
+        self.contactsTableView.hidden=false;
+        
+        
+        [UIView transitionWithView:contactsTableView
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionCurlDown
+                        animations:NULL
+                        completion:NULL];
+    
+   
 
 }
 
