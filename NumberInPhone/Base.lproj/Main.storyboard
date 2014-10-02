@@ -80,7 +80,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="pUP-fX-UuQ" secondAttribute="trailing" id="MHE-LH-q8C"/>
                                             <constraint firstItem="pUP-fX-UuQ" firstAttribute="leading" secondItem="9Jt-ri-pOw" secondAttribute="leading" id="Uf7-8a-2e3"/>
@@ -88,45 +88,6 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="bottomBar"/>
                                         </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YzO-6F-7ia" userLabel="contactView" customClass="FXBlurView">
-                                        <rect key="frame" x="0.0" y="108" width="320" height="190"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFX-fN-VxK">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
-                                                <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8B8-7C-6Ac">
-                                                        <rect key="frame" x="71" y="84" width="200" height="30"/>
-                                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="psz-3W-v5h">
-                                                        <rect key="frame" x="13" y="74" width="50" height="50"/>
-                                                    </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phone.png" translatesAutoresizingMaskIntoConstraints="NO" id="eTY-oY-2Vd">
-                                                        <rect key="frame" x="13" y="132" width="50" height="50"/>
-                                                    </imageView>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tp2-Hw-UN1">
-                                                        <rect key="frame" x="71" y="142" width="200" height="30"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What you waiting for, Put in your Number...." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jx-Sj-Lt9">
-                                                        <rect key="frame" x="13" y="8" width="295" height="62"/>
-                                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
-                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.46000000000000002" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="centerX" secondItem="cFX-fN-VxK" secondAttribute="centerX" id="yOm-qz-Tr6"/>
-                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kf0-77-T3J" userLabel="cheesyContainer" customClass="FXBlurView">
                                         <rect key="frame" x="0.0" y="250" width="320" height="140"/>
@@ -172,7 +133,6 @@
                                 <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="YzO-6F-7ia" secondAttribute="width" id="Axb-69-bVo"/>
                                     <constraint firstItem="9Jt-ri-pOw" firstAttribute="leading" secondItem="YJ1-A4-bkD" secondAttribute="leading" id="D3N-en-XjR"/>
                                     <constraint firstAttribute="trailing" secondItem="kf0-77-T3J" secondAttribute="trailing" id="KhY-LS-R2J"/>
                                     <constraint firstItem="kf0-77-T3J" firstAttribute="leading" secondItem="YJ1-A4-bkD" secondAttribute="leading" id="hna-qd-4I0"/>
@@ -182,25 +142,25 @@
                             <view alpha="0.90000000000000002" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ENC-a6-Owp" userLabel="Navbar" customClass="FXBlurView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
                                 <subviews>
-                                    <view alpha="0.5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jmI-uO-c5N">
+                                    <view alpha="0.80000000000000004" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jmI-uO-c5N">
                                         <rect key="frame" x="0.0" y="28" width="320" height="87"/>
                                         <subviews>
                                             <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="VIr-7C-nhv">
                                                 <rect key="frame" x="75" y="14" width="160" height="58"/>
                                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6x-Oc-Kdp" userLabel="backButton">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6x-Oc-Kdp" userLabel="backButton">
                                                 <rect key="frame" x="0.0" y="48" width="117" height="24"/>
-                                                <state key="normal" title="BUTTOn" image="back.png">
+                                                <state key="normal" image="back1.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="backButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fav-2j-GVQ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3U-qt-FwU">
-                                                <rect key="frame" x="250" y="49" width="46" height="30"/>
-                                                <state key="normal" title="Button">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3U-qt-FwU" userLabel="contactButton">
+                                                <rect key="frame" x="264" y="20" width="48" height="48"/>
+                                                <state key="normal" image="contacts.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -208,9 +168,12 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Q3U-qt-FwU" secondAttribute="trailing" constant="20" id="FwG-9M-ihB"/>
+                                            <constraint firstAttribute="centerY" secondItem="A6x-Oc-Kdp" secondAttribute="centerY" id="Hjm-mu-gTo"/>
                                             <constraint firstAttribute="centerX" secondItem="VIr-7C-nhv" secondAttribute="centerX" id="SUf-Bo-WYb"/>
+                                            <constraint firstAttribute="centerY" secondItem="Q3U-qt-FwU" secondAttribute="centerY" id="lBI-4r-noi"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -252,12 +215,53 @@
                                     <constraint firstItem="7F7-OS-eqM" firstAttribute="width" secondItem="qwB-zy-MyE" secondAttribute="width" id="aBH-Sf-hl0"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YzO-6F-7ia" userLabel="contactView" customClass="FXBlurView">
+                                <rect key="frame" x="0.0" y="189" width="320" height="470"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFX-fN-VxK">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="470"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8B8-7C-6Ac">
+                                                <rect key="frame" x="71" y="84" width="200" height="30"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="psz-3W-v5h">
+                                                <rect key="frame" x="13" y="74" width="50" height="50"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phone.png" translatesAutoresizingMaskIntoConstraints="NO" id="eTY-oY-2Vd">
+                                                <rect key="frame" x="13" y="132" width="50" height="50"/>
+                                            </imageView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tp2-Hw-UN1">
+                                                <rect key="frame" x="71" y="142" width="200" height="30"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What you waiting for, Put in your Number...." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jx-Sj-Lt9">
+                                                <rect key="frame" x="13" y="8" width="295" height="62"/>
+                                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.46000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="cFX-fN-VxK" secondAttribute="centerX" id="yOm-qz-Tr6"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="y4G-7T-9ME" firstAttribute="top" secondItem="YJ1-A4-bkD" secondAttribute="bottom" id="EuL-1w-pQZ"/>
                             <constraint firstAttribute="width" secondItem="ENC-a6-Owp" secondAttribute="width" id="HcE-3U-Y9f"/>
                             <constraint firstItem="YJ1-A4-bkD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LfN-qb-3F8"/>
+                            <constraint firstItem="YzO-6F-7ia" firstAttribute="top" secondItem="ENC-a6-Owp" secondAttribute="bottom" id="Y3u-pU-n3P"/>
+                            <constraint firstAttribute="width" secondItem="YzO-6F-7ia" secondAttribute="width" id="x0K-jd-aQ8"/>
                             <constraint firstAttribute="width" secondItem="qwB-zy-MyE" secondAttribute="width" id="yw8-hy-JPe"/>
                         </constraints>
                     </view>
@@ -295,8 +299,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back.png" width="24" height="24"/>
+        <image name="back1.png" width="48" height="48"/>
         <image name="bg.jpg" width="640" height="1136"/>
+        <image name="contacts.png" width="48" height="48"/>
         <image name="icon.png" width="120" height="120"/>
         <image name="no" width="152" height="152"/>
         <image name="phone.png" width="104" height="104"/>

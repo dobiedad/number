@@ -78,7 +78,7 @@
     self.tableViewContainer.dynamic = TRUE;
     self.tableViewContainer.blurRadius = 15;
     backButton.hidden = true;
-    self.contactsTableView.hidden=true;
+    self.tableViewContainer.hidden=true;
     putInNumber.textColor = [UIColor whiteColor];
     
 
@@ -94,14 +94,39 @@
     
     
         self.contactButton.hidden=false;
-        self.contactsTableView.hidden=false;
+        self.tableViewContainer.hidden=false;
         
         
-        [UIView transitionWithView:contactsTableView
+        [UIView transitionWithView:tableViewContainer
                           duration:0.5
                            options:UIViewAnimationOptionTransitionCurlDown
                         animations:NULL
                         completion:NULL];
+    self.cheesyLine.text=@"Contacts added using this app";
+    self.callLabel.text=@"Contacts.count";
+    [UIView transitionWithView:callLabel
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionFlipFromLeft
+                    animations:NULL
+                    completion:NULL];
+    [UIView transitionWithView:cheesyLine
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionFlipFromLeft
+                    animations:NULL
+                    completion:NULL];
+    self.noButton.hidden = true;
+    self.yesButton.hidden=true;
+    [UIView transitionWithView:noButton
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:NULL
+                    completion:NULL];
+    [UIView transitionWithView:yesButton
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:NULL
+                    completion:NULL];
+
     
    
 
@@ -112,6 +137,8 @@
 - (IBAction)backButtonClicked:(id)sender {
     contactView.hidden = true;
     cheesyContainer.hidden = false;
+    contactButton.hidden=false;
+
     
     [UIView transitionWithView:superView
                       duration:0.5
@@ -319,6 +346,7 @@
     yesButton.hidden=true;
     noButton.hidden=true;
     btnCreateNewContact.hidden =false;
+    contactButton.hidden=true;
     
 
     [UIView transitionWithView:superView
