@@ -20,6 +20,10 @@
 		B32D81F719DB112600CB5B38 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = B32D81F619DB112600CB5B38 /* back.png */; };
 		B3336BBE19DDF7AF009C56C0 /* contacts.png in Resources */ = {isa = PBXBuildFile; fileRef = B3336BBD19DDF7AF009C56C0 /* contacts.png */; };
 		B3336BC019DDF8D6009C56C0 /* back1.png in Resources */ = {isa = PBXBuildFile; fileRef = B3336BBF19DDF8D6009C56C0 /* back1.png */; };
+		B3336BC319DDFFC1009C56C0 /* aut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3336BC119DDFFC1009C56C0 /* aut.jpg */; };
+		B3336BC419DDFFC1009C56C0 /* house.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3336BC219DDFFC1009C56C0 /* house.jpg */; };
+		B3336BC719DE0044009C56C0 /* colour.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3336BC519DE0044009C56C0 /* colour.jpg */; };
+		B3336BC819DE0044009C56C0 /* road.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3336BC619DE0044009C56C0 /* road.jpg */; };
 		B35B61D319DC113B00AE0D09 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = B35B61D219DC113B00AE0D09 /* FXBlurView.m */; };
 		B35B61D519DC13BE00AE0D09 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35B61D419DC13BE00AE0D09 /* Accelerate.framework */; };
 		B35B61E219DC5C7700AE0D09 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B35B61E019DC5C7700AE0D09 /* Podfile */; };
@@ -65,6 +69,10 @@
 		B32D81F619DB112600CB5B38 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = SOURCE_ROOT; };
 		B3336BBD19DDF7AF009C56C0 /* contacts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contacts.png; sourceTree = SOURCE_ROOT; };
 		B3336BBF19DDF8D6009C56C0 /* back1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back1.png; sourceTree = SOURCE_ROOT; };
+		B3336BC119DDFFC1009C56C0 /* aut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aut.jpg; sourceTree = SOURCE_ROOT; };
+		B3336BC219DDFFC1009C56C0 /* house.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = house.jpg; sourceTree = SOURCE_ROOT; };
+		B3336BC519DE0044009C56C0 /* colour.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = colour.jpg; sourceTree = SOURCE_ROOT; };
+		B3336BC619DE0044009C56C0 /* road.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = road.jpg; sourceTree = SOURCE_ROOT; };
 		B35B61D119DC113B00AE0D09 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
 		B35B61D219DC113B00AE0D09 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 		B35B61D419DC13BE00AE0D09 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -162,8 +170,12 @@
 				B31D4E0219D76E8900E1CD79 /* save.png */,
 				B32D81E619DAFB7900CB5B38 /* boat.jpg */,
 				B3336BBD19DDF7AF009C56C0 /* contacts.png */,
+				B3336BC519DE0044009C56C0 /* colour.jpg */,
+				B3336BC619DE0044009C56C0 /* road.jpg */,
 				B32D81E119DAFB2900CB5B38 /* london.jpeg */,
 				B32D81F619DB112600CB5B38 /* back.png */,
+				B3336BC119DDFFC1009C56C0 /* aut.jpg */,
+				B3336BC219DDFFC1009C56C0 /* house.jpg */,
 				B35B61E019DC5C7700AE0D09 /* Podfile */,
 				B3336BBF19DDF8D6009C56C0 /* back1.png */,
 				B32D81E819DAFC8100CB5B38 /* plane.jpg */,
@@ -295,9 +307,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3336BC719DE0044009C56C0 /* colour.jpg in Resources */,
+				B3336BC319DDFFC1009C56C0 /* aut.jpg in Resources */,
 				B3336BBE19DDF7AF009C56C0 /* contacts.png in Resources */,
+				B3336BC819DE0044009C56C0 /* road.jpg in Resources */,
 				B31B24F019D86FC900025B47 /* bg.jpg in Resources */,
 				B3A5C07819D7857500015738 /* launch.png in Resources */,
+				B3336BC419DDFFC1009C56C0 /* house.jpg in Resources */,
 				B3E7EBD719D756F9008DD3B3 /* no in Resources */,
 				B3C3C85219D700A500B1D69B /* Main.storyboard in Resources */,
 				B32D81E419DAFB2900CB5B38 /* london.jpeg in Resources */,

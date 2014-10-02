@@ -26,7 +26,7 @@
                                     <view opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Jt-ri-pOw" userLabel="footerButtonView" customClass="FXBlurView">
                                         <rect key="frame" x="0.0" y="390" width="320" height="102"/>
                                         <subviews>
-                                            <view opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pUP-fX-UuQ" userLabel="centeredContainer">
+                                            <view opaque="NO" alpha="0.84999999999999987" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pUP-fX-UuQ" userLabel="centeredContainer">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
                                                 <subviews>
                                                     <view alpha="0.80000000000000004" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sMV-Ni-aIL">

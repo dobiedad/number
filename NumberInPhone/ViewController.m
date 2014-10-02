@@ -82,7 +82,6 @@
     putInNumber.textColor = [UIColor whiteColor];
     
     
-    
 
 
 
@@ -316,7 +315,7 @@
 - (IBAction)noButtonClicked:(id)sender {
     [self reloadCheeseFunction];
     [self vibrate];
-    imageArray = [[NSMutableArray alloc] initWithObjects:@"bg.jpg", @"london.jpeg", @"river.jpeg", @"wave.jpg", @"boat.jpg",@"plane.jpg", nil];
+    imageArray = [[NSMutableArray alloc] initWithObjects:@"bg.jpg", @"aut.jpg", @"house.jpg", @"wave.jpg", @"road.jpg", @"colour.jpg",@"boat.jpg",@"plane.jpg", nil];
     uint32_t imagernd = arc4random_uniform([imageArray count]);
     NSString *randomImage = [imageArray objectAtIndex:imagernd];
     background.image = [UIImage imageNamed:randomImage];
