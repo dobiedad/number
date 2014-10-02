@@ -34,6 +34,9 @@
 @synthesize backButton;
 @synthesize contactsTableView;
 @synthesize contactArray;
+@synthesize tableViewContainer;
+@synthesize tableViewInsideContainer;
+
 
 
 
@@ -69,7 +72,11 @@
     self.cheesyContainer.blurRadius = 15;
     self.contactView.blurRadius = 15;
     self.Navbar.dynamic = TRUE;
-    self.Navbar.blurRadius = 5;
+    self.Navbar.blurRadius = 15;
+    self.tableViewInsideContainer.dynamic = TRUE;
+    self.tableViewInsideContainer.blurRadius = 15;
+    self.tableViewContainer.dynamic = TRUE;
+    self.tableViewContainer.blurRadius = 15;
     backButton.hidden = true;
     self.contactsTableView.hidden=true;
     putInNumber.textColor = [UIColor whiteColor];
