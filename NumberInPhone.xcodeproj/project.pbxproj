@@ -27,6 +27,9 @@
 		B35B61D319DC113B00AE0D09 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = B35B61D219DC113B00AE0D09 /* FXBlurView.m */; };
 		B35B61D519DC13BE00AE0D09 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35B61D419DC13BE00AE0D09 /* Accelerate.framework */; };
 		B35B61E219DC5C7700AE0D09 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B35B61E019DC5C7700AE0D09 /* Podfile */; };
+		B37BAA4819DE041C005BF748 /* iconsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = B37BAA4719DE041C005BF748 /* iconsmall.png */; };
+		B37BAA4A19DE052E005BF748 /* contactFlat.png in Resources */ = {isa = PBXBuildFile; fileRef = B37BAA4919DE052E005BF748 /* contactFlat.png */; };
+		B37BAA4C19DE062F005BF748 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = B37BAA4B19DE062F005BF748 /* info.png */; };
 		B3A5C07619D7834E00015738 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A5C07519D7834E00015738 /* icon.png */; };
 		B3A5C07819D7857500015738 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A5C07719D7857500015738 /* launch.png */; };
 		B3AF700919D96D3A00899811 /* PixateFreestyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AF700819D96D3A00899811 /* PixateFreestyle.framework */; };
@@ -77,6 +80,9 @@
 		B35B61D219DC113B00AE0D09 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 		B35B61D419DC13BE00AE0D09 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		B35B61E019DC5C7700AE0D09 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		B37BAA4719DE041C005BF748 /* iconsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconsmall.png; sourceTree = SOURCE_ROOT; };
+		B37BAA4919DE052E005BF748 /* contactFlat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contactFlat.png; sourceTree = SOURCE_ROOT; };
+		B37BAA4B19DE062F005BF748 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = SOURCE_ROOT; };
 		B3A5C07519D7834E00015738 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
 		B3A5C07719D7857500015738 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = SOURCE_ROOT; };
 		B3AF700819D96D3A00899811 /* PixateFreestyle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PixateFreestyle.framework; sourceTree = SOURCE_ROOT; };
@@ -170,15 +176,18 @@
 				B31D4E0219D76E8900E1CD79 /* save.png */,
 				B32D81E619DAFB7900CB5B38 /* boat.jpg */,
 				B3336BBD19DDF7AF009C56C0 /* contacts.png */,
+				B37BAA4719DE041C005BF748 /* iconsmall.png */,
 				B3336BC519DE0044009C56C0 /* colour.jpg */,
 				B3336BC619DE0044009C56C0 /* road.jpg */,
 				B32D81E119DAFB2900CB5B38 /* london.jpeg */,
 				B32D81F619DB112600CB5B38 /* back.png */,
 				B3336BC119DDFFC1009C56C0 /* aut.jpg */,
+				B37BAA4B19DE062F005BF748 /* info.png */,
 				B3336BC219DDFFC1009C56C0 /* house.jpg */,
 				B35B61E019DC5C7700AE0D09 /* Podfile */,
 				B3336BBF19DDF8D6009C56C0 /* back1.png */,
 				B32D81E819DAFC8100CB5B38 /* plane.jpg */,
+				B37BAA4919DE052E005BF748 /* contactFlat.png */,
 				B32D81E919DAFC8100CB5B38 /* wave.jpg */,
 				B32D81E219DAFB2900CB5B38 /* river.jpeg */,
 				B3E7EBD519D756F9008DD3B3 /* no */,
@@ -324,14 +333,17 @@
 				B3E7EBD419D754B9008DD3B3 /* refresh.png in Resources */,
 				B3E7EBD819D756F9008DD3B3 /* yes.png in Resources */,
 				B31D4E0B19D7813200E1CD79 /* phone.png in Resources */,
+				B37BAA4A19DE052E005BF748 /* contactFlat.png in Resources */,
 				B3A5C07619D7834E00015738 /* icon.png in Resources */,
 				B32D81E719DAFB7900CB5B38 /* boat.jpg in Resources */,
 				B31D4E0C19D7813200E1CD79 /* user.png in Resources */,
 				B32D81EA19DAFC8100CB5B38 /* plane.jpg in Resources */,
+				B37BAA4819DE041C005BF748 /* iconsmall.png in Resources */,
 				B32D81F719DB112600CB5B38 /* back.png in Resources */,
 				B35B61E219DC5C7700AE0D09 /* Podfile in Resources */,
 				B3C3C85719D700A500B1D69B /* LaunchScreen.xib in Resources */,
 				B31D4E0319D76E8900E1CD79 /* save.png in Resources */,
+				B37BAA4C19DE062F005BF748 /* info.png in Resources */,
 				B3C3C85419D700A500B1D69B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

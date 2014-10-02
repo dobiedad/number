@@ -145,7 +145,7 @@
                                     <view alpha="0.80000000000000004" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jmI-uO-c5N">
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <subviews>
-                                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="VIr-7C-nhv">
+                                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="iconsmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="VIr-7C-nhv">
                                                 <rect key="frame" x="75" y="14" width="160" height="58"/>
                                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                             </imageView>
@@ -160,20 +160,32 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3U-qt-FwU" userLabel="contactButton">
                                                 <rect key="frame" x="264" y="20" width="48" height="48"/>
-                                                <state key="normal" image="contacts.png">
+                                                <state key="normal" image="contactFlat.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="contactButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vOw-fa-tGP"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kb1-pl-0ug">
+                                                <rect key="frame" x="15" y="20" width="45" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="NqA-io-Dfx"/>
+                                                    <constraint firstAttribute="height" constant="30" id="PGK-xL-OgO"/>
+                                                </constraints>
+                                                <state key="normal" image="info.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Q3U-qt-FwU" secondAttribute="trailing" constant="20" id="FwG-9M-ihB"/>
                                             <constraint firstAttribute="centerY" secondItem="A6x-Oc-Kdp" secondAttribute="centerY" id="Hjm-mu-gTo"/>
+                                            <constraint firstAttribute="centerY" secondItem="kb1-pl-0ug" secondAttribute="centerY" id="KwD-Lx-EUX"/>
                                             <constraint firstAttribute="centerX" secondItem="VIr-7C-nhv" secondAttribute="centerX" id="SUf-Bo-WYb"/>
+                                            <constraint firstAttribute="trailing" secondItem="Q3U-qt-FwU" secondAttribute="trailing" constant="8" id="bf6-r1-d4Q"/>
                                             <constraint firstAttribute="centerY" secondItem="Q3U-qt-FwU" secondAttribute="centerY" id="lBI-4r-noi"/>
+                                            <constraint firstItem="kb1-pl-0ug" firstAttribute="leading" secondItem="jmI-uO-c5N" secondAttribute="leading" constant="15" id="uMC-FB-hp2"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -301,8 +313,9 @@
     <resources>
         <image name="back1.png" width="48" height="48"/>
         <image name="bg.jpg" width="640" height="1136"/>
-        <image name="contacts.png" width="48" height="48"/>
-        <image name="icon.png" width="120" height="120"/>
+        <image name="contactFlat.png" width="56" height="40"/>
+        <image name="iconsmall.png" width="60" height="60"/>
+        <image name="info.png" width="60" height="60"/>
         <image name="no" width="152" height="152"/>
         <image name="phone.png" width="104" height="104"/>
         <image name="save.png" width="64" height="64"/>
