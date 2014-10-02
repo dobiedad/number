@@ -81,6 +81,8 @@
     self.tableViewContainer.hidden=true;
     putInNumber.textColor = [UIColor whiteColor];
     
+    
+    
 
 
 
