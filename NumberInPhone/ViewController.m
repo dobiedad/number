@@ -100,8 +100,9 @@
     self.tableViewContainer.blurRadius = 15;
     backButton.hidden = true;
     self.tableViewContainer.hidden=true;
-    putInNumber.textColor = [UIColor whiteColor];
     youtubeWebViewContainer.hidden=true;
+    
+    
     
     
 
