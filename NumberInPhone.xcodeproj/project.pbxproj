@@ -25,6 +25,7 @@
 		B3336BC719DE0044009C56C0 /* colour.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3336BC519DE0044009C56C0 /* colour.jpg */; };
 		B3336BC819DE0044009C56C0 /* road.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3336BC619DE0044009C56C0 /* road.jpg */; };
 		B342DF1B19DEC3B000EBFD2E /* blackLaunch.png in Resources */ = {isa = PBXBuildFile; fileRef = B342DF1A19DEC3B000EBFD2E /* blackLaunch.png */; };
+		B342DF1D19DEC4B100EBFD2E /* newIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B342DF1C19DEC4B100EBFD2E /* newIcon.png */; };
 		B35B61D319DC113B00AE0D09 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = B35B61D219DC113B00AE0D09 /* FXBlurView.m */; };
 		B35B61D519DC13BE00AE0D09 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35B61D419DC13BE00AE0D09 /* Accelerate.framework */; };
 		B35B61E219DC5C7700AE0D09 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B35B61E019DC5C7700AE0D09 /* Podfile */; };
@@ -78,6 +79,7 @@
 		B3336BC519DE0044009C56C0 /* colour.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = colour.jpg; sourceTree = SOURCE_ROOT; };
 		B3336BC619DE0044009C56C0 /* road.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = road.jpg; sourceTree = SOURCE_ROOT; };
 		B342DF1A19DEC3B000EBFD2E /* blackLaunch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackLaunch.png; sourceTree = SOURCE_ROOT; };
+		B342DF1C19DEC4B100EBFD2E /* newIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newIcon.png; sourceTree = SOURCE_ROOT; };
 		B35B61D119DC113B00AE0D09 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
 		B35B61D219DC113B00AE0D09 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 		B35B61D419DC13BE00AE0D09 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -200,6 +202,7 @@
 				B31B24EF19D86FC900025B47 /* bg.jpg */,
 				B35B61D119DC113B00AE0D09 /* FXBlurView.h */,
 				B35B61D219DC113B00AE0D09 /* FXBlurView.m */,
+				B342DF1C19DEC4B100EBFD2E /* newIcon.png */,
 				B31D4E0A19D7813200E1CD79 /* user.png */,
 				B31D4E0719D7761200E1CD79 /* gender.png */,
 				B3A5C07719D7857500015738 /* launch.png */,
@@ -341,6 +344,7 @@
 				B32D81E719DAFB7900CB5B38 /* boat.jpg in Resources */,
 				B31D4E0C19D7813200E1CD79 /* user.png in Resources */,
 				B32D81EA19DAFC8100CB5B38 /* plane.jpg in Resources */,
+				B342DF1D19DEC4B100EBFD2E /* newIcon.png in Resources */,
 				B342DF1B19DEC3B000EBFD2E /* blackLaunch.png in Resources */,
 				B37BAA4819DE041C005BF748 /* iconsmall.png in Resources */,
 				B32D81F719DB112600CB5B38 /* back.png in Resources */,

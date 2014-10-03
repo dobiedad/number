@@ -198,6 +198,7 @@
 
     if (!_clickedContactButton) {
         self.tableViewContainer.hidden=false;
+        tableViewInsideContainer.hidden=false;
         self.noButton.hidden = true;
         self.yesButton.hidden=true;
         
@@ -234,6 +235,8 @@
     }
     else if (_clickedContactButton){
         self.tableViewContainer.hidden=true;
+        tableViewInsideContainer.hidden=true;
+
         yesButton.hidden=false;
         noButton.hidden=false;
         [self reloadCheeseFunction];
