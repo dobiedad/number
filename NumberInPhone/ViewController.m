@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "APContact.h"
+@import LocalAuthentication;
+
 
 
 @implementation ViewController{
@@ -50,6 +52,10 @@
 @synthesize youtubeWebViewContainer;
 @synthesize infoButton;
 @synthesize footerButtonViewInside;
+NSUInteger noButtonTapCount;
+NSTimer *timer;
+
+
 
 
 
@@ -87,6 +93,7 @@
 
 
 
+
     [self reloadCheeseFunction];
     self.footerButtonView.dynamic = TRUE;
     self.footerButtonView.blurRadius = 15;
@@ -117,6 +124,12 @@
 
 }
 
+- (void)resetAlert {
+    timer = [NSTimer scheduledTimerWithTimeInterval:30.0 target:self selector:@selector(noButtonClicked:) userInfo:nil repeats:YES];
+    [timer fire];
+    
+}
+
 
 
 - (IBAction)infoButtonClicked:(id)sender {
@@ -126,6 +139,7 @@
     if (!_clickedInfoButton) {
         youtubeWebViewContainer.hidden=false;
         contactButton.hidden=true;
+        
         
         [UIView transitionWithView:superView
                           duration:0.5
@@ -201,15 +215,62 @@
 }
 
 
+
+
+
 - (IBAction)contactButtonClicked:(id)sender {
     
-    _clickedContactButton = !_clickedContactButton;
+    
+    LAContext *context = [[LAContext alloc] init];
+    
+    NSError *error = nil;
+    if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error]) {
+        [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
+                localizedReason:@"Are you the device owner?"
+                          reply:^(BOOL success, NSError *error) {
+                              
+                              if (error) {
+                                  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                                  message:@"There was a problem verifying your identity."
+                                                                                 delegate:nil
+                                                                        cancelButtonTitle:@"Ok"
+                                                                        otherButtonTitles:nil];
+                                  [alert show];
+                                  return;
+                              }
+                              
+                              if (success) {
+                                  [self displayContacts];
+                                  
+                              }
+                          }];
+        
+    } else {
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:@"Your device cannot authenticate using TouchID."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Ok"
+                                              otherButtonTitles:nil];
+        [alert show];
+        
+    }
+    
+   
+}
 
+
+- (void) displayContacts {
+    
+    
+    _clickedContactButton = !_clickedContactButton;
+    
     if (!_clickedContactButton) {
         self.tableViewContainer.hidden=false;
         tableViewInsideContainer.hidden=false;
         self.noButton.hidden = true;
         self.yesButton.hidden=true;
+        self.infoButton.hidden=true;
         
         callLabel.text=@"limitless";
         cheesyLine.text=@"Contacts saved with Number?";
@@ -222,6 +283,11 @@
         [UIView transitionWithView:callLabel
                           duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromLeft
+                        animations:NULL
+                        completion:NULL];
+        [UIView transitionWithView:infoButton
+                          duration:0.3
+                           options:UIViewAnimationOptionTransitionCrossDissolve
                         animations:NULL
                         completion:NULL];
         [UIView transitionWithView:cheesyLine
@@ -240,16 +306,18 @@
                         animations:NULL
                         completion:NULL];
         
-
+        
     }
     else if (_clickedContactButton){
         self.tableViewContainer.hidden=true;
         tableViewInsideContainer.hidden=true;
-
+        self.infoButton.hidden=false;
+        
+        
         yesButton.hidden=false;
         noButton.hidden=false;
         [self reloadCheeseFunction];
-
+        
         
         
         [UIView transitionWithView:tableViewContainer
@@ -267,7 +335,12 @@
                            options:UIViewAnimationOptionTransitionFlipFromLeft
                         animations:NULL
                         completion:NULL];
-    
+        [UIView transitionWithView:infoButton
+                          duration:0.3
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:NULL
+                        completion:NULL];
+        
         [UIView transitionWithView:noButton
                           duration:0.5
                            options:UIViewAnimationOptionTransitionCrossDissolve
@@ -279,12 +352,9 @@
                         animations:NULL
                         completion:NULL];
         
-
+        
     }
     
-    
-   
-
 }
 
 
@@ -490,7 +560,17 @@
                        options:UIViewAnimationOptionTransitionFlipFromLeft
                     animations:NULL
                     completion:NULL];
-
+    noButtonTapCount++;
+    if (noButtonTapCount == 4)
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Title"
+                                                        message:@"My alert text here"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Ok"
+                                              otherButtonTitles:nil];
+        [alert show];
+        noButtonTapCount = 0; // Not sure if you want to reset to 0 here.
+    }
 
 
 

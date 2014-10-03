@@ -23,6 +23,7 @@
 
 
 @interface ViewController : UIViewController<UITableViewDelegate ,UITableViewDataSource,MFMessageComposeViewControllerDelegate>
+
 @property (weak, nonatomic) IBOutlet UITableView *contactsTableView;
 @property (weak, nonatomic) IBOutlet UIView *cheesyInsideView;
 @property (weak, nonatomic) IBOutlet FXBlurView *tableViewContainer;
