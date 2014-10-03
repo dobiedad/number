@@ -201,6 +201,8 @@
         self.noButton.hidden = true;
         self.yesButton.hidden=true;
         
+        callLabel.text=@"limitless";
+        cheesyLine.text=@"Contacts saved with Number?";
         
         [UIView transitionWithView:tableViewContainer
                           duration:0.5
