@@ -11,6 +11,8 @@
 
 @implementation ViewController{
     BOOL _clickedInfoButton;
+    BOOL _clickedContactButton;
+
     
 }
 
@@ -75,6 +77,8 @@
     [self getContacts];
     [self loadVideo];
     _clickedInfoButton = !_clickedInfoButton;
+    _clickedContactButton = !_clickedContactButton;
+
 
 
 
@@ -147,7 +151,10 @@
     else if (_clickedInfoButton) {
         youtubeWebViewContainer.hidden=true;
         contactButton.hidden=false;
+        yesButton.hidden=false;
+        noButton.hidden=false;
         [self reloadCheeseFunction];
+
     
 
         
@@ -156,8 +163,6 @@
                            options:UIViewAnimationOptionTransitionFlipFromTop
                         animations:NULL
                         completion:NULL];
-        self.cheesyLine.text=@"This app was inspired by VitalyZDTV's prank";
-        self.callLabel.text=@"developed by limitless";
         [UIView transitionWithView:callLabel
                           duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromLeft
@@ -168,8 +173,6 @@
                            options:UIViewAnimationOptionTransitionFlipFromLeft
                         animations:NULL
                         completion:NULL];
-        self.noButton.hidden = true;
-        self.yesButton.hidden=true;
         [UIView transitionWithView:noButton
                           duration:0.5
                            options:UIViewAnimationOptionTransitionCrossDissolve
@@ -180,8 +183,7 @@
                            options:UIViewAnimationOptionTransitionCrossDissolve
                         animations:NULL
                         completion:NULL];
-        yesButton.hidden=false;
-        noButton.hidden=false;
+      
     }
     
    
@@ -192,9 +194,12 @@
 
 - (IBAction)contactButtonClicked:(id)sender {
     
-    
-        self.contactButton.hidden=true;
-        self.tableViewContainer.hidden=TRUE;
+    _clickedContactButton = !_clickedContactButton;
+
+    if (!_clickedContactButton) {
+        self.tableViewContainer.hidden=false;
+        self.noButton.hidden = true;
+        self.yesButton.hidden=true;
         
         
         [UIView transitionWithView:tableViewContainer
@@ -202,29 +207,67 @@
                            options:UIViewAnimationOptionTransitionCurlDown
                         animations:NULL
                         completion:NULL];
-    [UIView transitionWithView:callLabel
-                      duration:0.5
-                       options:UIViewAnimationOptionTransitionFlipFromLeft
-                    animations:NULL
-                    completion:NULL];
-    [UIView transitionWithView:cheesyLine
-                      duration:0.5
-                       options:UIViewAnimationOptionTransitionFlipFromLeft
-                    animations:NULL
-                    completion:NULL];
-    self.noButton.hidden = true;
-    self.yesButton.hidden=true;
-    [UIView transitionWithView:noButton
-                      duration:0.5
-                       options:UIViewAnimationOptionTransitionCrossDissolve
-                    animations:NULL
-                    completion:NULL];
-    [UIView transitionWithView:yesButton
-                      duration:0.5
-                       options:UIViewAnimationOptionTransitionCrossDissolve
-                    animations:NULL
-                    completion:NULL];
+        [UIView transitionWithView:callLabel
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromLeft
+                        animations:NULL
+                        completion:NULL];
+        [UIView transitionWithView:cheesyLine
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromLeft
+                        animations:NULL
+                        completion:NULL];
+        [UIView transitionWithView:noButton
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:NULL
+                        completion:NULL];
+        [UIView transitionWithView:yesButton
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:NULL
+                        completion:NULL];
+        
 
+    }
+    else if (_clickedContactButton){
+        self.tableViewContainer.hidden=true;
+        yesButton.hidden=false;
+        noButton.hidden=false;
+        [self reloadCheeseFunction];
+
+        
+        
+        [UIView transitionWithView:tableViewContainer
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionCurlUp
+                        animations:NULL
+                        completion:NULL];
+        [UIView transitionWithView:callLabel
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromLeft
+                        animations:NULL
+                        completion:NULL];
+        [UIView transitionWithView:cheesyLine
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromLeft
+                        animations:NULL
+                        completion:NULL];
+    
+        [UIView transitionWithView:noButton
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:NULL
+                        completion:NULL];
+        [UIView transitionWithView:yesButton
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:NULL
+                        completion:NULL];
+        
+
+    }
+    
     
    
 
