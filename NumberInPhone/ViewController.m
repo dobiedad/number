@@ -8,8 +8,7 @@
 
 #import "ViewController.h"
 #import "APContact.h"
-#import <MessageUI/MessageUI.h>
-#import <MessageUI/MFMailComposeViewController.h>
+
 
 @implementation ViewController{
     BOOL _clickedInfoButton;
@@ -43,6 +42,8 @@
 @synthesize backButton;
 @synthesize contactsTableView;
 @synthesize contactArray;
+@synthesize currentContact;
+
 @synthesize tableViewContainer;
 @synthesize tableViewInsideContainer;
 @synthesize youtubeWebView;
@@ -339,12 +340,16 @@
     
     NSString *Name = self.Name.text;
     NSString *Number = self.Number.text;
+    NSString *Note = @"Number?";
+
 
     
     if (Name.length > 2 && Number.length > 6 ) {
         ABAddressBookRef addressBookRef = ABAddressBookCreateWithOptions(NULL, nil);
         ABRecordRef new = ABPersonCreate();
         ABRecordSetValue(new, kABPersonFirstNameProperty, (__bridge CFStringRef)Name, nil);
+        ABRecordSetValue(new, kABPersonNoteProperty, (__bridge CFStringRef)Note, nil);
+
         
         
         ABMutableMultiValueRef Numbers = ABMultiValueCreateMutable(kABMultiStringPropertyType);
@@ -521,10 +526,19 @@
 }
 
 - (void)getContacts {
-    APAddressBook *addressBook = [[APAddressBook alloc] init];
+    APAddressBook *ab = [[APAddressBook alloc] init];
+    ab.fieldsMask = APContactFieldAll;
+    
     // don't forget to show some activity
-    [addressBook loadContacts:^(NSArray *contacts, NSError *error)
-     {
+    ab.filterBlock = ^BOOL(APContact *contact)
+    {
+        NSLog(@"%@", contact.note);
+        return  [contact.note isEqual: @"Number?"];
+    };
+    
+
+    [ab loadContacts:^(NSArray *contacts, NSError *error)
+    {
          // hide activity
          if (!error)
          {
@@ -566,12 +580,41 @@
     UIImage *message = [UIImage imageNamed:@"message.png"];
     [createSMSButton setImage:message forState:UIControlStateNormal];
     [cell addSubview:createSMSButton];
+    currentContact=contact;
     
+    [createSMSButton addTarget:self
+                        action:@selector(sendInAppSMS:)
+       forControlEvents:UIControlEventTouchUpInside];
     return cell;
 }
 
+-(IBAction) sendInAppSMS:(id) sender
+{
+     _messageComposer = [MFMessageComposeViewController new] ;
+    
+    if([MFMessageComposeViewController canSendText])
+    {
+        _messageComposer.body = @"";
+        _messageComposer.recipients = currentContact.phones;
+        _messageComposer.messageComposeDelegate = self;
+        [self presentViewController:_messageComposer animated:YES completion:nil];
+
+    }
+}
 
 
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result
+{
+    switch (result) {
+        case MessageComposeResultCancelled:
+            NSLog(@"Cancelled");
+            break;
+            default:
+            break;
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

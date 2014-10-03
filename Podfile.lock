@@ -4,9 +4,13 @@ PODS:
   - APAddressBook/Core (0.1.4)
 
 DEPENDENCIES:
-  - APAddressBook
+  - APAddressBook (from `https://github.com/leomdivani/APAddressBook.git`)
+
+EXTERNAL SOURCES:
+  APAddressBook:
+    :git: https://github.com/leomdivani/APAddressBook.git
 
 SPEC CHECKSUMS:
-  APAddressBook: 2b23557950065f8eb048e421dd4a18373f69949b
+  APAddressBook: 8f7e7308d3aa3b9bfeb61348e447140e9b3aedc7
 
 COCOAPODS: 0.34.1

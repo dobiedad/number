@@ -13,6 +13,8 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import "FXBlurView.h"
 #import <APAddressBook/APAddressBook.h>
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
 
 
@@ -20,7 +22,7 @@
 
 
 
-@interface ViewController : UIViewController<UITableViewDelegate ,UITableViewDataSource>
+@interface ViewController : UIViewController<UITableViewDelegate ,UITableViewDataSource,MFMessageComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *contactsTableView;
 @property (weak, nonatomic) IBOutlet UIView *cheesyInsideView;
 @property (weak, nonatomic) IBOutlet FXBlurView *tableViewContainer;
@@ -51,9 +53,13 @@
 
 @property (nonatomic) IBOutlet FXBlurView *contactView;
 @property (nonatomic) IBOutlet NSArray *cheesyArray;
+@property (nonatomic) IBOutlet APContact *currentContact;
+
 @property (nonatomic) IBOutlet NSMutableArray *imageArray;
 @property (nonatomic) IBOutlet NSArray *contactArray;
 @property (weak, nonatomic) IBOutlet UIButton *infoButton;
+@property (nonatomic, strong, retain) MFMessageComposeViewController *messageComposer;
+
 
 
 
