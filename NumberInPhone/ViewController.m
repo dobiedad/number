@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "APContact.h"
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
 @implementation ViewController{
     BOOL _clickedInfoButton;
@@ -123,7 +125,7 @@
                            options:UIViewAnimationOptionTransitionFlipFromTop
                         animations:NULL
                         completion:NULL];
-        self.cheesyLine.text=@"This app was inspired by VitalyZDTV's 'put your number in my phone prank without speaking'";
+        self.cheesyLine.text=@"This app was inspired by VitalyZDTV's 'put your number in my phone prank'";
         self.callLabel.text=@"developed by limitless";
         [UIView transitionWithView:callLabel
                           duration:0.5
@@ -296,7 +298,6 @@
     noButton.hidden= false;
     btnCreateNewContact.hidden = true ;
     backButton.hidden = true;
-    self.contactsTableView.hidden=true;
 
     [self reloadCheeseFunction];
 
@@ -556,14 +557,25 @@
         
     
     }
+   
     
     APContact *contact = [contactArray objectAtIndex:(indexPath.row)];
     cell.textLabel.text = contact.firstName;
+    UIButton *createSMSButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    createSMSButton.frame = CGRectMake(320.0f, 5.0f, 24.0f, 24.0f);
+    UIImage *message = [UIImage imageNamed:@"message.png"];
+    [createSMSButton setImage:message forState:UIControlStateNormal];
+    [cell addSubview:createSMSButton];
     
     return cell;
 }
 
+
+
+
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
 
 }
 - (void)loadVideo{
