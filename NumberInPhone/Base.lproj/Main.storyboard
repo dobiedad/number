@@ -23,28 +23,28 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3dO-5e-8Ok">
                                         <rect key="frame" x="-124" y="-270" width="568" height="1024"/>
                                     </imageView>
-                                    <view opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Jt-ri-pOw" userLabel="footerButtonView" customClass="FXBlurView">
+                                    <view opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Jt-ri-pOw" userLabel="footerButtonView" customClass="FXBlurView">
                                         <rect key="frame" x="0.0" y="390" width="320" height="102"/>
                                         <subviews>
-                                            <view alpha="0.79999999999999982" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="20r-RG-fxu" userLabel="footerButtonViewInside" customClass="FXBlurView">
+                                            <view alpha="0.90000000000000002" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="20r-RG-fxu" userLabel="footerButtonViewInside" customClass="FXBlurView">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
                                                 <subviews>
                                                     <view alpha="0.90000000000000002" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fz5-3A-MdB">
                                                         <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
                                                         <subviews>
-                                                            <view opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pUP-fX-UuQ" userLabel="centeredContainer">
+                                                            <view opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pUP-fX-UuQ" userLabel="centeredContainer">
                                                                 <rect key="frame" x="-80" y="-23" width="320" height="94"/>
                                                                 <subviews>
-                                                                    <view alpha="0.90000000000000002" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sMV-Ni-aIL">
+                                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sMV-Ni-aIL">
                                                                         <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
                                                                         <subviews>
                                                                             <view opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x8U-R6-cI6">
                                                                                 <rect key="frame" x="68" y="14" width="188" height="75"/>
                                                                                 <subviews>
-                                                                                    <button alpha="0.59999999999999964" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmt-lx-B7V" userLabel="saveContactButton">
+                                                                                    <button alpha="0.59999999999999964" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmt-lx-B7V" userLabel="saveContactButton">
                                                                                         <rect key="frame" x="64" y="8" width="48" height="48"/>
                                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                                                                        <state key="normal" backgroundImage="save.png">
+                                                                                        <state key="normal" backgroundImage="tick.png">
                                                                                             <color key="titleShadowColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="1" colorSpace="calibratedRGB"/>
                                                                                         </state>
                                                                                         <connections>
@@ -71,6 +71,10 @@
                                                                                     </button>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="centerX" secondItem="rmt-lx-B7V" secondAttribute="centerX" id="IfP-9P-a20"/>
+                                                                                    <constraint firstAttribute="centerY" secondItem="rmt-lx-B7V" secondAttribute="centerY" id="mie-YT-VDL"/>
+                                                                                </constraints>
                                                                             </view>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -176,7 +180,11 @@
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6x-Oc-Kdp" userLabel="backButton">
                                                 <rect key="frame" x="0.0" y="48" width="117" height="24"/>
-                                                <state key="normal" image="back1.png">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="Buc-1c-jia"/>
+                                                    <constraint firstAttribute="height" constant="30" id="VkO-3E-Bqw"/>
+                                                </constraints>
+                                                <state key="normal" image="backRed.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -212,13 +220,14 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="centerY" secondItem="A6x-Oc-Kdp" secondAttribute="centerY" id="Au9-WQ-2AE"/>
                                             <constraint firstAttribute="centerY" secondItem="A6x-Oc-Kdp" secondAttribute="centerY" id="Hjm-mu-gTo"/>
                                             <constraint firstAttribute="centerY" secondItem="kb1-pl-0ug" secondAttribute="centerY" id="KwD-Lx-EUX"/>
                                             <constraint firstAttribute="centerX" secondItem="VIr-7C-nhv" secondAttribute="centerX" id="SUf-Bo-WYb"/>
                                             <constraint firstAttribute="trailing" secondItem="Q3U-qt-FwU" secondAttribute="trailing" constant="15" id="bf6-r1-d4Q"/>
-                                            <constraint firstItem="A6x-Oc-Kdp" firstAttribute="leading" secondItem="jmI-uO-c5N" secondAttribute="leading" id="jUT-t4-7py"/>
                                             <constraint firstAttribute="centerY" secondItem="Q3U-qt-FwU" secondAttribute="centerY" id="lBI-4r-noi"/>
                                             <constraint firstItem="kb1-pl-0ug" firstAttribute="leading" secondItem="jmI-uO-c5N" secondAttribute="leading" constant="15" id="uMC-FB-hp2"/>
+                                            <constraint firstItem="A6x-Oc-Kdp" firstAttribute="leading" secondItem="jmI-uO-c5N" secondAttribute="leading" constant="15" id="zyP-sZ-lr8"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -303,15 +312,15 @@
                                     <constraint firstAttribute="centerX" secondItem="cFX-fN-VxK" secondAttribute="centerX" id="yOm-qz-Tr6"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6IB-Ij-VL4" userLabel="youtubeWebViewContainer">
+                            <view hidden="YES" alpha="0.90000000000000002" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6IB-Ij-VL4" userLabel="youtubeWebViewContainer">
                                 <rect key="frame" x="0.0" y="20" width="320" height="400"/>
                                 <subviews>
-                                    <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D3s-cY-789" userLabel="youtubeWebView">
+                                    <webView alpha="0.90000000000000002" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D3s-cY-789" userLabel="youtubeWebView">
                                         <rect key="frame" x="8" y="77" width="299" height="360"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                                     </webView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="D3s-cY-789" firstAttribute="leading" secondItem="6IB-Ij-VL4" secondAttribute="leading" id="81M-vG-j7P"/>
                                     <constraint firstAttribute="bottom" secondItem="D3s-cY-789" secondAttribute="bottom" id="NgF-y4-YCN"/>
@@ -370,14 +379,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back1.png" width="48" height="48"/>
+        <image name="backRed.png" width="80" height="80"/>
         <image name="bg.jpg" width="640" height="1136"/>
         <image name="contact1.png" width="80" height="80"/>
         <image name="iconsmall.png" width="60" height="60"/>
         <image name="info1.png" width="80" height="80"/>
         <image name="no" width="152" height="152"/>
         <image name="phone.png" width="104" height="104"/>
-        <image name="save.png" width="64" height="64"/>
+        <image name="tick.png" width="80" height="80"/>
         <image name="user.png" width="104" height="104"/>
         <image name="yes.png" width="152" height="152"/>
     </resources>

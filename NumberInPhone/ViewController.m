@@ -76,7 +76,7 @@
     
     contactView.hidden = true;
     btnCreateNewContact.hidden =true;
-    [background setImage:[UIImage imageNamed:@"bg.jpg"]];
+    [background setImage:[UIImage imageNamed:@"colour.jpg"]];
     addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     [self checkAddressBookAccess];
     [self getContacts];
@@ -116,6 +116,7 @@
    
 
 }
+
 
 
 - (IBAction)infoButtonClicked:(id)sender {
@@ -472,7 +473,7 @@
 - (IBAction)noButtonClicked:(id)sender {
     [self reloadCheeseFunction];
     [self vibrate];
-    imageArray = [[NSMutableArray alloc] initWithObjects:@"bg.jpg", @"aut.jpg", @"house.jpg", @"wave.jpg", @"road.jpg", @"colour.jpg",@"boat.jpg",@"plane.jpg", nil];
+    imageArray = [[NSMutableArray alloc] initWithObjects:@"italy.jpg", @"wave.jpg", @"leaf.jpg", @"beach.jpg", @"nightfall.jpg", @"colour.jpg",@"star.jpg",@"road.jpg",@"wave2.jpg",@"building.jpg", nil];
     uint32_t imagernd = arc4random_uniform([imageArray count]);
     NSString *randomImage = [imageArray objectAtIndex:imagernd];
     background.image = [UIImage imageNamed:randomImage];
@@ -581,8 +582,8 @@
     APContact *contact = [contactArray objectAtIndex:(indexPath.row)];
     cell.textLabel.text = contact.firstName;
     UIButton *createSMSButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    createSMSButton.frame = CGRectMake(320.0f, 5.0f, 24.0f, 24.0f);
-    UIImage *message = [UIImage imageNamed:@"message.png"];
+    createSMSButton.frame = CGRectMake(320.0f, 5.0f, 30.0f, 30.0f);
+    UIImage *message = [UIImage imageNamed:@"chat.png"];
     [createSMSButton setImage:message forState:UIControlStateNormal];
     [cell addSubview:createSMSButton];
     currentContact=contact;
