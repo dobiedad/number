@@ -32,6 +32,7 @@
 @property (nonatomic, assign) ABAddressBookRef addressBook;
 @property (weak, nonatomic) IBOutlet UITextField *Name;
 @property (weak, nonatomic) IBOutlet UITextField *Number;
+@property (weak, nonatomic) IBOutlet UIView *youtubeWebViewContainer;
 
 @property (strong, nonatomic) IBOutlet UIView *superView;
 @property (weak, nonatomic) IBOutlet UIButton *yesButton;
@@ -52,6 +53,7 @@
 @property (nonatomic) IBOutlet NSArray *cheesyArray;
 @property (nonatomic) IBOutlet NSMutableArray *imageArray;
 @property (nonatomic) IBOutlet NSArray *contactArray;
+@property (weak, nonatomic) IBOutlet UIButton *infoButton;
 
 
 

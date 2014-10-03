@@ -9,7 +9,12 @@
 #import "ViewController.h"
 #import "APContact.h"
 
-@implementation ViewController
+@implementation ViewController{
+    BOOL _clickedInfoButton;
+    
+}
+
+
 
 @synthesize addressBook;
 @synthesize cheesyArray;
@@ -37,6 +42,10 @@
 @synthesize tableViewContainer;
 @synthesize tableViewInsideContainer;
 @synthesize youtubeWebView;
+@synthesize youtubeWebViewContainer;
+@synthesize infoButton;
+
+
 
 
 
@@ -65,6 +74,8 @@
     [self checkAddressBookAccess];
     [self getContacts];
     [self loadVideo];
+    _clickedInfoButton = !_clickedInfoButton;
+
 
 
     [self reloadCheeseFunction];
@@ -83,6 +94,7 @@
     backButton.hidden = true;
     self.tableViewContainer.hidden=true;
     putInNumber.textColor = [UIColor whiteColor];
+    youtubeWebViewContainer.hidden=true;
     
     
 
@@ -94,11 +106,95 @@
 }
 
 
+- (IBAction)infoButtonClicked:(id)sender {
+    
+    _clickedInfoButton = !_clickedInfoButton;
+
+    if (!_clickedInfoButton) {
+        youtubeWebViewContainer.hidden=false;
+        contactButton.hidden=true;
+        
+        [UIView transitionWithView:superView
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromTop
+                        animations:NULL
+                        completion:NULL];
+        self.cheesyLine.text=@"This app was inspired by Vitalyzdtv put your number in my phone prank";
+        self.callLabel.text=@"developed by limitless";
+        [UIView transitionWithView:callLabel
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromLeft
+                        animations:NULL
+                        completion:NULL];
+        [UIView transitionWithView:cheesyLine
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromLeft
+                        animations:NULL
+                        completion:NULL];
+        self.noButton.hidden = true;
+        self.yesButton.hidden=true;
+        [UIView transitionWithView:noButton
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:NULL
+                        completion:NULL];
+        [UIView transitionWithView:yesButton
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:NULL
+                        completion:NULL];
+    }
+    else if (_clickedInfoButton) {
+        youtubeWebViewContainer.hidden=true;
+        contactButton.hidden=false;
+        [self reloadCheeseFunction];
+    
+
+        
+        [UIView transitionWithView:superView
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromTop
+                        animations:NULL
+                        completion:NULL];
+        self.cheesyLine.text=@"This app was inspired by VitalyZDTV's prank";
+        self.callLabel.text=@"developed by limitless";
+        [UIView transitionWithView:callLabel
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromLeft
+                        animations:NULL
+                        completion:NULL];
+        [UIView transitionWithView:cheesyLine
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromLeft
+                        animations:NULL
+                        completion:NULL];
+        self.noButton.hidden = true;
+        self.yesButton.hidden=true;
+        [UIView transitionWithView:noButton
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:NULL
+                        completion:NULL];
+        [UIView transitionWithView:yesButton
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:NULL
+                        completion:NULL];
+        yesButton.hidden=false;
+        noButton.hidden=false;
+    }
+    
+   
+
+    
+}
+
+
 - (IBAction)contactButtonClicked:(id)sender {
     
     
-        self.contactButton.hidden=false;
-        self.tableViewContainer.hidden=false;
+        self.contactButton.hidden=true;
+        self.tableViewContainer.hidden=TRUE;
         
         
         [UIView transitionWithView:tableViewContainer
@@ -106,8 +202,6 @@
                            options:UIViewAnimationOptionTransitionCurlDown
                         animations:NULL
                         completion:NULL];
-    self.cheesyLine.text=@"Contacts added using this app";
-    self.callLabel.text=@"Contacts.count";
     [UIView transitionWithView:callLabel
                       duration:0.5
                        options:UIViewAnimationOptionTransitionFlipFromLeft
@@ -142,6 +236,7 @@
     contactView.hidden = true;
     cheesyContainer.hidden = false;
     contactButton.hidden=false;
+    infoButton.hidden=false;
 
     
     [UIView transitionWithView:superView
@@ -351,6 +446,7 @@
     noButton.hidden=true;
     btnCreateNewContact.hidden =false;
     contactButton.hidden=true;
+    infoButton.hidden=true;
     
 
     [UIView transitionWithView:superView
@@ -442,7 +538,7 @@
                            a.target.playVideo(); \
                            }\
                            </script>\
-                           <iframe id='playerId' type='text/html' width='375' height='200' src='http://www.youtube.com/embed/ksnCqh9DDB8?list=UU1KPy3cAAj0i0RIFC_SzjMg' frameborder='0'>\
+                           <iframe id='playerId' type='text/html' width='375' height='400' src='http://www.youtube.com/embed/ksnCqh9DDB8?list=UU1KPy3cAAj0i0RIFC_SzjMg' frameborder='0'>\
                            </body>\
                            </html>"];
     [self.youtubeWebView loadHTMLString:embedHTML baseURL:[[NSBundle mainBundle]resourceURL]];
