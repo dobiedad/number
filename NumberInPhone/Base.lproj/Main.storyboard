@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Number?-->
@@ -266,13 +267,32 @@
                                     <constraint firstAttribute="centerX" secondItem="cFX-fN-VxK" secondAttribute="centerX" id="yOm-qz-Tr6"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6IB-Ij-VL4">
+                                <rect key="frame" x="0.0" y="20" width="320" height="400"/>
+                                <subviews>
+                                    <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D3s-cY-789">
+                                        <rect key="frame" x="35" y="77" width="240" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </webView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="D3s-cY-789" secondAttribute="centerX" id="4zZ-BM-5Nl"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6IB-Ij-VL4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="8V7-yq-Ao0"/>
                             <constraint firstItem="y4G-7T-9ME" firstAttribute="top" secondItem="YJ1-A4-bkD" secondAttribute="bottom" id="EuL-1w-pQZ"/>
+                            <constraint firstItem="6IB-Ij-VL4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GeJ-nP-15H"/>
                             <constraint firstAttribute="width" secondItem="ENC-a6-Owp" secondAttribute="width" id="HcE-3U-Y9f"/>
                             <constraint firstItem="YJ1-A4-bkD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LfN-qb-3F8"/>
+                            <constraint firstItem="6IB-Ij-VL4" firstAttribute="top" secondItem="ENC-a6-Owp" secondAttribute="bottom" id="M5f-vj-TYG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6IB-Ij-VL4" secondAttribute="trailing" id="MgO-A2-b8J"/>
                             <constraint firstItem="YzO-6F-7ia" firstAttribute="top" secondItem="ENC-a6-Owp" secondAttribute="bottom" id="Y3u-pU-n3P"/>
+                            <constraint firstItem="6IB-Ij-VL4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ydw-Sw-0nh"/>
+                            <constraint firstItem="6IB-Ij-VL4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iUk-0T-zok"/>
                             <constraint firstAttribute="width" secondItem="YzO-6F-7ia" secondAttribute="width" id="x0K-jd-aQ8"/>
                             <constraint firstAttribute="width" secondItem="qwB-zy-MyE" secondAttribute="width" id="yw8-hy-JPe"/>
                         </constraints>
@@ -303,6 +323,7 @@
                         <outlet property="tableViewInsideContainer" destination="7F7-OS-eqM" id="fMR-1e-6wh"/>
                         <outlet property="userImage" destination="psz-3W-v5h" id="Lw8-1F-i5m"/>
                         <outlet property="yesButton" destination="1Ii-dM-jiH" id="iQ1-ao-ajv"/>
+                        <outlet property="youtubeWebView" destination="D3s-cY-789" id="RSf-z7-5Ft"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

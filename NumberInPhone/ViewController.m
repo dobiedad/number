@@ -36,6 +36,7 @@
 @synthesize contactArray;
 @synthesize tableViewContainer;
 @synthesize tableViewInsideContainer;
+@synthesize youtubeWebView;
 
 
 
@@ -63,6 +64,8 @@
     addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     [self checkAddressBookAccess];
     [self getContacts];
+    [self loadVideo];
+
 
     [self reloadCheeseFunction];
     self.footerButtonView.dynamic = TRUE;
@@ -418,6 +421,32 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
+}
+- (void)loadVideo{
+    self.youtubeWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 120,500, 400)];
+    [self.youtubeWebView setAllowsInlineMediaPlayback:YES];
+    [self.youtubeWebView setMediaPlaybackRequiresUserAction:NO];
+    
+    [self.view addSubview:self.youtubeWebView];
+    
+    NSString* embedHTML = [NSString stringWithFormat:@"\
+                           <html>\
+                           <body style='margin:0px;padding:0px;'>\
+                           <script type='text/javascript' src='http://www.youtube.com/iframe_api'></script>\
+                           <script type='text/javascript'>\
+                           function onYouTubeIframeAPIReady()\
+                           {\
+                           ytplayer=new YT.Player('playerId',{events:{onReady:onPlayerReady}})\
+                           }\
+                           function onPlayerReady(a)\
+                           { \
+                           a.target.playVideo(); \
+                           }\
+                           </script>\
+                           <iframe id='playerId' type='text/html' width='%d' height='%d' src='http://www.youtube.com/embed/%@?enablejsapi=1&rel=0&playsinline=1&autoplay=1' frameborder='0'>\
+                           </body>\
+                           </html>", 300, 200, @"JW5meKfy3fY"];
+    [self.youtubeWebView loadHTMLString:embedHTML baseURL:[[NSBundle mainBundle]resourceURL]];
 }
 
 @end
