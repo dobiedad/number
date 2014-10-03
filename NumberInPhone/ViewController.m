@@ -123,7 +123,7 @@
                            options:UIViewAnimationOptionTransitionFlipFromTop
                         animations:NULL
                         completion:NULL];
-        self.cheesyLine.text=@"This app was inspired by Vitalyzdtv put your number in my phone prank";
+        self.cheesyLine.text=@"This app was inspired by VitalyZDTV's 'put your number in my phone prank without speaking'";
         self.callLabel.text=@"developed by limitless";
         [UIView transitionWithView:callLabel
                           duration:0.5
