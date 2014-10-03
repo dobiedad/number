@@ -442,9 +442,9 @@
                            a.target.playVideo(); \
                            }\
                            </script>\
-                           <iframe id='playerId' type='text/html' width='%d' height='%d' src='http://www.youtube.com/embed/ksnCqh9DDB8?list=UU1KPy3cAAj0i0RIFC_SzjMg' frameborder='0'>\
+                           <iframe id='playerId' type='text/html' width='375' height='200' src='http://www.youtube.com/embed/ksnCqh9DDB8?list=UU1KPy3cAAj0i0RIFC_SzjMg' frameborder='0'>\
                            </body>\
-                           </html>", 300, 200, @"JW5meKfy3fY"];
+                           </html>"];
     [self.youtubeWebView loadHTMLString:embedHTML baseURL:[[NSBundle mainBundle]resourceURL]];
 }
 
