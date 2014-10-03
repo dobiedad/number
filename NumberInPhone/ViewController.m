@@ -49,6 +49,8 @@
 @synthesize youtubeWebView;
 @synthesize youtubeWebViewContainer;
 @synthesize infoButton;
+@synthesize footerButtonViewInside;
+
 
 
 
@@ -98,6 +100,8 @@
     self.tableViewInsideContainer.blurRadius = 15;
     self.tableViewContainer.dynamic = TRUE;
     self.tableViewContainer.blurRadius = 15;
+    self.footerButtonViewInside.dynamic = TRUE;
+    self.footerButtonViewInside.blurRadius = 15;
     backButton.hidden = true;
     self.tableViewContainer.hidden=true;
     youtubeWebViewContainer.hidden=true;
