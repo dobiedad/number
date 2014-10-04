@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NumberInPhone/ViewController.m"
-            timestampString = "434070590.60866"
+            timestampString = "434117206.289707"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "484"
-            endingLineNumber = "484"
-            landmarkName = "-requestAddressBookAccess"
+            startingLineNumber = "488"
+            endingLineNumber = "488"
+            landmarkName = "-checkAddressBookAccess"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -31,8 +31,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
             endingLineNumber = "25"
-            landmarkName = "contactsTableView"
-            landmarkType = "19">
+            landmarkName = "@interface ViewController"
+            landmarkType = "2">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -72,11 +72,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NumberInPhone/ViewController.m"
-            timestampString = "434070590.60866"
+            timestampString = "434117206.289707"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "396"
-            endingLineNumber = "396"
+            startingLineNumber = "400"
+            endingLineNumber = "400"
             landmarkName = "-paralax"
             landmarkType = "5">
          </BreakpointContent>
@@ -88,12 +88,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NumberInPhone/ViewController.m"
-            timestampString = "434070590.60866"
+            timestampString = "434117206.289707"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "536"
-            endingLineNumber = "536"
-            landmarkName = "-noButtonClicked:"
+            startingLineNumber = "540"
+            endingLineNumber = "540"
+            landmarkName = "-reloadCheeseFunction"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -104,12 +104,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NumberInPhone/ViewController.m"
-            timestampString = "434070590.60866"
+            timestampString = "434117206.289707"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "538"
-            endingLineNumber = "538"
-            landmarkName = "-noButtonClicked:"
+            startingLineNumber = "542"
+            endingLineNumber = "542"
+            landmarkName = "-vibrate"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -120,11 +120,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NumberInPhone/ViewController.m"
-            timestampString = "434070179.727212"
+            timestampString = "434117206.289707"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>

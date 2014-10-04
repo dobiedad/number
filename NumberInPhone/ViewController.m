@@ -82,7 +82,11 @@ NSTimer *timer;
     
     contactView.hidden = true;
     btnCreateNewContact.hidden =true;
-    [background setImage:[UIImage imageNamed:@"colour.jpg"]];
+    [background setImage:[UIImage imageNamed:@"winter.jpg"]];
+    
+    
+    
+    
     addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     [self checkAddressBookAccess];
     [self getContacts];
@@ -543,7 +547,7 @@ NSTimer *timer;
 - (IBAction)noButtonClicked:(id)sender {
     [self reloadCheeseFunction];
     [self vibrate];
-    imageArray = [[NSMutableArray alloc] initWithObjects:@"italy.jpg", @"wave.jpg", @"leaf.jpg", @"beach.jpg", @"nightfall.jpg", @"colour.jpg",@"star.jpg",@"road.jpg",@"wave2.jpg",@"building.jpg", nil];
+    imageArray = [[NSMutableArray alloc] initWithObjects:@"italy.jpg", @"wave.jpg", @"nightfall.jpg", @"colour.jpg",@"star.jpg",@"wave2.jpg",@"building.jpg",@"empireState.jpg", @"fog.jpg", @"frankfurt.jpg", @"hotbaloon.jpg",@"nycsun.jpg",@"paris.jpg",@"rain.jpg",@"rocky.jpg",@"sidewalk.jpg",@"snowmountain.jpg"@"weed.jpg",@"winter.jpg", nil];
     uint32_t imagernd = arc4random_uniform([imageArray count]);
     NSString *randomImage = [imageArray objectAtIndex:imagernd];
     background.image = [UIImage imageNamed:randomImage];
@@ -561,10 +565,10 @@ NSTimer *timer;
                     animations:NULL
                     completion:NULL];
     noButtonTapCount++;
-    if (noButtonTapCount == 4)
+    if (noButtonTapCount == 3)
     {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Title"
-                                                        message:@"My alert text here"
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Play Nice!"
+                                                        message:@"You need to tap the green button"
                                                        delegate:nil
                                               cancelButtonTitle:@"Ok"
                                               otherButtonTitles:nil];

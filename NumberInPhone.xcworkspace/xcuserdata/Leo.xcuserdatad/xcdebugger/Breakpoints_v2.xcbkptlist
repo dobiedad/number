@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NumberInPhone/ViewController.m"
-            timestampString = "434070590.60866"
+            timestampString = "434117206.289707"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "638"
-            endingLineNumber = "638"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            startingLineNumber = "642"
+            endingLineNumber = "642"
+            landmarkName = "-getContacts"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NumberInPhone/ViewController.m"
-            timestampString = "434070590.60866"
+            timestampString = "434117206.289707"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "656"
-            endingLineNumber = "656"
-            landmarkName = "-sendInAppSMS:"
+            startingLineNumber = "660"
+            endingLineNumber = "660"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NumberInPhone/ViewController.m"
-            timestampString = "434070179.727212"
+            timestampString = "434117206.289707"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "-infoButtonClicked:"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NumberInPhone/ViewController.m"
-            timestampString = "434070590.60866"
+            timestampString = "434117206.289707"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "669"
-            endingLineNumber = "669"
-            landmarkName = "-messageComposeViewController:didFinishWithResult:"
+            startingLineNumber = "673"
+            endingLineNumber = "673"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NumberInPhone/ViewController.m"
-            timestampString = "434070590.60866"
+            timestampString = "434117206.289707"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "608"
-            endingLineNumber = "608"
-            landmarkName = "-getContacts"
+            startingLineNumber = "612"
+            endingLineNumber = "612"
+            landmarkName = "-didReceiveMemoryWarning"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NumberInPhone/ViewController.m"
-            timestampString = "434070590.60866"
+            timestampString = "434117206.289707"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "617"
-            endingLineNumber = "617"
+            startingLineNumber = "621"
+            endingLineNumber = "621"
             landmarkName = "-getContacts"
             landmarkType = "5">
          </BreakpointContent>
