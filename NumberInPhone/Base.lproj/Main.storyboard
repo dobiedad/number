@@ -42,7 +42,7 @@
                                                                                 <rect key="frame" x="68" y="14" width="188" height="75"/>
                                                                                 <subviews>
                                                                                     <button alpha="0.59999999999999964" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmt-lx-B7V" userLabel="saveContactButton">
-                                                                                        <rect key="frame" x="64" y="8" width="48" height="48"/>
+                                                                                        <rect key="frame" x="62" y="8" width="48" height="48"/>
                                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                                                         <state key="normal" backgroundImage="tick.png">
                                                                                             <color key="titleShadowColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="1" colorSpace="calibratedRGB"/>
@@ -72,7 +72,6 @@
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                                 <constraints>
-                                                                                    <constraint firstAttribute="centerX" secondItem="rmt-lx-B7V" secondAttribute="centerX" id="IfP-9P-a20"/>
                                                                                     <constraint firstAttribute="centerY" secondItem="rmt-lx-B7V" secondAttribute="centerY" id="mie-YT-VDL"/>
                                                                                 </constraints>
                                                                             </view>

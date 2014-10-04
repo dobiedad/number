@@ -544,6 +544,11 @@ NSTimer *timer;
                                                        delegate:nil
                                               cancelButtonTitle:@"Ok"
                                               otherButtonTitles:nil];
+        [UIView transitionWithView:alert
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromLeft
+                        animations:NULL
+                        completion:NULL];
         [alert show];
         noButtonTapCount = 0; // Not sure if you want to reset to 0 here.
     }
