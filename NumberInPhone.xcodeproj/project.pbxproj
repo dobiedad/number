@@ -11,6 +11,7 @@
 		B35B61D319DC113B00AE0D09 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = B35B61D219DC113B00AE0D09 /* FXBlurView.m */; };
 		B35B61D519DC13BE00AE0D09 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35B61D419DC13BE00AE0D09 /* Accelerate.framework */; };
 		B35B61E219DC5C7700AE0D09 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B35B61E019DC5C7700AE0D09 /* Podfile */; };
+		B36929BB19E03061003D9FFA /* page.wav in Resources */ = {isa = PBXBuildFile; fileRef = B36929BA19E03061003D9FFA /* page.wav */; };
 		B3AF700919D96D3A00899811 /* PixateFreestyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AF700819D96D3A00899811 /* PixateFreestyle.framework */; };
 		B3BFAFD119DF5E0B009041B0 /* backRed.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BFAFA919DF5E0B009041B0 /* backRed.png */; };
 		B3BFAFD219DF5E0B009041B0 /* backRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BFAFAA19DF5E0B009041B0 /* backRed@2x.png */; };
@@ -98,6 +99,7 @@
 		B35B61D219DC113B00AE0D09 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 		B35B61D419DC13BE00AE0D09 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		B35B61E019DC5C7700AE0D09 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B36929BA19E03061003D9FFA /* page.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = page.wav; sourceTree = "<group>"; };
 		B3AF700819D96D3A00899811 /* PixateFreestyle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PixateFreestyle.framework; sourceTree = SOURCE_ROOT; };
 		B3BFAFA919DF5E0B009041B0 /* backRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backRed.png; sourceTree = "<group>"; };
 		B3BFAFAA19DF5E0B009041B0 /* backRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backRed@2x.png"; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			children = (
 				B3BFAFA919DF5E0B009041B0 /* backRed.png */,
 				B3BFAFAA19DF5E0B009041B0 /* backRed@2x.png */,
+				B36929BA19E03061003D9FFA /* page.wav */,
 				B3F0391819E0154200766A61 /* empireState.jpg */,
 				B3F0391919E0154200766A61 /* empireState@2x.jpg */,
 				B3F0391A19E0154200766A61 /* fog.jpg */,
@@ -433,6 +436,7 @@
 				B3BFAFE719DF5E0B009041B0 /* newIcon.png in Resources */,
 				B3C3C85219D700A500B1D69B /* Main.storyboard in Resources */,
 				B35B61E219DC5C7700AE0D09 /* Podfile in Resources */,
+				B36929BB19E03061003D9FFA /* page.wav in Resources */,
 				B3F0393B19E0154200766A61 /* hotbaloon@2x.jpg in Resources */,
 				B3BFAFD919DF5E0B009041B0 /* chat@2x.png in Resources */,
 				B3F0393519E0154200766A61 /* empireState@2x.jpg in Resources */,

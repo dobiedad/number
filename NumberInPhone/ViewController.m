@@ -226,6 +226,8 @@ NSTimer *timer;
 
     
     [self displayContacts];
+    [self playSound:@"page" :@"wav"];
+
 
     
 }
@@ -422,11 +424,34 @@ NSTimer *timer;
         [contactAddedAlert show];
         self.Name.text=@"";
         self.Number.text=@"";
+        contactView.hidden=true;
+        [UIView transitionWithView:superView
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromTop
+                        animations:NULL
+                        completion:NULL];
+        noButton.hidden=false;
+        btnCreateNewContact.hidden=true;
+        yesButton.hidden=false;
+        cheesyContainer.hidden=false;
+        backButton.hidden=true;
+        infoButton.hidden=false;
+        contactButton.hidden=false;
+        [UIView transitionWithView:noButton
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromTop
+                        animations:NULL
+                        completion:NULL];
+        [UIView transitionWithView:yesButton
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromTop
+                        animations:NULL
+                        completion:NULL];
 
 
     }
     else {
-        UIAlertView *emptyAlert = [[UIAlertView alloc]initWithTitle:@"Thats a fake contact. Try again with the correct details" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        UIAlertView *emptyAlert = [[UIAlertView alloc]initWithTitle:@"Those details are not valid.Please try again" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [emptyAlert show];
     }
 }
@@ -559,7 +584,8 @@ NSTimer *timer;
 
 }
 - (IBAction)yesButton:(id)sender {
-    
+    [self playSound:@"page" :@"wav"];
+
     cheesyContainer.hidden = TRUE;
     contactView.hidden = false;
     btnCreateNewContact.hidden =true;
@@ -712,6 +738,18 @@ NSTimer *timer;
                            </body>\
                            </html>"];
     [self.youtubeWebView loadHTMLString:embedHTML baseURL:[[NSBundle mainBundle]resourceURL]];
+}
+- (void)playSound :(NSString *)fName :(NSString *) ext{
+    SystemSoundID audioEffect;
+    NSString *path = [[NSBundle mainBundle] pathForResource : fName ofType :ext];
+    if ([[NSFileManager defaultManager] fileExistsAtPath : path]) {
+        NSURL *pathURL = [NSURL fileURLWithPath: path];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef) pathURL, &audioEffect);
+        AudioServicesPlaySystemSound(audioEffect);
+    }
+    else {
+        NSLog(@"error, file not found: %@", path);
+    }
 }
 
 @end
