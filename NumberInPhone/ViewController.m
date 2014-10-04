@@ -223,44 +223,11 @@ NSTimer *timer;
 
 
 - (IBAction)contactButtonClicked:(id)sender {
+
     
+    [self displayContacts];
+
     
-    LAContext *context = [[LAContext alloc] init];
-    
-    NSError *error = nil;
-    if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error]) {
-        [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
-                localizedReason:@"Are you the device owner?"
-                          reply:^(BOOL success, NSError *error) {
-                              
-                              if (error) {
-                                  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                                                  message:@"There was a problem verifying your identity."
-                                                                                 delegate:nil
-                                                                        cancelButtonTitle:@"Ok"
-                                                                        otherButtonTitles:nil];
-                                  [alert show];
-                                  return;
-                              }
-                              
-                              if (success) {
-                                  [self displayContacts];
-                                  
-                              }
-                          }];
-        
-    } else {
-        
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                        message:@"Your device cannot authenticate using TouchID."
-                                                       delegate:nil
-                                              cancelButtonTitle:@"Ok"
-                                              otherButtonTitles:nil];
-        [alert show];
-        
-    }
-    
-   
 }
 
 
@@ -522,16 +489,19 @@ NSTimer *timer;
 - (void)reloadCheeseFunction
 {
     NSArray *cheesyArray = @[@"Are you religious? Because you're the answer to all my prayers.", @"Do you have a Band-Aid? Because I just scraped my knee falling for you.", @"I'm not a photographer, but I can picture me and you together.",
-                             @"I seem to have lost my phone number. Can I have yours?", @"You look cold. Want to use me as a blanket?"];
+                             @"I seem to have lost my phone number. Can I have yours?", @"You look cold. Want to use me as a blanket?",@"I thought happiness started with an H. Why does mine start with U?", @"Does your left eye hurt? Because you've been looking right all day.", @"What time do you have to be back in heaven?",
+                             @"You're so hot, I want to bake cookies on you."];
     uint32_t rnd = arc4random_uniform([cheesyArray count]);
     NSString *randomCheese = [cheesyArray objectAtIndex:rnd];
+    
+
     
     
     cheesyLine.text = randomCheese;
     [cheesyLine setUserInteractionEnabled:NO];
     
     NSArray *callMeArray = @[@"Let me call you later?", @"Grab some coffee later?", @"Lets go out sometime?",
-                             @"Its a date?", @"Me + You"];
+                             @"Its a date?", @"Me + You", @"See you soon?"];
     uint32_t callrnd = arc4random_uniform([callMeArray count]);
     NSString *callMe = [callMeArray objectAtIndex:callrnd];
     
@@ -547,10 +517,12 @@ NSTimer *timer;
 - (IBAction)noButtonClicked:(id)sender {
     [self reloadCheeseFunction];
     [self vibrate];
-    imageArray = [[NSMutableArray alloc] initWithObjects:@"italy.jpg", @"wave.jpg", @"nightfall.jpg", @"colour.jpg",@"star.jpg",@"wave2.jpg",@"building.jpg",@"empireState.jpg", @"fog.jpg", @"frankfurt.jpg", @"hotbaloon.jpg",@"nycsun.jpg",@"paris.jpg",@"rain.jpg",@"rocky.jpg",@"sidewalk.jpg",@"snowmountain.jpg"@"weed.jpg",@"winter.jpg", nil];
+    imageArray = [[NSMutableArray alloc] initWithObjects:@"italy.jpg", @"wave.jpg", @"nightfall.jpg", @"colour.jpg",@"star.jpg",@"wave2.jpg",@"building.jpg",@"empireState.jpg", @"fog.jpg", @"frankfurt.jpg", @"hotbaloon.jpg",@"nycsun.jpg",@"paris.jpg",@"rain.jpg",@"rocky.jpg",@"sidewalk.jpg",@"snowmountain.jpg",@"weed.jpg",@"winter.jpg", nil];
     uint32_t imagernd = arc4random_uniform([imageArray count]);
     NSString *randomImage = [imageArray objectAtIndex:imagernd];
     background.image = [UIImage imageNamed:randomImage];
+    NSLog(@"%@",randomImage);
+
     
     [UIView transitionWithView:background
                       duration:0.3
