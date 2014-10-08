@@ -58,7 +58,7 @@
 @property (nonatomic) IBOutlet APContact *currentContact;
 
 @property (nonatomic) IBOutlet NSMutableArray *imageArray;
-@property (nonatomic) IBOutlet NSMutableArray *contactArray;
+@property (nonatomic) IBOutlet NSArray *contactArray;
 @property (weak, nonatomic) IBOutlet UIButton *infoButton;
 @property (nonatomic, strong, retain) MFMessageComposeViewController *messageComposer;
 
