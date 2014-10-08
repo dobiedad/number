@@ -55,6 +55,10 @@
 
 @synthesize footerButtonViewInside;
 NSUInteger noButtonTapCount;
+NSUInteger cheeseCountInteger;
+NSUInteger callCountInteger;
+
+
 NSTimer *timer;
 
 
@@ -85,6 +89,10 @@ NSTimer *timer;
     contactView.hidden = true;
     btnCreateNewContact.hidden =true;
     [background setImage:[UIImage imageNamed:@"winter.jpg"]];
+    
+    cheeseCountInteger=0;
+    callCountInteger=0;
+
     
     
     
@@ -519,36 +527,48 @@ NSTimer *timer;
 
 - (void)reloadCheeseFunction
 {
-//    NSMutableArray *cheesyArray = [NSMutableArray arrayWithArray: @[@"Are you religious? Because you're the answer to all my prayers.", @"Do you have a Band-Aid? Because I just scraped my knee falling for you.", @"I'm not a photographer, but I can picture me and you together.",
-//                             @"I seem to have lost my phone number. Can I have yours?", @"You look cold. Want to use me as a blanket?",@"I thought happiness started with an H. Why does mine start with U?", @"Does your left eye hurt? Because you've been looking right all day.", @"What time do you have to be back in heaven?",
-//                             @"You're so hot, I want to bake cookies on you.",@"Hi, I’m Mr. Right. Someone said you were looking for me",@"Do you believe in love at first sight or do I need to walk by again?",@"If I said you had a great body, would you hold it against me?", @" Do you have the time. . . to write your number down?",@"Screw me if I am wrong, but haven’t we met before?",@"I didn't know angels could fly so low.", @"The only thing your eyes haven't told me is your name."]];
-//    
-//    NSUInteger cheesyCount = [cheesyArray count];
-//    for (NSUInteger i = 0; i < cheesyCount; ++i) {
-//        NSUInteger nElements = cheesyCount - i;
-//        NSUInteger n = (arc4random() % nElements) + i;
-//        [cheesyArray exchangeObjectAtIndex:i withObjectAtIndex:n];
-//    }
-//    NSString *cheesyLineIndexed = [cheesyArray objectAtIndex:cheesyCount];
-//    
-//    
-//    
-//    cheesyLine.text = cheesyLineIndexed;
-//    [cheesyLine setUserInteractionEnabled:NO];
-//    
-//    NSMutableArray *callMeArray = [NSMutableArray arrayWithArray: @[@"Meet up later?", @"Grab some coffee later?", @"Lets go out sometime?",
-//                                                                    @"Its a date?", @"Me + You ?", @"See you soon?", @"Lets grab a drink sometime?",@"Lets grab a bite sometime?"]];
-//    
-//    NSUInteger callMeCount = [callMeArray count];
-//    for (NSUInteger i = 0; i < callMeCount; ++i) {
-//        NSUInteger nElements = callMeCount - i;
-//        NSUInteger n = (arc4random() % nElements) + i;
-//        [callMeArray exchangeObjectAtIndex:i withObjectAtIndex:n];
-//    }
-//    NSString *callMeIndexed = [callMeArray objectAtIndex:callMeCount];
-//    
-//    
-//    callLabel.text = callMeIndexed;
+    NSMutableArray *cheesyArray = [NSMutableArray arrayWithArray: @[@"Are you religious? Because you're the answer to all my prayers.", @"Do you have a Band-Aid? Because I just scraped my knee falling for you.", @"I'm not a photographer, but I can picture me and you together.",
+                             @"I seem to have lost my phone number. Can I have yours?", @"You look cold. Want to use me as a blanket?",@"I thought happiness started with an H. Why does mine start with U?", @"Does your left eye hurt? Because you've been looking right all day.", @"What time do you have to be back in heaven?",
+                             @"You're so hot, I want to bake cookies on you.",@"Hi, I’m Mr. Right. Someone said you were looking for me",@"Do you believe in love at first sight or do I need to walk by again?",@"If I said you had a great body, would you hold it against me?", @" Do you have the time. . . to write your number down?",@"Screw me if I am wrong, but haven’t we met before?",@"I didn't know angels could fly so low.", @"The only thing your eyes haven't told me is your name."]];
+    
+    NSUInteger cheesyCount = [cheesyArray count];
+    
+    
+    for (NSUInteger i = 0; i < cheesyCount; ++i) {
+        NSUInteger nElements = cheesyCount - i;
+        NSUInteger n = (arc4random() % nElements) + i;
+        [cheesyArray exchangeObjectAtIndex:i withObjectAtIndex:n];
+    }
+    NSString *cheesyLineIndexed = [cheesyArray objectAtIndex:cheeseCountInteger];
+    
+    
+    
+    cheesyLine.text = cheesyLineIndexed;
+    [cheesyLine setUserInteractionEnabled:NO];
+    
+    NSMutableArray *callMeArray = [NSMutableArray arrayWithArray: @[@"Meet up later?", @"Grab some coffee later?", @"Lets go out sometime?",
+                                                                    @"Its a date?", @"Me + You ?", @"See you soon?", @"Lets grab a drink sometime?",@"Lets grab a bite sometime?"]];
+    
+    NSUInteger callMeCount = [callMeArray count];
+    for (NSUInteger i = 0; i < callMeCount; ++i) {
+        NSUInteger nElements = callMeCount - i;
+        NSUInteger n = (arc4random() % nElements) + i;
+        [callMeArray exchangeObjectAtIndex:i withObjectAtIndex:n];
+    }
+    NSString *callMeIndexed = [callMeArray objectAtIndex:callCountInteger];
+    
+    
+    callLabel.text = callMeIndexed;
+    cheeseCountInteger++;
+    callCountInteger++;
+
+    
+    if (cheeseCountInteger == cheesyCount) {
+        cheeseCountInteger = 0;
+    }
+    if (callCountInteger == callMeCount) {
+        callCountInteger = 0;
+    };
 }
 - (void)vibrate
 {
