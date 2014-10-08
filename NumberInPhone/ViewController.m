@@ -137,7 +137,7 @@ NSTimer *timer;
 }
 
 - (IBAction)contactUsButton:(id)sender {
-    NSString *mailString = [NSString stringWithFormat:@"mailto:info@limtiless.xyz"];
+    NSString *mailString = [NSString stringWithFormat:@"mailto:info@limitless.xyz"];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:mailString]];
 }
 
