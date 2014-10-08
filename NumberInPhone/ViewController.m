@@ -88,7 +88,7 @@ NSTimer *timer;
     
     contactView.hidden = true;
     btnCreateNewContact.hidden =true;
-    [background setImage:[UIImage imageNamed:@"winter.jpg"]];
+    [background setImage:[UIImage imageNamed:@"colour.jpg"]];
     
     cheeseCountInteger=0;
     callCountInteger=0;
@@ -240,7 +240,6 @@ NSTimer *timer;
 
     
     [self displayContacts];
-    [self playSound:@"page" :@"wav"];
 
 
     
@@ -258,8 +257,10 @@ NSTimer *timer;
         self.noButton.hidden = true;
         self.yesButton.hidden=true;
         self.infoButton.hidden=true;
+        contactUsButton.hidden=false;
         
-        callLabel.text=@"limitless";
+        
+        callLabel.text=@"developed by limitless";
         cheesyLine.text=@"Contacts saved with Number?";
         
         [UIView transitionWithView:tableViewContainer
@@ -299,6 +300,8 @@ NSTimer *timer;
         self.tableViewContainer.hidden=true;
         tableViewInsideContainer.hidden=true;
         self.infoButton.hidden=false;
+        contactUsButton.hidden=true;
+
         
         
         yesButton.hidden=false;
@@ -465,7 +468,7 @@ NSTimer *timer;
 
     }
     else {
-        UIAlertView *emptyAlert = [[UIAlertView alloc]initWithTitle:@"Those details are not valid.Please try again" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        UIAlertView *emptyAlert = [[UIAlertView alloc]initWithTitle:@"Those details are not valid. Please try again" message:nil delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
         [emptyAlert show];
     }
 }
@@ -579,7 +582,7 @@ NSTimer *timer;
 - (IBAction)noButtonClicked:(id)sender {
     [self reloadCheeseFunction];
     [self vibrate];
-    imageArray = [[NSMutableArray alloc] initWithObjects:@"italy.jpg", @"wave.jpg", @"nightfall.jpg", @"colour.jpg",@"star.jpg",@"wave2.jpg",@"building.jpg",@"empireState.jpg", @"fog.jpg", @"frankfurt.jpg", @"hotbaloon.jpg",@"nycsun.jpg",@"paris.jpg",@"rain.jpg",@"rocky.jpg",@"sidewalk.jpg",@"snowmountain.jpg",@"weed.jpg",@"winter.jpg", nil];
+    imageArray = [[NSMutableArray alloc] initWithObjects:@"italy.jpg",  @"nightfall.jpg", @"colour.jpg",@"star.jpg",@"building.jpg",@"empireState.jpg", @"fog.jpg", @"frankfurt.jpg", @"hotbaloon.jpg",@"nycsun.jpg",@"paris.jpg",@"rain.jpg",@"rocky.jpg",@"sidewalk.jpg",@"snowmountain.jpg",@"weed.jpg", nil];
     uint32_t imagernd = arc4random_uniform([imageArray count]);
     NSString *randomImage = [imageArray objectAtIndex:imagernd];
     background.image = [UIImage imageNamed:randomImage];
@@ -621,7 +624,6 @@ NSTimer *timer;
 
 }
 - (IBAction)yesButton:(id)sender {
-    [self playSound:@"page" :@"wav"];
 
     cheesyContainer.hidden = TRUE;
     contactView.hidden = false;
