@@ -54,11 +54,11 @@
 @property (weak, nonatomic) IBOutlet FXBlurView *Navbar;
 
 @property (nonatomic) IBOutlet FXBlurView *contactView;
-@property (nonatomic) IBOutlet NSArray *cheesyArray;
+@property (nonatomic) IBOutlet NSMutableArray *cheesyArray;
 @property (nonatomic) IBOutlet APContact *currentContact;
 
 @property (nonatomic) IBOutlet NSMutableArray *imageArray;
-@property (nonatomic) IBOutlet NSArray *contactArray;
+@property (nonatomic) IBOutlet NSMutableArray *contactArray;
 @property (weak, nonatomic) IBOutlet UIButton *infoButton;
 @property (nonatomic, strong, retain) MFMessageComposeViewController *messageComposer;
 
@@ -68,3 +68,4 @@
 
 
 @end
+
