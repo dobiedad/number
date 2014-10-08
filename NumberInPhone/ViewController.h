@@ -37,6 +37,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *Number;
 @property (weak, nonatomic) IBOutlet UIView *youtubeWebViewContainer;
 @property (weak, nonatomic) IBOutlet FXBlurView *footerButtonViewInside;
+@property (weak, nonatomic) IBOutlet UIButton *contactUsButton;
 
 @property (strong, nonatomic) IBOutlet UIView *superView;
 @property (weak, nonatomic) IBOutlet UIButton *yesButton;

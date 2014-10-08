@@ -51,6 +51,8 @@
 @synthesize youtubeWebView;
 @synthesize youtubeWebViewContainer;
 @synthesize infoButton;
+@synthesize contactUsButton;
+
 @synthesize footerButtonViewInside;
 NSUInteger noButtonTapCount;
 NSTimer *timer;
@@ -116,7 +118,7 @@ NSTimer *timer;
     backButton.hidden = true;
     self.tableViewContainer.hidden=true;
     youtubeWebViewContainer.hidden=true;
-    
+    contactUsButton.hidden=true;
     
     
     
@@ -134,6 +136,10 @@ NSTimer *timer;
     
 }
 
+- (IBAction)contactUsButton:(id)sender {
+    NSString *mailString = [NSString stringWithFormat:@"mailto:info@limtiless.xyz"];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:mailString]];
+}
 
 
 - (IBAction)infoButtonClicked:(id)sender {
@@ -143,6 +149,7 @@ NSTimer *timer;
     if (!_clickedInfoButton) {
         youtubeWebViewContainer.hidden=false;
         contactButton.hidden=true;
+        contactUsButton.hidden=false;
         
         
         [UIView transitionWithView:superView
@@ -180,6 +187,7 @@ NSTimer *timer;
         contactButton.hidden=false;
         yesButton.hidden=false;
         noButton.hidden=false;
+        contactUsButton.hidden=true;
         [self reloadCheeseFunction];
 
     

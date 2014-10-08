@@ -51,6 +51,15 @@
                                                                                             <action selector="btnCreateNewContactClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bu2-Do-XY5"/>
                                                                                         </connections>
                                                                                     </button>
+                                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBJ-rZ-48V" userLabel="contactUsButton">
+                                                                                        <rect key="frame" x="71" y="23" width="46" height="30"/>
+                                                                                        <state key="normal" title="Button">
+                                                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                        </state>
+                                                                                        <connections>
+                                                                                            <action selector="contactUsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZLv-Lr-q7K"/>
+                                                                                        </connections>
+                                                                                    </button>
                                                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ii-dM-jiH" userLabel="yesButton">
                                                                                         <rect key="frame" x="96" y="-12" width="100" height="100"/>
                                                                                         <state key="normal" backgroundImage="yes.png">
@@ -72,7 +81,9 @@
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                                 <constraints>
+                                                                                    <constraint firstAttribute="centerX" secondItem="TBJ-rZ-48V" secondAttribute="centerX" id="7Gf-nZ-Pp7"/>
                                                                                     <constraint firstAttribute="centerY" secondItem="rmt-lx-B7V" secondAttribute="centerY" id="mie-YT-VDL"/>
+                                                                                    <constraint firstAttribute="centerY" secondItem="TBJ-rZ-48V" secondAttribute="centerY" id="zHC-W1-0q2"/>
                                                                                 </constraints>
                                                                             </view>
                                                                         </subviews>
@@ -355,6 +366,7 @@
                         <outlet property="cheesyInsideView" destination="IpG-lo-oKt" id="KI2-Mk-pep"/>
                         <outlet property="cheesyLine" destination="TND-Cd-cJl" id="Xbk-K2-TjR"/>
                         <outlet property="contactButton" destination="Q3U-qt-FwU" id="Hce-Yy-xhT"/>
+                        <outlet property="contactUsButton" destination="TBJ-rZ-48V" id="UCv-cT-2cf"/>
                         <outlet property="contactView" destination="YzO-6F-7ia" id="a5E-Ld-m22"/>
                         <outlet property="contactsTableView" destination="dND-Sf-G7v" id="4G9-1U-0SR"/>
                         <outlet property="footerButtonView" destination="9Jt-ri-pOw" id="nkd-ZF-7ga"/>
