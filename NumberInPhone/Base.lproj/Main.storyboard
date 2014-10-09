@@ -176,6 +176,7 @@
                                 <constraints>
                                     <constraint firstItem="9Jt-ri-pOw" firstAttribute="leading" secondItem="YJ1-A4-bkD" secondAttribute="leading" id="D3N-en-XjR"/>
                                     <constraint firstAttribute="trailing" secondItem="kf0-77-T3J" secondAttribute="trailing" id="KhY-LS-R2J"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Jt-ri-pOw" secondAttribute="bottom" id="gqP-9J-p4E"/>
                                     <constraint firstItem="kf0-77-T3J" firstAttribute="leading" secondItem="YJ1-A4-bkD" secondAttribute="leading" id="hna-qd-4I0"/>
                                     <constraint firstAttribute="trailing" secondItem="9Jt-ri-pOw" secondAttribute="trailing" id="pqM-7i-5g0"/>
                                 </constraints>
@@ -393,7 +394,7 @@
     </scenes>
     <resources>
         <image name="backRed.png" width="80" height="80"/>
-        <image name="bg.jpg" width="640" height="1136"/>
+        <image name="bg.jpg" width="768" height="1024"/>
         <image name="contact1.png" width="80" height="80"/>
         <image name="iconsmall.png" width="60" height="60"/>
         <image name="info1.png" width="80" height="80"/>
