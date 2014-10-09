@@ -11,6 +11,8 @@
 		B35B61D319DC113B00AE0D09 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = B35B61D219DC113B00AE0D09 /* FXBlurView.m */; };
 		B35B61D519DC13BE00AE0D09 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35B61D419DC13BE00AE0D09 /* Accelerate.framework */; };
 		B35B61E219DC5C7700AE0D09 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B35B61E019DC5C7700AE0D09 /* Podfile */; };
+		B39A94AB19E6896500AE4B6C /* 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = B39A94A919E6896500AE4B6C /* 640x960.png */; };
+		B39A94AC19E6896500AE4B6C /* 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = B39A94AA19E6896500AE4B6C /* 640x1136.png */; };
 		B3AF700919D96D3A00899811 /* PixateFreestyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AF700819D96D3A00899811 /* PixateFreestyle.framework */; };
 		B3BFAFD119DF5E0B009041B0 /* backRed.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BFAFA919DF5E0B009041B0 /* backRed.png */; };
 		B3BFAFD219DF5E0B009041B0 /* backRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BFAFAA19DF5E0B009041B0 /* backRed@2x.png */; };
@@ -29,7 +31,6 @@
 		B3BFAFE119DF5E0B009041B0 /* info1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BFAFB919DF5E0B009041B0 /* info1@2x.png */; };
 		B3BFAFE219DF5E0B009041B0 /* italy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3BFAFBA19DF5E0B009041B0 /* italy.jpg */; };
 		B3BFAFE319DF5E0B009041B0 /* italy@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3BFAFBB19DF5E0B009041B0 /* italy@2x.jpg */; };
-		B3BFAFE419DF5E0B009041B0 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BFAFBC19DF5E0B009041B0 /* launch.png */; };
 		B3BFAFE719DF5E0B009041B0 /* newIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BFAFBF19DF5E0B009041B0 /* newIcon.png */; };
 		B3BFAFE819DF5E0B009041B0 /* nightfall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3BFAFC019DF5E0B009041B0 /* nightfall.jpg */; };
 		B3BFAFE919DF5E0B009041B0 /* nightfall@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3BFAFC119DF5E0B009041B0 /* nightfall@2x.jpg */; };
@@ -97,6 +98,8 @@
 		B35B61D219DC113B00AE0D09 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 		B35B61D419DC13BE00AE0D09 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		B35B61E019DC5C7700AE0D09 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B39A94A919E6896500AE4B6C /* 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x960.png; sourceTree = "<group>"; };
+		B39A94AA19E6896500AE4B6C /* 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x1136.png; sourceTree = "<group>"; };
 		B3AF700819D96D3A00899811 /* PixateFreestyle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PixateFreestyle.framework; sourceTree = SOURCE_ROOT; };
 		B3BFAFA919DF5E0B009041B0 /* backRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backRed.png; sourceTree = "<group>"; };
 		B3BFAFAA19DF5E0B009041B0 /* backRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backRed@2x.png"; sourceTree = "<group>"; };
@@ -115,7 +118,6 @@
 		B3BFAFB919DF5E0B009041B0 /* info1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info1@2x.png"; sourceTree = "<group>"; };
 		B3BFAFBA19DF5E0B009041B0 /* italy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = italy.jpg; sourceTree = "<group>"; };
 		B3BFAFBB19DF5E0B009041B0 /* italy@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "italy@2x.jpg"; sourceTree = "<group>"; };
-		B3BFAFBC19DF5E0B009041B0 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		B3BFAFBF19DF5E0B009041B0 /* newIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newIcon.png; sourceTree = "<group>"; };
 		B3BFAFC019DF5E0B009041B0 /* nightfall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nightfall.jpg; sourceTree = "<group>"; };
 		B3BFAFC119DF5E0B009041B0 /* nightfall@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "nightfall@2x.jpg"; sourceTree = "<group>"; };
@@ -253,7 +255,6 @@
 				B3BFAFB919DF5E0B009041B0 /* info1@2x.png */,
 				B3BFAFBA19DF5E0B009041B0 /* italy.jpg */,
 				B3BFAFBB19DF5E0B009041B0 /* italy@2x.jpg */,
-				B3BFAFBC19DF5E0B009041B0 /* launch.png */,
 				B3BFAFBF19DF5E0B009041B0 /* newIcon.png */,
 				B3BFAFC019DF5E0B009041B0 /* nightfall.jpg */,
 				B3BFAFC119DF5E0B009041B0 /* nightfall@2x.jpg */,
@@ -341,6 +342,8 @@
 		B3E21EE719E5C91C0023AF65 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				B39A94A919E6896500AE4B6C /* 640x960.png */,
+				B39A94AA19E6896500AE4B6C /* 640x1136.png */,
 				B3E21EE819E5C91C0023AF65 /* 120.png */,
 				B3E21EF019E5C9530023AF65 /* 80.png */,
 				B3E21EE919E5C91C0023AF65 /* 180.png */,
@@ -432,9 +435,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3BFAFE419DF5E0B009041B0 /* launch.png in Resources */,
 				B3F0394419E0154200766A61 /* rocky.jpg in Resources */,
 				B3BFAFE719DF5E0B009041B0 /* newIcon.png in Resources */,
+				B39A94AB19E6896500AE4B6C /* 640x960.png in Resources */,
 				B3E21EEE19E5C91C0023AF65 /* 58.png in Resources */,
 				B3C3C85219D700A500B1D69B /* Main.storyboard in Resources */,
 				B35B61E219DC5C7700AE0D09 /* Podfile in Resources */,
@@ -474,6 +477,7 @@
 				B3BFAFD219DF5E0B009041B0 /* backRed@2x.png in Resources */,
 				B3C3C85719D700A500B1D69B /* LaunchScreen.xib in Resources */,
 				B3BFAFD619DF5E0B009041B0 /* building.jpg in Resources */,
+				B39A94AC19E6896500AE4B6C /* 640x1136.png in Resources */,
 				B3F0393719E0154200766A61 /* fog@2x.jpg in Resources */,
 				B3BFAFEC19DF5E0B009041B0 /* phone.png in Resources */,
 				B3F0394C19E0154200766A61 /* weed.jpg in Resources */,
@@ -671,6 +675,7 @@
 			baseConfigurationReference = CC07600DF388D0A10E10CBCA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -688,6 +693,7 @@
 			baseConfigurationReference = 59CCFC1105B78DA69515E324 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
