@@ -54,6 +54,9 @@
 @synthesize contactUsButton;
 
 @synthesize footerButtonViewInside;
+@synthesize clickMeButton;
+
+
 NSUInteger noButtonTapCount;
 NSUInteger cheeseCountInteger;
 NSUInteger callCountInteger;
@@ -92,6 +95,7 @@ NSTimer *timer;
     
     cheeseCountInteger=0;
     callCountInteger=0;
+    [self hideForClickMe];
 
     
     
@@ -245,7 +249,14 @@ NSTimer *timer;
     
 }
 
+- (IBAction)clickMeButtonClicked:(id)sender {
+}
+- (void)hideForClickMe{
+    footerButtonView.hidden=true;
+    cheesyContainer.hidden=true;
 
+    
+}
 - (void) displayContacts {
     
     

@@ -29,6 +29,7 @@
 @property (weak, nonatomic) IBOutlet FXBlurView *tableViewContainer;
 @property (weak, nonatomic) IBOutlet FXBlurView *tableViewInsideContainer;
 @property (nonatomic) IBOutlet UIWebView *youtubeWebView;
+@property (weak, nonatomic) IBOutlet UIButton *clickMeButton;
 
 
 @property (weak, nonatomic) IBOutlet UIButton *contactButton;

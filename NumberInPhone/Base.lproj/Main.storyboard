@@ -23,12 +23,15 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3dO-5e-8Ok">
                                         <rect key="frame" x="-124" y="-270" width="568" height="1024"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmy-Dd-hRf">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmy-Dd-hRf" userLabel="clickMeButton">
                                         <rect key="frame" x="137" y="227" width="46" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="Button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="clickMeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uLU-j3-uzn"/>
+                                        </connections>
                                     </button>
                                     <view opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Jt-ri-pOw" userLabel="footerButtonView" customClass="FXBlurView">
                                         <rect key="frame" x="0.0" y="390" width="320" height="102"/>
@@ -377,6 +380,7 @@
                         <outlet property="cheesyContainer" destination="kf0-77-T3J" id="nUD-Lo-Hob"/>
                         <outlet property="cheesyInsideView" destination="IpG-lo-oKt" id="KI2-Mk-pep"/>
                         <outlet property="cheesyLine" destination="TND-Cd-cJl" id="Xbk-K2-TjR"/>
+                        <outlet property="clickMeButton" destination="Hmy-Dd-hRf" id="drG-uC-QJy"/>
                         <outlet property="contactButton" destination="Q3U-qt-FwU" id="Hce-Yy-xhT"/>
                         <outlet property="contactUsButton" destination="TBJ-rZ-48V" id="UCv-cT-2cf"/>
                         <outlet property="contactView" destination="YzO-6F-7ia" id="a5E-Ld-m22"/>
