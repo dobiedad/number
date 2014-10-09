@@ -625,7 +625,6 @@ NSTimer *timer;
 }
 - (IBAction)yesButton:(id)sender {
 
-    cheesyContainer.hidden = TRUE;
     contactView.hidden = false;
     btnCreateNewContact.hidden =true;
     yesButton.hidden=true;
@@ -633,6 +632,8 @@ NSTimer *timer;
     btnCreateNewContact.hidden =false;
     contactButton.hidden=true;
     infoButton.hidden=true;
+    cheesyLine.text=@"What you waiting for?";
+    callLabel.text=@"Put your number in my phone....";
     
 
     [UIView transitionWithView:superView
