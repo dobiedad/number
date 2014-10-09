@@ -253,10 +253,10 @@
                                 </constraints>
                             </view>
                             <view alpha="0.90000000000000002" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qwB-zy-MyE" userLabel="tableViewContainer" customClass="FXBlurView">
-                                <rect key="frame" x="2" y="80" width="316" height="355"/>
+                                <rect key="frame" x="2" y="80" width="316" height="250"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7F7-OS-eqM" userLabel="tableViewInsideContainer" customClass="FXBlurView">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="355"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
                                         <subviews>
                                             <tableView clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dND-Sf-G7v">
                                                 <rect key="frame" x="-81" y="-87" width="320" height="355"/>
@@ -285,7 +285,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YzO-6F-7ia" userLabel="contactView" customClass="FXBlurView">
-                                <rect key="frame" x="0.0" y="189" width="320" height="352"/>
+                                <rect key="frame" x="0.0" y="189" width="320" height="255"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFX-fN-VxK">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="470"/>
@@ -329,7 +329,7 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="400"/>
                                 <subviews>
                                     <webView alpha="0.90000000000000002" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D3s-cY-789" userLabel="youtubeWebView">
-                                        <rect key="frame" x="8" y="77" width="299" height="360"/>
+                                        <rect key="frame" x="8" y="77" width="299" height="260"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                                     </webView>
                                 </subviews>
