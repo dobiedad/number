@@ -147,11 +147,11 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TND-Cd-cJl" userLabel="cheesyLine">
-                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
                                                         <color key="backgroundColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
                                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna </string>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="21"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                 </subviews>
@@ -185,8 +185,10 @@
                                 <color key="tintColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="9Jt-ri-pOw" firstAttribute="leading" secondItem="YJ1-A4-bkD" secondAttribute="leading" id="D3N-en-XjR"/>
-                                    <constraint firstAttribute="width" secondItem="Hmy-Dd-hRf" secondAttribute="width" id="Fpu-2J-Kyn"/>
+                                    <constraint firstItem="9Jt-ri-pOw" firstAttribute="top" secondItem="Hmy-Dd-hRf" secondAttribute="bottom" id="GYg-BJ-SO7"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hmy-Dd-hRf" secondAttribute="trailing" id="HvL-6A-BSc"/>
                                     <constraint firstAttribute="trailing" secondItem="kf0-77-T3J" secondAttribute="trailing" id="KhY-LS-R2J"/>
+                                    <constraint firstItem="Hmy-Dd-hRf" firstAttribute="leading" secondItem="YJ1-A4-bkD" secondAttribute="leading" id="R4m-zS-cTO"/>
                                     <constraint firstAttribute="height" secondItem="Hmy-Dd-hRf" secondAttribute="height" id="b2m-OO-QLB"/>
                                     <constraint firstAttribute="bottom" secondItem="9Jt-ri-pOw" secondAttribute="bottom" id="gqP-9J-p4E"/>
                                     <constraint firstItem="kf0-77-T3J" firstAttribute="leading" secondItem="YJ1-A4-bkD" secondAttribute="leading" id="hna-qd-4I0"/>

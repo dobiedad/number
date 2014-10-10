@@ -158,7 +158,7 @@ NSTimer *timer;
 
 -(void)animate {
     // Load images
-    NSArray *tapAnimationArray = @[@"tapGreenSmallNew.png", @"tapLargeGreen.png"];
+    NSArray *tapAnimationArray = @[@"tap2startSmall.png", @"tap2startBig.png"];
     
     NSMutableArray *images = [[NSMutableArray alloc] init];
     for (int i = 0; i < tapAnimationArray.count; i++) {
