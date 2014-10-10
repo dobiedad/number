@@ -150,8 +150,8 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
                                                         <color key="backgroundColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
                                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna </string>
-                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                 </subviews>
@@ -356,8 +356,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNp-Wo-2VE" userLabel="tapImageView">
                                 <rect key="frame" x="40" y="220" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="e3e-la-N3m"/>
-                                    <constraint firstAttribute="width" constant="100" id="oBs-V7-0oi"/>
+                                    <constraint firstAttribute="height" constant="130" id="e3e-la-N3m"/>
+                                    <constraint firstAttribute="width" constant="130" id="oBs-V7-0oi"/>
                                 </constraints>
                             </imageView>
                         </subviews>

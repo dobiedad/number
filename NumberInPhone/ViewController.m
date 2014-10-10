@@ -94,7 +94,7 @@ NSTimer *timer;
     
     contactView.hidden = true;
     btnCreateNewContact.hidden =true;
-    [background setImage:[UIImage imageNamed:@"colour.jpg"]];
+    [background setImage:[UIImage imageNamed:@"frankfurt.jpg"]];
     
     cheeseCountInteger=0;
     callCountInteger=0;
