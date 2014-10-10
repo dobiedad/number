@@ -153,7 +153,7 @@ NSTimer *timer;
 
 -(void)animate {
     // Load images
-    NSArray *tapAnimationArray = @[@"tapSmall.png", @"tapBig.png"];
+    NSArray *tapAnimationArray = @[@"tapSmallNew.png", @"tapBigNew.png"];
     
     NSMutableArray *images = [[NSMutableArray alloc] init];
     for (int i = 0; i < tapAnimationArray.count; i++) {
@@ -281,6 +281,8 @@ NSTimer *timer;
     footerButtonView.hidden=true;
     cheesyContainer.hidden=true;
     clickMeButton.hidden=false;
+    tapImageView.hidden=false;
+
     
     [UIView transitionWithView:superView
                       duration:0.5
@@ -302,6 +304,7 @@ NSTimer *timer;
     cheesyLine.hidden=false;
     yesButton.hidden=false;
     noButton.hidden=false;
+    tapImageView.hidden=true;
 
     
     [UIView transitionWithView:superView
