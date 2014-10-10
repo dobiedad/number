@@ -9,18 +9,16 @@
 /* Begin PBXBuildFile section */
 		B3150B3A19E7EDB000236163 /* goButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B3150B3919E7EDB000236163 /* goButton.png */; };
 		B3150B3C19E7EE4B00236163 /* goButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3150B3B19E7EE4B00236163 /* goButton@2x.png */; };
-		B3150B4119E7F3DF00236163 /* tapSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = B3150B3D19E7F3DF00236163 /* tapSmall.png */; };
-		B3150B4219E7F3DF00236163 /* tapSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3150B3E19E7F3DF00236163 /* tapSmall@2x.png */; };
-		B3150B4319E7F3DF00236163 /* tapBig.png in Resources */ = {isa = PBXBuildFile; fileRef = B3150B3F19E7F3DF00236163 /* tapBig.png */; };
-		B3150B4419E7F3DF00236163 /* tapBig@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3150B4019E7F3DF00236163 /* tapBig@2x.png */; };
-		B33209A219E7FF450054C916 /* tapBigNew.png in Resources */ = {isa = PBXBuildFile; fileRef = B33209A019E7FF450054C916 /* tapBigNew.png */; };
-		B33209A319E7FF450054C916 /* tapBigNew@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B33209A119E7FF450054C916 /* tapBigNew@2x.png */; };
-		B33209A619E7FF4B0054C916 /* tapSmallNew.png in Resources */ = {isa = PBXBuildFile; fileRef = B33209A419E7FF4B0054C916 /* tapSmallNew.png */; };
-		B33209A719E7FF4B0054C916 /* tapSmallNew@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B33209A519E7FF4B0054C916 /* tapSmallNew@2x.png */; };
 		B342DF1F19DEE18E00EBFD2E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B342DF1E19DEE18E00EBFD2E /* MessageUI.framework */; };
 		B35B61D319DC113B00AE0D09 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = B35B61D219DC113B00AE0D09 /* FXBlurView.m */; };
 		B35B61D519DC13BE00AE0D09 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35B61D419DC13BE00AE0D09 /* Accelerate.framework */; };
 		B35B61E219DC5C7700AE0D09 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B35B61E019DC5C7700AE0D09 /* Podfile */; };
+		B38ADDC619E8011200CBED2C /* tapLargeGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B38ADDC219E8011200CBED2C /* tapLargeGreen.png */; };
+		B38ADDC719E8011200CBED2C /* tapLargeGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B38ADDC319E8011200CBED2C /* tapLargeGreen@2x.png */; };
+		B38ADDC819E8011200CBED2C /* tapSmallGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B38ADDC419E8011200CBED2C /* tapSmallGreen.png */; };
+		B38ADDC919E8011200CBED2C /* tapSmallGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B38ADDC519E8011200CBED2C /* tapSmallGreen@2x.png */; };
+		B38ADDCC19E801A600CBED2C /* tapGreenSmallNew.png in Resources */ = {isa = PBXBuildFile; fileRef = B38ADDCA19E801A600CBED2C /* tapGreenSmallNew.png */; };
+		B38ADDCD19E801A600CBED2C /* tapGreenSmallNew@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B38ADDCB19E801A600CBED2C /* tapGreenSmallNew@2x.png */; };
 		B39A94AB19E6896500AE4B6C /* 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = B39A94A919E6896500AE4B6C /* 640x960.png */; };
 		B39A94AC19E6896500AE4B6C /* 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = B39A94AA19E6896500AE4B6C /* 640x1136.png */; };
 		B3AF700919D96D3A00899811 /* PixateFreestyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AF700819D96D3A00899811 /* PixateFreestyle.framework */; };
@@ -105,19 +103,17 @@
 		59CCFC1105B78DA69515E324 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B3150B3919E7EDB000236163 /* goButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goButton.png; sourceTree = "<group>"; };
 		B3150B3B19E7EE4B00236163 /* goButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "goButton@2x.png"; sourceTree = "<group>"; };
-		B3150B3D19E7F3DF00236163 /* tapSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapSmall.png; sourceTree = "<group>"; };
-		B3150B3E19E7F3DF00236163 /* tapSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tapSmall@2x.png"; sourceTree = "<group>"; };
-		B3150B3F19E7F3DF00236163 /* tapBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapBig.png; sourceTree = "<group>"; };
-		B3150B4019E7F3DF00236163 /* tapBig@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tapBig@2x.png"; sourceTree = "<group>"; };
-		B33209A019E7FF450054C916 /* tapBigNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapBigNew.png; sourceTree = "<group>"; };
-		B33209A119E7FF450054C916 /* tapBigNew@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tapBigNew@2x.png"; sourceTree = "<group>"; };
-		B33209A419E7FF4B0054C916 /* tapSmallNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapSmallNew.png; sourceTree = "<group>"; };
-		B33209A519E7FF4B0054C916 /* tapSmallNew@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tapSmallNew@2x.png"; sourceTree = "<group>"; };
 		B342DF1E19DEE18E00EBFD2E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B35B61D119DC113B00AE0D09 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
 		B35B61D219DC113B00AE0D09 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 		B35B61D419DC13BE00AE0D09 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		B35B61E019DC5C7700AE0D09 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B38ADDC219E8011200CBED2C /* tapLargeGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapLargeGreen.png; sourceTree = "<group>"; };
+		B38ADDC319E8011200CBED2C /* tapLargeGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tapLargeGreen@2x.png"; sourceTree = "<group>"; };
+		B38ADDC419E8011200CBED2C /* tapSmallGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapSmallGreen.png; sourceTree = "<group>"; };
+		B38ADDC519E8011200CBED2C /* tapSmallGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tapSmallGreen@2x.png"; sourceTree = "<group>"; };
+		B38ADDCA19E801A600CBED2C /* tapGreenSmallNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapGreenSmallNew.png; sourceTree = "<group>"; };
+		B38ADDCB19E801A600CBED2C /* tapGreenSmallNew@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tapGreenSmallNew@2x.png"; sourceTree = "<group>"; };
 		B39A94A919E6896500AE4B6C /* 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x960.png; sourceTree = "<group>"; };
 		B39A94AA19E6896500AE4B6C /* 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x1136.png; sourceTree = "<group>"; };
 		B3AF700819D96D3A00899811 /* PixateFreestyle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PixateFreestyle.framework; sourceTree = SOURCE_ROOT; };
@@ -241,16 +237,8 @@
 				B3150B3B19E7EE4B00236163 /* goButton@2x.png */,
 				B3BFAFAA19DF5E0B009041B0 /* backRed@2x.png */,
 				B3F0391819E0154200766A61 /* empireState.jpg */,
-				B33209A019E7FF450054C916 /* tapBigNew.png */,
-				B33209A119E7FF450054C916 /* tapBigNew@2x.png */,
-				B33209A419E7FF4B0054C916 /* tapSmallNew.png */,
-				B33209A519E7FF4B0054C916 /* tapSmallNew@2x.png */,
 				B3F0391919E0154200766A61 /* empireState@2x.jpg */,
 				B3F0391A19E0154200766A61 /* fog.jpg */,
-				B3150B3D19E7F3DF00236163 /* tapSmall.png */,
-				B3150B3E19E7F3DF00236163 /* tapSmall@2x.png */,
-				B3150B3F19E7F3DF00236163 /* tapBig.png */,
-				B3150B4019E7F3DF00236163 /* tapBig@2x.png */,
 				B3F0391B19E0154200766A61 /* fog@2x.jpg */,
 				B3F0391C19E0154200766A61 /* frankfurt.jpg */,
 				B3F0391D19E0154200766A61 /* frankfurt@2x.jpg */,
@@ -274,6 +262,12 @@
 				B3BFAFAE19DF5E0B009041B0 /* building.jpg */,
 				B3BFAFAF19DF5E0B009041B0 /* building@2x.jpg */,
 				B3BFAFB019DF5E0B009041B0 /* chat.png */,
+				B38ADDC219E8011200CBED2C /* tapLargeGreen.png */,
+				B38ADDC319E8011200CBED2C /* tapLargeGreen@2x.png */,
+				B38ADDCA19E801A600CBED2C /* tapGreenSmallNew.png */,
+				B38ADDCB19E801A600CBED2C /* tapGreenSmallNew@2x.png */,
+				B38ADDC419E8011200CBED2C /* tapSmallGreen.png */,
+				B38ADDC519E8011200CBED2C /* tapSmallGreen@2x.png */,
 				B3BFAFB119DF5E0B009041B0 /* chat@2x.png */,
 				B3BFAFB219DF5E0B009041B0 /* colour.jpg */,
 				B3BFAFB319DF5E0B009041B0 /* colour@2x.jpg */,
@@ -468,9 +462,8 @@
 			files = (
 				B3F0394419E0154200766A61 /* rocky.jpg in Resources */,
 				B3BFAFE719DF5E0B009041B0 /* newIcon.png in Resources */,
-				B3150B4219E7F3DF00236163 /* tapSmall@2x.png in Resources */,
+				B38ADDCC19E801A600CBED2C /* tapGreenSmallNew.png in Resources */,
 				B39A94AB19E6896500AE4B6C /* 640x960.png in Resources */,
-				B33209A219E7FF450054C916 /* tapBigNew.png in Resources */,
 				B3E21EEE19E5C91C0023AF65 /* 58.png in Resources */,
 				B3C3C85219D700A500B1D69B /* Main.storyboard in Resources */,
 				B35B61E219DC5C7700AE0D09 /* Podfile in Resources */,
@@ -480,6 +473,7 @@
 				B3F0393A19E0154200766A61 /* hotbaloon.jpg in Resources */,
 				B3F0393619E0154200766A61 /* fog.jpg in Resources */,
 				B3BFAFD119DF5E0B009041B0 /* backRed.png in Resources */,
+				B38ADDCD19E801A600CBED2C /* tapGreenSmallNew@2x.png in Resources */,
 				B3F0393819E0154200766A61 /* frankfurt.jpg in Resources */,
 				B3F0393919E0154200766A61 /* frankfurt@2x.jpg in Resources */,
 				B3F0394519E0154200766A61 /* rocky@2x.jpg in Resources */,
@@ -501,21 +495,19 @@
 				B3F0394919E0154200766A61 /* snowmountain@2x.jpg in Resources */,
 				B3F0393E19E0154200766A61 /* nycsun.jpg in Resources */,
 				B3F0393F19E0154200766A61 /* nycsun@2x.jpg in Resources */,
+				B38ADDC619E8011200CBED2C /* tapLargeGreen.png in Resources */,
 				B3F0394219E0154200766A61 /* rain.jpg in Resources */,
 				B3BFAFDB19DF5E0B009041B0 /* colour@2x.jpg in Resources */,
-				B33209A619E7FF4B0054C916 /* tapSmallNew.png in Resources */,
 				B3E21EED19E5C91C0023AF65 /* 180.png in Resources */,
-				B3150B4419E7F3DF00236163 /* tapBig@2x.png in Resources */,
 				B3E21EF119E5C9530023AF65 /* 80.png in Resources */,
-				B3150B4119E7F3DF00236163 /* tapSmall.png in Resources */,
 				B3F0394019E0154200766A61 /* paris.jpg in Resources */,
 				B3BFAFF219DF5E0B009041B0 /* tick@2x.png in Resources */,
 				B3BFAFD219DF5E0B009041B0 /* backRed@2x.png in Resources */,
-				B33209A319E7FF450054C916 /* tapBigNew@2x.png in Resources */,
 				B3C3C85719D700A500B1D69B /* LaunchScreen.xib in Resources */,
-				B33209A719E7FF4B0054C916 /* tapSmallNew@2x.png in Resources */,
 				B3BFAFD619DF5E0B009041B0 /* building.jpg in Resources */,
 				B39A94AC19E6896500AE4B6C /* 640x1136.png in Resources */,
+				B38ADDC919E8011200CBED2C /* tapSmallGreen@2x.png in Resources */,
+				B38ADDC719E8011200CBED2C /* tapLargeGreen@2x.png in Resources */,
 				B3F0393719E0154200766A61 /* fog@2x.jpg in Resources */,
 				B3BFAFEC19DF5E0B009041B0 /* phone.png in Resources */,
 				B3F0394C19E0154200766A61 /* weed.jpg in Resources */,
@@ -527,11 +519,11 @@
 				B3F0394119E0154200766A61 /* paris@2x.jpg in Resources */,
 				B3BFAFDC19DF5E0B009041B0 /* contact1.png in Resources */,
 				B3F0394319E0154200766A61 /* rain@2x.jpg in Resources */,
-				B3150B4319E7F3DF00236163 /* tapBig.png in Resources */,
 				B3BFAFF019DF5E0B009041B0 /* star@2x.jpg in Resources */,
 				B3C3C85419D700A500B1D69B /* Images.xcassets in Resources */,
 				B3BFAFD819DF5E0B009041B0 /* chat.png in Resources */,
 				B3150B3A19E7EDB000236163 /* goButton.png in Resources */,
+				B38ADDC819E8011200CBED2C /* tapSmallGreen.png in Resources */,
 				B3BFAFE919DF5E0B009041B0 /* nightfall@2x.jpg in Resources */,
 				B3F0394719E0154200766A61 /* sidewalk@2x.jpg in Resources */,
 				B3F0394619E0154200766A61 /* sidewalk.jpg in Resources */,

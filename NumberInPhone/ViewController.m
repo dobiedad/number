@@ -101,6 +101,11 @@ NSTimer *timer;
     [self hideForClickMe];
     [self animate];
     
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetected)];
+    singleTap.numberOfTapsRequired = 1;
+    [tapImageView setUserInteractionEnabled:YES];
+    [tapImageView addGestureRecognizer:singleTap];
+    
     
     
     
@@ -153,7 +158,7 @@ NSTimer *timer;
 
 -(void)animate {
     // Load images
-    NSArray *tapAnimationArray = @[@"tapSmallNew.png", @"tapBigNew.png"];
+    NSArray *tapAnimationArray = @[@"tapGreenSmallNew.png", @"tapLargeGreen.png"];
     
     NSMutableArray *images = [[NSMutableArray alloc] init];
     for (int i = 0; i < tapAnimationArray.count; i++) {
@@ -175,6 +180,10 @@ NSTimer *timer;
 - (IBAction)contactUsButton:(id)sender {
     NSString *mailString = [NSString stringWithFormat:@"mailto:info@limitless.xyz"];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:mailString]];
+}
+
+-(void)tapDetected{
+    [self showForClickMe];
 }
 
 
@@ -278,10 +287,11 @@ NSTimer *timer;
     
 }
 - (void)hideForClickMe{
-    footerButtonView.hidden=true;
     cheesyContainer.hidden=true;
     clickMeButton.hidden=false;
     tapImageView.hidden=false;
+    yesButton.hidden=true;
+    noButton.hidden=true;
 
     
     [UIView transitionWithView:superView
