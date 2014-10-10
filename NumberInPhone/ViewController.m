@@ -52,9 +52,12 @@
 @synthesize youtubeWebViewContainer;
 @synthesize infoButton;
 @synthesize contactUsButton;
+@synthesize tapImageView;
 
 @synthesize footerButtonViewInside;
 @synthesize clickMeButton;
+@synthesize tapAnimationArray;
+
 
 
 NSUInteger noButtonTapCount;
@@ -96,7 +99,8 @@ NSTimer *timer;
     cheeseCountInteger=0;
     callCountInteger=0;
     [self hideForClickMe];
-
+    [self animate];
+    
     
     
     
@@ -145,6 +149,27 @@ NSTimer *timer;
     timer = [NSTimer scheduledTimerWithTimeInterval:30.0 target:self selector:@selector(noButtonClicked:) userInfo:nil repeats:YES];
     [timer fire];
     
+}
+
+-(void)animate {
+    // Load images
+    NSArray *tapAnimationArray = @[@"tapSmall.png", @"tapBig.png"];
+    
+    NSMutableArray *images = [[NSMutableArray alloc] init];
+    for (int i = 0; i < tapAnimationArray.count; i++) {
+        [images addObject:[UIImage imageNamed:[tapAnimationArray objectAtIndex:i]]];
+    }
+    
+    // Normal Animation
+    UIImageView *animationImageView =tapImageView;
+    animationImageView.animationImages = images;
+    animationImageView.animationDuration = 0.5;
+    
+ 
+    [self.view addSubview:animationImageView];
+
+    [animationImageView startAnimating];
+
 }
 
 - (IBAction)contactUsButton:(id)sender {

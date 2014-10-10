@@ -23,10 +23,13 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3dO-5e-8Ok">
                                         <rect key="frame" x="-124" y="-270" width="568" height="1024"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNp-Wo-2VE" userLabel="tapImageView">
+                                        <rect key="frame" x="40" y="178" width="240" height="128"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmy-Dd-hRf" userLabel="clickMeButton">
                                         <rect key="frame" x="137" y="227" width="46" height="30"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="Button">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -185,8 +188,10 @@
                                 <color key="tintColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="9Jt-ri-pOw" firstAttribute="leading" secondItem="YJ1-A4-bkD" secondAttribute="leading" id="D3N-en-XjR"/>
+                                    <constraint firstAttribute="width" secondItem="Hmy-Dd-hRf" secondAttribute="width" id="Fpu-2J-Kyn"/>
                                     <constraint firstAttribute="trailing" secondItem="kf0-77-T3J" secondAttribute="trailing" id="KhY-LS-R2J"/>
                                     <constraint firstAttribute="centerX" secondItem="Hmy-Dd-hRf" secondAttribute="centerX" id="VmT-5E-sX8"/>
+                                    <constraint firstAttribute="height" secondItem="Hmy-Dd-hRf" secondAttribute="height" id="b2m-OO-QLB"/>
                                     <constraint firstAttribute="bottom" secondItem="9Jt-ri-pOw" secondAttribute="bottom" id="gqP-9J-p4E"/>
                                     <constraint firstItem="kf0-77-T3J" firstAttribute="leading" secondItem="YJ1-A4-bkD" secondAttribute="leading" id="hna-qd-4I0"/>
                                     <constraint firstAttribute="centerY" secondItem="Hmy-Dd-hRf" secondAttribute="centerY" id="khf-ZV-C6c"/>
@@ -394,6 +399,7 @@
                         <outlet property="superView" destination="8bC-Xf-vdC" id="Ufg-ip-PVb"/>
                         <outlet property="tableViewContainer" destination="qwB-zy-MyE" id="xYj-3H-kva"/>
                         <outlet property="tableViewInsideContainer" destination="7F7-OS-eqM" id="fMR-1e-6wh"/>
+                        <outlet property="tapImageView" destination="DNp-Wo-2VE" id="zjM-It-7tr"/>
                         <outlet property="userImage" destination="psz-3W-v5h" id="Lw8-1F-i5m"/>
                         <outlet property="yesButton" destination="1Ii-dM-jiH" id="iQ1-ao-ajv"/>
                         <outlet property="youtubeWebView" destination="D3s-cY-789" id="RSf-z7-5Ft"/>

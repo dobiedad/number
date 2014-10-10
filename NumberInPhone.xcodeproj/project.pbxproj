@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3150B3A19E7EDB000236163 /* goButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B3150B3919E7EDB000236163 /* goButton.png */; };
+		B3150B3C19E7EE4B00236163 /* goButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3150B3B19E7EE4B00236163 /* goButton@2x.png */; };
+		B3150B4119E7F3DF00236163 /* tapSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = B3150B3D19E7F3DF00236163 /* tapSmall.png */; };
+		B3150B4219E7F3DF00236163 /* tapSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3150B3E19E7F3DF00236163 /* tapSmall@2x.png */; };
+		B3150B4319E7F3DF00236163 /* tapBig.png in Resources */ = {isa = PBXBuildFile; fileRef = B3150B3F19E7F3DF00236163 /* tapBig.png */; };
+		B3150B4419E7F3DF00236163 /* tapBig@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3150B4019E7F3DF00236163 /* tapBig@2x.png */; };
 		B342DF1F19DEE18E00EBFD2E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B342DF1E19DEE18E00EBFD2E /* MessageUI.framework */; };
 		B35B61D319DC113B00AE0D09 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = B35B61D219DC113B00AE0D09 /* FXBlurView.m */; };
 		B35B61D519DC13BE00AE0D09 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35B61D419DC13BE00AE0D09 /* Accelerate.framework */; };
@@ -93,6 +99,12 @@
 /* Begin PBXFileReference section */
 		246D0414A12EE0D51E195079 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CCFC1105B78DA69515E324 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B3150B3919E7EDB000236163 /* goButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goButton.png; sourceTree = "<group>"; };
+		B3150B3B19E7EE4B00236163 /* goButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "goButton@2x.png"; sourceTree = "<group>"; };
+		B3150B3D19E7F3DF00236163 /* tapSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapSmall.png; sourceTree = "<group>"; };
+		B3150B3E19E7F3DF00236163 /* tapSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tapSmall@2x.png"; sourceTree = "<group>"; };
+		B3150B3F19E7F3DF00236163 /* tapBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapBig.png; sourceTree = "<group>"; };
+		B3150B4019E7F3DF00236163 /* tapBig@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tapBig@2x.png"; sourceTree = "<group>"; };
 		B342DF1E19DEE18E00EBFD2E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B35B61D119DC113B00AE0D09 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
 		B35B61D219DC113B00AE0D09 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
@@ -216,11 +228,17 @@
 		B3BFAFA819DF5E0B009041B0 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B3150B3919E7EDB000236163 /* goButton.png */,
 				B3BFAFA919DF5E0B009041B0 /* backRed.png */,
+				B3150B3B19E7EE4B00236163 /* goButton@2x.png */,
 				B3BFAFAA19DF5E0B009041B0 /* backRed@2x.png */,
 				B3F0391819E0154200766A61 /* empireState.jpg */,
 				B3F0391919E0154200766A61 /* empireState@2x.jpg */,
 				B3F0391A19E0154200766A61 /* fog.jpg */,
+				B3150B3D19E7F3DF00236163 /* tapSmall.png */,
+				B3150B3E19E7F3DF00236163 /* tapSmall@2x.png */,
+				B3150B3F19E7F3DF00236163 /* tapBig.png */,
+				B3150B4019E7F3DF00236163 /* tapBig@2x.png */,
 				B3F0391B19E0154200766A61 /* fog@2x.jpg */,
 				B3F0391C19E0154200766A61 /* frankfurt.jpg */,
 				B3F0391D19E0154200766A61 /* frankfurt@2x.jpg */,
@@ -438,6 +456,7 @@
 			files = (
 				B3F0394419E0154200766A61 /* rocky.jpg in Resources */,
 				B3BFAFE719DF5E0B009041B0 /* newIcon.png in Resources */,
+				B3150B4219E7F3DF00236163 /* tapSmall@2x.png in Resources */,
 				B39A94AB19E6896500AE4B6C /* 640x960.png in Resources */,
 				B3E21EEE19E5C91C0023AF65 /* 58.png in Resources */,
 				B3C3C85219D700A500B1D69B /* Main.storyboard in Resources */,
@@ -472,7 +491,9 @@
 				B3F0394219E0154200766A61 /* rain.jpg in Resources */,
 				B3BFAFDB19DF5E0B009041B0 /* colour@2x.jpg in Resources */,
 				B3E21EED19E5C91C0023AF65 /* 180.png in Resources */,
+				B3150B4419E7F3DF00236163 /* tapBig@2x.png in Resources */,
 				B3E21EF119E5C9530023AF65 /* 80.png in Resources */,
+				B3150B4119E7F3DF00236163 /* tapSmall.png in Resources */,
 				B3F0394019E0154200766A61 /* paris.jpg in Resources */,
 				B3BFAFF219DF5E0B009041B0 /* tick@2x.png in Resources */,
 				B3BFAFD219DF5E0B009041B0 /* backRed@2x.png in Resources */,
@@ -490,13 +511,16 @@
 				B3F0394119E0154200766A61 /* paris@2x.jpg in Resources */,
 				B3BFAFDC19DF5E0B009041B0 /* contact1.png in Resources */,
 				B3F0394319E0154200766A61 /* rain@2x.jpg in Resources */,
+				B3150B4319E7F3DF00236163 /* tapBig.png in Resources */,
 				B3BFAFF019DF5E0B009041B0 /* star@2x.jpg in Resources */,
 				B3C3C85419D700A500B1D69B /* Images.xcassets in Resources */,
 				B3BFAFD819DF5E0B009041B0 /* chat.png in Resources */,
+				B3150B3A19E7EDB000236163 /* goButton.png in Resources */,
 				B3BFAFE919DF5E0B009041B0 /* nightfall@2x.jpg in Resources */,
 				B3F0394719E0154200766A61 /* sidewalk@2x.jpg in Resources */,
 				B3F0394619E0154200766A61 /* sidewalk.jpg in Resources */,
 				B3F0393419E0154200766A61 /* empireState.jpg in Resources */,
+				B3150B3C19E7EE4B00236163 /* goButton@2x.png in Resources */,
 				B3BFAFDD19DF5E0B009041B0 /* contact1@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

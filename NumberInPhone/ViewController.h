@@ -30,6 +30,7 @@
 @property (weak, nonatomic) IBOutlet FXBlurView *tableViewInsideContainer;
 @property (nonatomic) IBOutlet UIWebView *youtubeWebView;
 @property (weak, nonatomic) IBOutlet UIButton *clickMeButton;
+@property (weak, nonatomic) IBOutlet UIImageView *tapImageView;
 
 
 @property (weak, nonatomic) IBOutlet UIButton *contactButton;
@@ -61,6 +62,8 @@
 
 @property (nonatomic) IBOutlet NSMutableArray *imageArray;
 @property (nonatomic) IBOutlet NSArray *contactArray;
+@property (nonatomic) IBOutlet NSArray *tapAnimationArray;
+
 @property (weak, nonatomic) IBOutlet UIButton *infoButton;
 @property (nonatomic, strong, retain) MFMessageComposeViewController *messageComposer;
 
