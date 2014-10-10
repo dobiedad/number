@@ -165,7 +165,7 @@ NSTimer *timer;
     animationImageView.animationImages = images;
     animationImageView.animationDuration = 0.5;
     
- 
+   
     [self.view addSubview:animationImageView];
 
     [animationImageView startAnimating];

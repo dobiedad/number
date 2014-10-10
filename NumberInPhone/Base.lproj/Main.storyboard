@@ -23,9 +23,6 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3dO-5e-8Ok">
                                         <rect key="frame" x="-124" y="-270" width="568" height="1024"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNp-Wo-2VE" userLabel="tapImageView">
-                                        <rect key="frame" x="40" y="178" width="240" height="128"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmy-Dd-hRf" userLabel="clickMeButton">
                                         <rect key="frame" x="137" y="227" width="46" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -190,11 +187,9 @@
                                     <constraint firstItem="9Jt-ri-pOw" firstAttribute="leading" secondItem="YJ1-A4-bkD" secondAttribute="leading" id="D3N-en-XjR"/>
                                     <constraint firstAttribute="width" secondItem="Hmy-Dd-hRf" secondAttribute="width" id="Fpu-2J-Kyn"/>
                                     <constraint firstAttribute="trailing" secondItem="kf0-77-T3J" secondAttribute="trailing" id="KhY-LS-R2J"/>
-                                    <constraint firstAttribute="centerX" secondItem="Hmy-Dd-hRf" secondAttribute="centerX" id="VmT-5E-sX8"/>
                                     <constraint firstAttribute="height" secondItem="Hmy-Dd-hRf" secondAttribute="height" id="b2m-OO-QLB"/>
                                     <constraint firstAttribute="bottom" secondItem="9Jt-ri-pOw" secondAttribute="bottom" id="gqP-9J-p4E"/>
                                     <constraint firstItem="kf0-77-T3J" firstAttribute="leading" secondItem="YJ1-A4-bkD" secondAttribute="leading" id="hna-qd-4I0"/>
-                                    <constraint firstAttribute="centerY" secondItem="Hmy-Dd-hRf" secondAttribute="centerY" id="khf-ZV-C6c"/>
                                     <constraint firstAttribute="trailing" secondItem="9Jt-ri-pOw" secondAttribute="trailing" id="pqM-7i-5g0"/>
                                 </constraints>
                             </view>
@@ -358,15 +353,24 @@
                                     <constraint firstItem="D3s-cY-789" firstAttribute="top" secondItem="6IB-Ij-VL4" secondAttribute="top" id="ngk-wH-0zS"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNp-Wo-2VE" userLabel="tapImageView">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="e3e-la-N3m"/>
+                                    <constraint firstAttribute="width" constant="100" id="oBs-V7-0oi"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="DNp-Wo-2VE" secondAttribute="centerX" id="BGG-gW-MfG"/>
                             <constraint firstItem="y4G-7T-9ME" firstAttribute="top" secondItem="YJ1-A4-bkD" secondAttribute="bottom" id="EuL-1w-pQZ"/>
                             <constraint firstAttribute="width" secondItem="ENC-a6-Owp" secondAttribute="width" id="HcE-3U-Y9f"/>
                             <constraint firstItem="YJ1-A4-bkD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LfN-qb-3F8"/>
                             <constraint firstItem="6IB-Ij-VL4" firstAttribute="top" secondItem="ENC-a6-Owp" secondAttribute="bottom" id="M5f-vj-TYG"/>
                             <constraint firstItem="6IB-Ij-VL4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="OOb-JN-ovP"/>
                             <constraint firstItem="YzO-6F-7ia" firstAttribute="top" secondItem="ENC-a6-Owp" secondAttribute="bottom" id="Y3u-pU-n3P"/>
+                            <constraint firstAttribute="centerY" secondItem="DNp-Wo-2VE" secondAttribute="centerY" id="iYr-V4-4XJ"/>
                             <constraint firstAttribute="width" secondItem="YzO-6F-7ia" secondAttribute="width" id="x0K-jd-aQ8"/>
                             <constraint firstAttribute="width" secondItem="qwB-zy-MyE" secondAttribute="width" id="yw8-hy-JPe"/>
                         </constraints>
