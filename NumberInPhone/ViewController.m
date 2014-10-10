@@ -315,6 +315,13 @@ NSTimer *timer;
     yesButton.hidden=false;
     noButton.hidden=false;
     tapImageView.hidden=true;
+    
+    imageArray = [[NSMutableArray alloc] initWithObjects:@"italy.jpg",  @"nightfall.jpg", @"colour.jpg",@"star.jpg",@"building.jpg",@"empireState.jpg", @"fog.jpg", @"frankfurt.jpg", @"hotbaloon.jpg",@"nycsun.jpg",@"paris.jpg",@"rain.jpg",@"rocky.jpg",@"sidewalk.jpg",@"snowmountain.jpg",@"weed.jpg", nil];
+    uint32_t imagernd = arc4random_uniform([imageArray count]);
+    NSString *randomImage = [imageArray objectAtIndex:imagernd];
+    background.image = [UIImage imageNamed:randomImage];
+    NSLog(@"%@",randomImage);
+
 
     
     [UIView transitionWithView:superView
