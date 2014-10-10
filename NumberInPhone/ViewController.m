@@ -112,7 +112,6 @@ NSTimer *timer;
 
 
 
-    [self reloadCheeseFunction];
     self.footerButtonView.dynamic = TRUE;
     self.footerButtonView.blurRadius = 15;
     self.cheesyContainer.dynamic = TRUE;
@@ -250,11 +249,43 @@ NSTimer *timer;
 }
 
 - (IBAction)clickMeButtonClicked:(id)sender {
+    [self showForClickMe];
+    
 }
 - (void)hideForClickMe{
     footerButtonView.hidden=true;
     cheesyContainer.hidden=true;
+    clickMeButton.hidden=false;
+    
+    [UIView transitionWithView:superView
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionFlipFromBottom
+                    animations:NULL
+                    completion:NULL];
 
+    
+
+    
+}
+- (void)showForClickMe{
+    footerButtonView.hidden=false;
+    cheesyContainer.hidden=false;
+    clickMeButton.hidden=true;
+    [self reloadCheeseFunction];
+    cheesyContainer.hidden=false;
+    callLabel.hidden=false;
+    cheesyLine.hidden=false;
+    yesButton.hidden=false;
+    noButton.hidden=false;
+
+    
+    [UIView transitionWithView:superView
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionFlipFromTop
+                    animations:NULL
+                    completion:NULL];
+   
+    
     
 }
 - (void) displayContacts {
@@ -448,20 +479,25 @@ NSTimer *timer;
         }
         ABAddressBookSave(addressBookRef, nil);
         UIAlertView *contactAddedAlert = [[UIAlertView alloc]initWithTitle:@"Saved! Ill be in touch soon " message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [self hideForClickMe];
+
         
         [contactAddedAlert show];
         self.Name.text=@"";
         self.Number.text=@"";
+        cheesyContainer.hidden=true;
         contactView.hidden=true;
+        callLabel.hidden=true;
+        cheesyLine.hidden=true;
+        
         [UIView transitionWithView:superView
                           duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromTop
                         animations:NULL
                         completion:NULL];
-        noButton.hidden=false;
         btnCreateNewContact.hidden=true;
-        yesButton.hidden=false;
-        cheesyContainer.hidden=false;
+    
+
         backButton.hidden=true;
         infoButton.hidden=false;
         contactButton.hidden=false;
