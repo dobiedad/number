@@ -143,19 +143,19 @@
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kf0-77-T3J" userLabel="cheesyContainer" customClass="FXBlurView">
                                         <rect key="frame" x="0.0" y="250" width="320" height="140"/>
                                         <subviews>
-                                            <view alpha="0.20000000000000001" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IpG-lo-oKt">
+                                            <view alpha="0.59999999999999998" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IpG-lo-oKt">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TND-Cd-cJl" userLabel="cheesyLine">
                                                         <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
-                                                        <color key="backgroundColor" red="1" green="0.0073365899630000002" blue="0.083803695129999994" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.47000000000000003" colorSpace="calibratedRGB"/>
                                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna </string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                 </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="TND-Cd-cJl" secondAttribute="trailing" id="FIL-G9-2rl"/>
                                                     <constraint firstAttribute="centerY" secondItem="TND-Cd-cJl" secondAttribute="centerY" id="Ibd-h7-V3E"/>
